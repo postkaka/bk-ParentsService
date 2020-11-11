@@ -1,0 +1,7 @@
+<!--components/wx-more/wx-more.wxml-->
+<view class="more">
+    <view class="more-text">
+        <view class="more-1">{{text}}</view>
+        <view class="more-2">查看更多</view>
+    </view>
+</view>

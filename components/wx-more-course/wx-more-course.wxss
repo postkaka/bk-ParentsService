@@ -1,0 +1,19 @@
+/* components/wx-more-course/wx-more-course.wxss */
+.more-item {
+    background-color: #ffffff;
+    margin-top: 50rpx;
+    margin-left: 32rpx;
+    margin-bottom: 32rpx;
+    margin-right: 32rpx;
+    border-radius: 10rpx;
+    display: flex;
+    height: 414rpx;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.more-item-1 {
+    margin-top: 32rpx;
+    margin-left: 20rpx;
+    margin-right: 10rpx;
+    padding-right: 10rpx;
+}

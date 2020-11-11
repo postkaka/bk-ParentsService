@@ -1,0 +1,37 @@
+/* components/wx-more-items/wx-more-items.wxss *//* components/wx-more-item/wx-more-item.wxss */
+.more-item {
+    background-color: #ffffff;
+    margin: 32rpx;
+    border-radius: 10rpx;
+    display: flex;
+    height: 494rpx;
+    display: flex;
+    flex-direction: column;
+}
+.more-item-1 {
+    display: flex;
+    margin-top: 32rpx;
+    margin-left: 32rpx;
+}
+.more-item-text {
+    margin-top: 11rpx;
+    margin-left: 16rpx;
+}
+.name {
+    color: #333333;
+    font-family: PingFang SC;
+    font-size: 30rpx;
+    margin-bottom: 8rpx;
+    
+}
+.title {
+    color: #999999;
+    font-family: PingFang SC;
+    font-size: 24rpx;
+    margin-bottom: 41rpx;
+}
+.introduce {
+    color: #999999;
+    font-family: PingFang SC;
+    font-size: 24rpx;
+}

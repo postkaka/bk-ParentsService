@@ -1,0 +1,59 @@
+<!--pages/index/index.wxml-->
+<view class="page">
+    <!--轮播-->
+<view>
+    <swiper autoplay="true" style="height: 451rpx">
+        <block wx:for="{{background}}" wx:key="*this">
+            <swiper-item >
+                <image src="{{item}}" data-id="{{index}}"  mode="widthFix" style="width: 100%"></image>
+            </swiper-item>
+        </block>
+    </swiper>
+</view>
+<!--定位窗框-->
+<view style="height:101rpx">
+    <by-location></by-location>
+</view>
+<!--精选课程-->
+<view class="choosebox">
+    <view class="choiceness">
+        <image src="../../assets/image/choiceness.png" class="choicenessimage"></image>
+    </view>
+    <view class="choosebox-1">
+        <view class="activity">
+            <image src="../../assets/image/activity.png" class="activityimage"></image>
+        </view>
+        <view class="discounts">
+            <image src="../../assets/image/discounts.png" class="discountsiamge"></image>
+        </view>
+    </view>
+</view>
+<!--分类框-->
+<view class="classitem">
+<view wx:for="{{class}}" wx:key="*this" style="margin-left: 32rpx ">
+    <image src="{{item}}" mode="heightFix" style="height: 150rpx" ></image>
+</view>
+</view>
+<!--教学老师-->
+<by-more text="教学老师"></by-more>
+<by-more-item item="{{item}}"></by-more-item>
+<!--学员风采-->
+<by-more text="学员风采"></by-more>
+<by-more-items></by-more-items>
+<!--推荐课程-->
+<view>
+    <view class="tab">
+        <view class="tab-1">
+         <block wx:for="{{course}}" wx:key="index">
+            <view class='tab-item {{index == currentIndex?"active": ""}}'
+                    bind:tap="itemClick" 
+                    data-index="{{index}}">
+                 <text>{{item}}</text>
+             </view>
+         </block>
+        </view>
+    </view>
+   
+</view>
+<by-more-course item="{{items}}"></by-more-course>
+</view>

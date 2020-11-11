@@ -1,0 +1,14 @@
+<!--components/wx-more-item/wx-more-item.wxml-->
+<view class="more-item">
+    <view class="more-item-n">
+        <view class="more-item-1" wx:for="{{item}}" wx:key="*this">
+        <view class="more-item-2" style="height: 307rpx">
+            <image src="{{item.image}}"  mode="heightFix" style="height:307rpx"></image>
+        </view>
+        <view class="more-item-text">
+            <view class="name">{{item.name}}</view>
+            <view class="introduce">{{item.introduce}}</view>
+        </view>
+    </view>
+    </view>
+</view>

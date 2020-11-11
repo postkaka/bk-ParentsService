@@ -1,0 +1,8 @@
+<!--components/wx-more-course/wx-more-course.wxml-->
+<view class="more-item">
+    <view class="more-item-1" wx:for="{{item}}" wx:key="*this">
+        <view style="flex: 1">
+            <image src="{{item}}"  mode="heightFix" style="height:350rpx"></image>
+        </view>
+    </view>
+</view>

@@ -1,0 +1,22 @@
+/* components/wx-more/wx-more.wxss */
+.more {
+    margin-top: 32rpx;
+}
+.more-text {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    line-height: 32rpx;
+}
+.more-1 {
+    color: #333333;
+    font-family: PingFang SC;
+    font-size: 34rpx;
+    margin-left: 32rpx;
+}
+.more-2 {
+    color: #999999;
+    font-family: PingFang SC;
+    font-size: 24rpx;
+    margin-right: 32rpx;
+}
