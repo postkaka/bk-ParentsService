@@ -1,4 +1,4 @@
-// components/wx-more/wx-more.js
+// components/wx-add/wx-add.js
 Component({
     /**
      * 组件的属性列表
@@ -8,9 +8,17 @@ Component({
             type: String,
             value: ''
         },
+        icon: {
+            type: String,
+            value: ""
+        },
+        icons: {
+            type: String,
+            value: ""
+        },
         texts: {
             type: String,
-            value: "查看更多"
+            value: ""
         }
     },
 

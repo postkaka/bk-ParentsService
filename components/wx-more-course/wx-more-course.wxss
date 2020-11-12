@@ -1,19 +1,51 @@
 /* components/wx-more-course/wx-more-course.wxss */
-.more-item {
-    background-color: #ffffff;
-    margin-top: 50rpx;
+.more-course {
     margin-left: 32rpx;
-    margin-bottom: 32rpx;
     margin-right: 32rpx;
-    border-radius: 10rpx;
+    margin-top: 10rpx;
+    padding-bottom: 10rpx;
+    background-color: #ffffff;
+}
+.more-item {
+    height: 524rpx;
     display: flex;
-    height: 414rpx;
-    flex-wrap: wrap;
-    justify-content: space-between;
 }
 .more-item-1 {
-    margin-top: 32rpx;
-    margin-left: 20rpx;
-    margin-right: 10rpx;
-    padding-right: 10rpx;
+    border: 1rpx solid  #F5F5F5;
+    border-radius: 30rpx;
+    margin-left: 8rpx;
+    margin-right: 8rpx;
+}
+.item-text {
+    margin-top: 16rpx;
+    margin-left: 29rpx;
+}
+.item-name {
+    color: #333333;
+    font-family: PingFang SC;
+    font-size: 28rpx;
+    font-weight:bold;
+    height: 40rpx;
+}
+.item-price {
+    color: #F25A43;
+    font-family: PingFang SC;
+    font-weight:bold;
+    font-size: 28rpx;
+    margin-top: 5rpx;
+    margin-bottom: 5rpx;
+}
+.item-cout {
+    color: #999999;
+    font-family: PingFang SC;
+    font-size: 20rpx;
+    margin-bottom: 8rpx;
+}
+.cout {
+    display: flex;
+    justify-content: space-between;
+}
+.item-cout-src {
+    margin-right: 25rpx;
+    line-height: 10rpx;
 }

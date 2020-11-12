@@ -1,3 +1,8 @@
 {
-  "usingComponents": {}
+  "usingComponents": {
+    "by-more":"../../components/wx-more/wx-more",
+    "by-add":"../../components/wx-add/wx-add"
+  },
+  "navigationStyle": "custom"
+  
 }

@@ -1,0 +1,46 @@
+/* components/wx-add/wx-add.wxss */
+.wx-add {
+    display: flex;
+    height: 40rpx;
+    margin-left: 30rpx;
+    margin-right: 30rpx;
+    justify-content: space-between;
+}
+.add {
+    display: flex;
+}
+.adds {
+    display: flex;
+}
+.add-icon {
+    height: 40rpx;
+    width: 80rpx;
+    margin-left: 30rpx;
+    margin-right: 30rpx;
+}
+.add-icons {
+    height: 28rpx;
+    width: 28rpx;
+    margin-right: 30rpx;
+}
+.add-text {
+    width: 100%;
+    color: #333333;
+    font-family: PingFang SC;
+    font-size: 28rpx;
+}
+.add-texts {
+    width: 100%;
+    color: #333333;
+    font-family: PingFang SC;
+    font-size: 28rpx;
+    margin-right: 13rpx;
+
+}
+.add-border {
+    border-bottom: 2rpx solid #dddddd;
+    margin: 30rpx;
+}
+.active {
+    display: none;
+}

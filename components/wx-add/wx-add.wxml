@@ -1,0 +1,14 @@
+<!--components/wx-add/wx-add.wxml-->
+<view class="wx-add">
+    <view class="add">
+        <image src="{{icon}}" class="add-icon"></image>
+        <view class="add-text">{{text}}</view>
+    </view>
+    <view class="adds">
+        <view class="add-texts">{{texts}}</view>
+       <view>
+        <image src="{{icons}}"  class='add-icons {{icons == false?"active": ""}}'></image>
+       </view>
+    </view>
+</view>
+<view class="add-border"></view>

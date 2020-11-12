@@ -5,9 +5,6 @@
         "pages/activity/activity",
         "pages/mine/mine"
     ],
-    "window":{
-        "navigationStyle": "custom"
-    },
     "sitemapLocation": "sitemap23.json",
     "tabBar": {
         "selectedColor": "#333333",

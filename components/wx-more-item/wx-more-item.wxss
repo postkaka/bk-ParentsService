@@ -1,6 +1,5 @@
 /* components/wx-more-item/wx-more-item.wxss */
 .more-item {
-   
     width: 100%;
     overflow: auto;
 }
@@ -9,18 +8,23 @@
     margin: 32rpx;
 }
 .more-item-1 {
+    width: 200rpx;
     background-color: #ffffff;
     margin-right: 16rpx;
     border-radius: 10rpx;
 }
 .more-item-2 {
-   margin: 16rpx;
+   margin-top: 16rpx;
+   margin-left: 16rpx;
+   margin-right: 16rpx;
+   margin-bottom: 8rpx;
 }
 .more-item-text {
     margin-left: 16rpx;
-    margin-bottom: 8rpx;
+    margin-bottom: 10rpx;
 }
 .name {
+    font-weight:bold;
     color: #333333;
     font-family: PingFang SC;
     font-size: 28rpx;
@@ -30,5 +34,5 @@
     color: #999999;
     font-family: PingFang SC;
     font-size: 20rpx;
-    
+    margin-bottom: 4rpx; 
 }

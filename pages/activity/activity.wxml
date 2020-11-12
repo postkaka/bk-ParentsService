@@ -1,2 +1,4 @@
 <!--pages/activity/activity.wxml-->
-<text>pages/activity/activity.wxml</text>
+<view style='background-image:url("../../assets/image/bj.png");'
+class="body"
+></view>

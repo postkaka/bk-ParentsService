@@ -1,2 +1,9 @@
 <!--pages/mine/mine.wxml-->
-<text>pages/mine/mine.wxml</text>
+<by-more text="我的订单" texts="查看更多订单"></by-more>
+<by-add text="所在学校" icon="../../assets/image/activity-1.png" texts="班客新赛道（铁西校区）"></by-add>
+<by-add text="我的钱包" icon="../../assets/image/activity-1.png" icons="../../assets/components-image/back-1.png" texts="￥2000.00"></by-add>
+<by-add text="我的活动" icon="../../assets/image/activity-1.png" icons="../../assets/components-image/back-1.png"></by-add>
+<by-add text="优惠券" icon="../../assets/image/activity-1.png" icons="../../assets/components-image/back-1.png"></by-add>
+<by-add text="我要招生" icon="../../assets/image/activity-1.png" icons="../../assets/components-image/back-1.png"></by-add>
+<by-add text="意见反馈" icon="../../assets/image/activity-1.png" icons="../../assets/components-image/back-1.png"></by-add>
+<by-add text="关于我们" icon="../../assets/image/activity-1.png" icons="../../assets/components-image/back-1.png"></by-add>

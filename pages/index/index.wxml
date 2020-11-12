@@ -1,5 +1,5 @@
 <!--pages/index/index.wxml-->
-<view class="page">
+<view class="page"  style="padding-top:{{statusBarHeight}}rpx">
     <!--轮播-->
 <view>
     <swiper autoplay="true" style="height: 451rpx">
@@ -10,21 +10,19 @@
         </block>
     </swiper>
 </view>
-<!--定位窗框-->
-<view style="height:101rpx">
-    <by-location></by-location>
-</view>
+<!--背景图-->
+ <view class="box">
 <!--精选课程-->
 <view class="choosebox">
     <view class="choiceness">
-        <image src="../../assets/image/choiceness.png" class="choicenessimage"></image>
+        <image src="../../assets/image/choiceness.png" class="choicenessimage"  ></image>
     </view>
     <view class="choosebox-1">
         <view class="activity">
             <image src="../../assets/image/activity.png" class="activityimage"></image>
         </view>
         <view class="discounts">
-            <image src="../../assets/image/discounts.png" class="discountsiamge"></image>
+            <image src="../../assets/image/discounts.png" class="discountsiamge" ></image>
         </view>
     </view>
 </view>
@@ -41,7 +39,7 @@
 <by-more text="学员风采"></by-more>
 <by-more-items></by-more-items>
 <!--推荐课程-->
-<view>
+<view class="tabs">
     <view class="tab">
         <view class="tab-1">
          <block wx:for="{{course}}" wx:key="index">
@@ -56,4 +54,6 @@
    
 </view>
 <by-more-course item="{{items}}"></by-more-course>
+ </view>
+
 </view>

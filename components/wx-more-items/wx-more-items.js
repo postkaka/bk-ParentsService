@@ -12,8 +12,8 @@ Component({
      */
     data: {
         item:[
-            {name:"美术XXXX班.李冰冰",title:"美术学员",introduce:"美术学员美术学员美术学员美术学员美术学员美术学员美术学员美术学员美术学员",image:"../../assets/components-image/x1.png"},
-            {name:"美术XXXX班.李冰冰",title:"美术学员",introduce:"美术学员美术学员美术学员美术学员美术学员美术学员美术学员美术学员美术学员",image:"../../assets/components-image/x2.png"}
+            {name:"风采标题",title:"李冰冰",introduce:"风采详情风采详情风采详情",image:"../../assets/components-image/x1.png"},
+            {name:"风采标题",title:"李冰冰",introduce:"风采详情风采详情风采详情",image:"../../assets/components-image/x1.png"}
         ]
     },
 

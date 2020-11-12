@@ -6,9 +6,9 @@ Page({
      */
     data: {
         background:[
+            "../../assets/image/figure.png",
             "../../assets/image/figure-1.png",
-            "../../assets/image/figure-1.png",
-            "../../assets/image/figure-1.png"
+            "../../assets/image/figure-2.png"
         ],
         class:[
             "../../assets/image/curriculum.png",
@@ -19,16 +19,14 @@ Page({
         ],
         course:["推荐课程","国学","美术","声乐","书法","舞蹈","口才"],
         item:[
-            {name:"某某某",introduce:"毕业于xxxxx学校，曾获得XXXXXX奖",image:"../../assets/components-image/t1.png"},
-            {name:"某某某",introduce:"毕业于xxxxx学校，曾获得XXXXXX奖",image:"../../assets/components-image/t2.png"},
-            {name:"某某某",introduce:"毕业于xxxxx学校，曾获得XXXXXX奖",image:"../../assets/components-image/t1.png"},
-            {name:"某某某",introduce:"毕业于xxxxx学校，曾获得XXXXXX奖",image:"../../assets/components-image/t2.png"}
+            {name:"某某某",introduce:"曾获得XXXXXX奖",image:"../../assets/components-image/t1.png"},
+            {name:"某某某",introduce:"曾获得XXXXXX奖",image:"../../assets/components-image/t2.png"},
+            {name:"某某某",introduce:"曾获得XXXXXX奖",image:"../../assets/components-image/t1.png"},
+            {name:"某某某",introduce:"曾获得XXXXXX奖",image:"../../assets/components-image/t2.png"}
         ],
         items:[
-            "../../assets/image/course-1.png",
-            "../../assets/image/course-2.png",
-            "../../assets/image/course-1.png",
-            "../../assets/image/course-2.png"
+            {name:"课程名称课程名称",price:"￥100000",cout:"60000",src: "../../assets/image/course-1.png"}, 
+            {name:"课程名称课程名称",price:"￥100000",cout:"60000",src: "../../assets/image/course-2.png"}, 
         ],
         currentIndex: 0
     },

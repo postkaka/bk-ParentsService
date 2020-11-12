@@ -1,8 +1,8 @@
 <!--components/wx-more-items/wx-more-items.wxml-->
 <view class="more-item">
     <view class="more-item-1" wx:for="{{item}}" wx:key="*this">
-        <view style="height: 207rpx">
-            <image src="{{item.image}}"  mode="heightFix" style="height:207rpx"></image>
+        <view style="height: 181rpx">
+            <image src="{{item.image}}"  mode="heightFix" style="height:181rpx"></image>
         </view>
         <view class="more-item-text">
             <view class="name">{{item.name}}</view>
