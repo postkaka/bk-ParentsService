@@ -1,6 +1,7 @@
 <!--pages/index/index.wxml-->
 <view class="page"  style="padding-top:{{statusBarHeight}}rpx">
-    <!--轮播-->
+<view class="nav"></view>
+<!--轮播-->
 <view>
     <swiper autoplay="true" style="height: 451rpx">
         <block wx:for="{{background}}" wx:key="*this">
@@ -39,21 +40,13 @@
 <by-more text="学员风采"></by-more>
 <by-more-items></by-more-items>
 <!--推荐课程-->
-<view class="tabs">
-    <view class="tab">
-        <view class="tab-1">
-         <block wx:for="{{course}}" wx:key="index">
-            <view class='tab-item {{index == currentIndex?"active": ""}}'
-                    bind:tap="itemClick" 
-                    data-index="{{index}}">
-                 <text>{{item}}</text>
-             </view>
-         </block>
-        </view>
-    </view>
-   
+<view class="tabs ">
+<by-tab course="{{course}}"></by-tab>   
 </view>
+<scroll-view class='content' scroll-y>
 <by-more-course item="{{items}}"></by-more-course>
+  </scroll-view> 
+
  </view>
 
 </view>

@@ -4,7 +4,8 @@
    "by-more":"../../components/wx-more/wx-more",
    "by-more-item":"../../components/wx-more-item/wx-more-item",
    "by-more-items":"../../components/wx-more-items/wx-more-items",
-   "by-more-course":"../../components/wx-more-course/wx-more-course"
+   "by-more-course":"../../components/wx-more-course/wx-more-course",
+   "by-tab":"../../components/wx-tab/wx-tab"
   },
     "navigationStyle": "custom"
 

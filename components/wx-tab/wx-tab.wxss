@@ -1,0 +1,20 @@
+/* components/wx-tab/wx-tab.wxss */
+.tab-1 {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+}
+.tab-item {
+    color: #999999;
+    font-family: PingFang SC;
+    font-size: 28rpx;
+}
+.active {
+    color: #333333;
+    font-weight:bold;
+  }
+  .tab-item.active .text {
+    padding: 16rpx 10rpx;
+    border-bottom: 10rpx solid #333333;
+    border-radius: 6rpx;
+  }

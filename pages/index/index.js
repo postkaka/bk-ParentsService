@@ -27,18 +27,21 @@ Page({
         items:[
             {name:"课程名称课程名称",price:"￥100000",cout:"60000",src: "../../assets/image/course-1.png"}, 
             {name:"课程名称课程名称",price:"￥100000",cout:"60000",src: "../../assets/image/course-2.png"}, 
+            {name:"课程名称课程名称",price:"￥100000",cout:"60000",src: "../../assets/image/course-1.png"}, 
+            {name:"课程名称课程名称",price:"￥100000",cout:"60000",src: "../../assets/image/course-2.png"},
+            {name:"课程名称课程名称",price:"￥100000",cout:"60000",src: "../../assets/image/course-1.png"}, 
+            {name:"课程名称课程名称",price:"￥100000",cout:"60000",src: "../../assets/image/course-2.png"}
         ],
-        currentIndex: 0
+        scrollTop:0
     },
-    /**
-     * tab点击事件
-     */
-    itemClick(e) {
-        // 1.设置最新的index
+    onPageScroll: function(e){
+        // console.log(e)
         this.setData({
-          currentIndex: e.currentTarget.dataset.index
+            scrollTop: e.scrollTop
         })
-      },
+        // console.log(this.data.scrollTop)
+    },
+  
     /**
      * 生命周期函数--监听页面加载
      */
