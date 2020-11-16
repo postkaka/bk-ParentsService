@@ -7,22 +7,22 @@
     </view>
     <view class="show"> 
         <view class="show-list">
-            <view wx:for="{{course[0].show}}" wx:key="*this">
+            <view wx:for="{{course[2].show}}" wx:key="*this">
                 <view class="item">{{item}}</view>
             </view>   
          </view>
          <view class="show-list show-lists">
-            <view wx:for="{{course[0].show1}}" wx:key="*this">
+            <view wx:for="{{course[2].show1}}" wx:key="*this">
                 <view class="item">{{item}}</view>
             </view>
          </view>
          <view class="show-list show-lists">
-            <view wx:for="{{course[0].show2}}" wx:key="*this">
+            <view wx:for="{{course[2].show2}}" wx:key="*this">
                 <view class="item">{{item}}</view>
             </view>
         </view>
         <view class="show-list show-lists">
-            <view wx:for="{{course[0].show3}}" wx:key="*this">
+            <view wx:for="{{course[2].show3}}" wx:key="*this">
                 <view class="item">{{item}}</view>
          </view>
         </view>
