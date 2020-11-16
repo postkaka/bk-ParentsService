@@ -1,13 +1,13 @@
 /* components/wx-more-course/wx-more-course.wxss */
 .more-course {
-    margin-left: 32rpx;
+    margin-left: 20rpx;
     margin-right: 32rpx;
     margin-top: 10rpx;
     padding-bottom: 10rpx;
     height: 524rpx;
     width: 100%;
     display: flex;
-    text-align: center;
+    /* text-align: center; */
     align-content: flex-start;
     flex-flow: row wrap;
 }

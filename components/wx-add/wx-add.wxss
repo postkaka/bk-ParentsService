@@ -4,6 +4,7 @@
     height: 40rpx;
     margin-left: 30rpx;
     margin-right: 30rpx;
+    margin-bottom: 30rpx;
     justify-content: space-between;
 }
 .add {
@@ -39,7 +40,7 @@
 }
 .add-border {
     border-bottom: 2rpx solid #dddddd;
-    margin: 30rpx;
+    margin-bottom: 30rpx;
 }
 .active {
     display: none;

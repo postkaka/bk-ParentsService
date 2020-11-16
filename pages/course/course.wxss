@@ -1,1 +1,47 @@
 /* pages/course/course.wxss */
+page {
+    background-color: #f5f5f5 ;
+}
+.course {
+    display: flex;
+    height: 236rpx;
+    margin-left: 17rpx;
+    margin-right: 32rpx;
+    margin-top: 32rpx;
+    
+}
+.course view {
+    border-radius: 30rpx;
+    border: 1rpx solid #ffffff;
+    margin-left: 15rpx;
+    height: 172rpx;
+   
+}
+.course image {
+    height: 172rpx;
+    width: 160rpx;
+}
+.show {
+    display: flex;
+    height: 392rpx;
+    background-color: #FFFFFF;
+    justify-content: space-between;
+}
+.show-list {
+    display: flex;
+    flex-direction: column;
+    margin-top: 32rpx;
+    margin-left:23rpx;
+    margin-right:23rpx;
+}
+.item {
+    width: 100%;
+    margin-bottom: 32rpx;
+    color: #333333;
+    font-family: PingFang SC;
+    font-size: 28rpx;
+}
+.show-lists {
+    border-left: 2rpx solid #DDDDDD;
+    padding-left: 40rpx;
+}

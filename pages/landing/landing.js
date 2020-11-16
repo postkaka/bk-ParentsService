@@ -1,21 +1,22 @@
-// pages/mine/mine.js
+// pages/landing/landing.js
 Page({
 
     /**
      * 页面的初始数据
      */
     data: {
-        item:[
-            {src:'../../assets/image/pay.png',title:"待付款"},
-            {src:'../../assets/image/after.png',title:"已报名"},
-            {src:'../../assets/image/after.png',title:"退课/售后"}
-        ]
+        phone:""
     },
-    // 点击跳转登陆页面
-    landingClick(e){
-        wx.navigateTo({
-          url: '../landing/landing',
+    // 获取输入的手机号
+    handleInputPhone(e){
+        this.setData({
+            phone: e.detail.value
         })
+    },
+     
+
+    auth(e){
+           
     },
     /**
      * 生命周期函数--监听页面加载

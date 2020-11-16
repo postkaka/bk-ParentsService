@@ -1,3 +1,9 @@
 {
-  "usingComponents": {}
+  "usingComponents": {
+    "by-more-course":"../../components/wx-more-course/wx-more-course"
+  },
+  "backgroundTextStyle":"light",
+  "navigationBarBackgroundColor": "#fff",
+  "navigationBarTitleText": "教程科目",
+  "navigationBarTextStyle":"black"
 }

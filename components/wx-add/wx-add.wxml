@@ -11,4 +11,4 @@
        </view>
     </view>
 </view>
-<view class="add-border"></view>
+<view class=" {{add == 1?'add-border': ''}}"></view>

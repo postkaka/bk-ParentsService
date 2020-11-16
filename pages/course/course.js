@@ -5,7 +5,23 @@ Page({
      * 页面的初始数据
      */
     data: {
-
+        course:[
+        {src:"../../assets/image/course/courses.png",show:["创意美术","素描"],show1:["中国舞","芭蕾舞","爵士舞","街舞"],
+        show2:["合唱团","音乐剧","大师课","乐团"],show3:["尤克里里","架子鼓","古琴","钢琴","古琴"]},
+        {src:"../../assets/image/course/courses-1.png",show:["英语","口才"],show1:["国学","国画"],
+        show2:["硬笔书法","软笔书法"],show3:["尤克里里","托管","幼小衔接"]},
+        {src:"../../assets/image/course/courses-2.png",show:["儿童体智能","儿童体适能"],show1:["轮滑","跆拳道","围棋"],
+        },
+        {src:"../../assets/image/course/courses-3.png",show:["机器人编程","无人机"]},
+        ],
+        items:[
+            {name:"课程名称课程名称",price:"￥100000",cout:"60000",src: "../../assets/image/course-1.png"}, 
+            {name:"课程名称课程名称",price:"￥100000",cout:"60000",src: "../../assets/image/course-2.png"}, 
+            {name:"课程名称课程名称",price:"￥100000",cout:"60000",src: "../../assets/image/course-1.png"}, 
+            {name:"课程名称课程名称",price:"￥100000",cout:"60000",src: "../../assets/image/course-2.png"},
+            {name:"课程名称课程名称",price:"￥100000",cout:"60000",src: "../../assets/image/course-1.png"}, 
+            {name:"课程名称课程名称",price:"￥100000",cout:"60000",src: "../../assets/image/course-2.png"}
+        ]
     },
 
     /**

@@ -1,2 +1,33 @@
 <!--pages/course/course.wxml-->
-<text>pages/course/course.wxml</text>
+<view>
+    <view class="course">
+        <view wx:for="{{course}}" wx:key="*this" bindtap="courseClick">
+                <image src="{{item.src}}" data-id="{{index}}"  mode="heightFix" style="height: 172rpx"></image>
+        </view>
+    </view>
+    <view class="show"> 
+        <view class="show-list">
+            <view wx:for="{{course[0].show}}" wx:key="*this">
+                <view class="item">{{item}}</view>
+            </view>   
+         </view>
+         <view class="show-list show-lists">
+            <view wx:for="{{course[0].show1}}" wx:key="*this">
+                <view class="item">{{item}}</view>
+            </view>
+         </view>
+         <view class="show-list show-lists">
+            <view wx:for="{{course[0].show2}}" wx:key="*this">
+                <view class="item">{{item}}</view>
+            </view>
+        </view>
+        <view class="show-list show-lists">
+            <view wx:for="{{course[0].show3}}" wx:key="*this">
+                <view class="item">{{item}}</view>
+         </view>
+        </view>
+    </view>
+    <scroll-view class='content' scroll-y>
+        <by-more-course item="{{items}}"></by-more-course>
+    </scroll-view> 
+</view>

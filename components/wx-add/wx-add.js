@@ -19,6 +19,10 @@ Component({
         texts: {
             type: String,
             value: ""
+        },
+        add: {
+            type: String,
+            value: "1"
         }
     },
 

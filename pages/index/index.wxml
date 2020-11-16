@@ -45,8 +45,6 @@
 </view>
 <scroll-view class='content' scroll-y>
 <by-more-course item="{{items}}"></by-more-course>
-  </scroll-view> 
-
- </view>
-
+</scroll-view> 
+</view>
 </view>

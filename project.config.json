@@ -52,8 +52,15 @@
         "miniprogram": {
             "list": [
                 {
-                    "name": "pages/mine/mine",
-                    "pathName": "pages/mine/mine",
+                    "name": "pages/landing/landing",
+                    "pathName": "pages/landing/landing",
+                    "query": "",
+                    "scene": null
+                },
+                {
+                    "name": "pages/course/course",
+                    "pathName": "pages/course/course",
+                    "query": "",
                     "scene": null
                 }
             ]

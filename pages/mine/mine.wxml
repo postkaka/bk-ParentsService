@@ -1,9 +1,33 @@
 <!--pages/mine/mine.wxml-->
-<by-more text="我的订单" texts="查看更多订单"></by-more>
-<by-add text="所在学校" icon="../../assets/image/activity-1.png" texts="班客新赛道（铁西校区）"></by-add>
-<by-add text="我的钱包" icon="../../assets/image/activity-1.png" icons="../../assets/components-image/back-1.png" texts="￥2000.00"></by-add>
-<by-add text="我的活动" icon="../../assets/image/activity-1.png" icons="../../assets/components-image/back-1.png"></by-add>
-<by-add text="优惠券" icon="../../assets/image/activity-1.png" icons="../../assets/components-image/back-1.png"></by-add>
-<by-add text="我要招生" icon="../../assets/image/activity-1.png" icons="../../assets/components-image/back-1.png"></by-add>
-<by-add text="意见反馈" icon="../../assets/image/activity-1.png" icons="../../assets/components-image/back-1.png"></by-add>
-<by-add text="关于我们" icon="../../assets/image/activity-1.png" icons="../../assets/components-image/back-1.png"></by-add>
+<view class="mine">
+<!-- 头部图片 -->
+<view  bind:tap="landingClick" >
+    <image src="../../assets/image/mines.png" mode="widthFix" style="width: 100%"></image>
+</view>
+<!-- 点击文章 -->
+<view class="text"  bind:tap="landingClick" >请点击登陆</view>
+<!-- 订单模块 -->
+<by-more text="我的订单" texts="查看更多订单">
+    <view class="back">
+        <image src="../../assets/image/back.png" class="backs"></image>
+    </view>
+</by-more>
+<view class="item-list">
+    <block wx:for="{{item}}" wx:key="*this">
+            <view >
+                <view class="item-list-src" >
+                    <image src="{{item.src}}" data-id="{{index}}"  mode="widthFix" style="width: 64rpx"></image>
+                </view>
+                <view class="item-list-title">{{item.title}}</view>
+            </view>
+        </block>
+</view>
+<!-- 列表信息 -->
+<by-add text="所在学校" icon="../../assets/image/m1.png" texts="班客新赛道（铁西校区）"></by-add>
+<by-add text="我的钱包" icon="../../assets/image/m2.png" icons="../../assets/image/back.png" texts="￥2000.00"></by-add>
+<by-add text="我的活动" icon="../../assets/image/m3.png" icons="../../assets/image/back.png"></by-add>
+<by-add text="我的优惠券" icon="../../assets/image/m4.png" icons="../../assets/image/back.png"></by-add>
+<by-add text="推荐好友" icon="../../assets/image/m5.png" icons="../../assets/image/back.png"></by-add>
+<by-add text="意见反馈" icon="../../assets/image/m6.png" icons="../../assets/image/back.png"></by-add>
+<by-add text="关于新赛道" icon="../../assets/image/m7.png" icons="../../assets/image/back.png" add="2"></by-add>
+</view>

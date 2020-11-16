@@ -1,0 +1,29 @@
+<!--pages/landing/landing.wxml-->
+<view class="page">
+<view class="background">
+    <image src="../../assets/image/loading/background.png" mode="widthFix" style="width:100% "></image>
+</view>
+<view class="logo">
+    <image src="../../assets/image/loading/logo.png" mode="widthFix" style="width: 260rpx"></image>
+</view>
+<view class="list">
+    <view class="lists">
+        <view class="texts">
+            <text class="text">*</text>
+            <text class="textitem">手机号:</text>
+        </view>
+        <view class="input">
+            <input class="input-text" type="number" auto-focus placeholder="请输入常用手机号" bindinput="handleInputPhone"></input>
+            <view class="input-note" bindtap="auth">短信验证码</view>
+        </view>
+        <view class="texts">
+            <text class="text">*</text>
+            <text class="textitem">验证码:</text>
+        </view>
+        <view class="input">
+            <input class="input-text" type="number" auto-focus placeholder="请输入短信验证码"></input>
+        </view>
+    </view>
+    <view class="button" >下一步</view>
+</view>
+</view>
