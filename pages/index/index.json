@@ -7,6 +7,7 @@
    "by-more-course":"../../components/wx-more-course/wx-more-course",
    "by-tab":"../../components/wx-tab/wx-tab"
   },
-    "navigationStyle": "custom"
-
+    "navigationStyle": "custom",
+    "backgroundColorTop": "#F5F5F5",
+    "backgroundColorBottom": "#F5F5F5"
 }

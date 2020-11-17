@@ -20,15 +20,85 @@ Page({
             {name:"课程名称课程名称",price:"￥100000",cout:"60000",src: "../../assets/image/course-1.png"}, 
             {name:"课程名称课程名称",price:"￥100000",cout:"60000",src: "../../assets/image/course-2.png"},
             {name:"课程名称课程名称",price:"￥100000",cout:"60000",src: "../../assets/image/course-1.png"}, 
+            {name:"课程名称课程名称",price:"￥100000",cout:"60000",src: "../../assets/image/course-2.png"},
+            {name:"课程名称课程名称",price:"￥100000",cout:"60000",src: "../../assets/image/course-2.png"},
+            {name:"课程名称课程名称",price:"￥100000",cout:"60000",src: "../../assets/image/course-2.png"},
+            {name:"课程名称课程名称",price:"￥100000",cout:"60000",src: "../../assets/image/course-2.png"},
+            {name:"课程名称课程名称",price:"￥100000",cout:"60000",src: "../../assets/image/course-2.png"},
+            {name:"课程名称课程名称",price:"￥100000",cout:"60000",src: "../../assets/image/course-2.png"},
+            {name:"课程名称课程名称",price:"￥100000",cout:"60000",src: "../../assets/image/course-2.png"},
             {name:"课程名称课程名称",price:"￥100000",cout:"60000",src: "../../assets/image/course-2.png"}
-        ]
+        ],
+        currentIndex: 7,
+        itemIndex: 0,
+        itemIndex1: 7,
+        itemIndex2: 7,
+        itemIndex3: 7,
+        show: false,
+        display:""
     },
+            /**
+     * tab点击事件
+     */
+    itemClick(e) {
+        // 1.设置最新的index
+        this.setData({
+          currentIndex: e.currentTarget.dataset.index,
+          itemIndex: 0,
+          itemIndex1: 7,
+          itemIndex2: 7,
+          itemIndex3: 7,
+          show: true,
+          display: "block"
+        })
+      },
+    // 第一组点击
+    viewClick(e) {
+        // 1.设置最新的index
+        this.setData({
+            itemIndex: e.currentTarget.dataset.index,
+            itemIndex1: 7,
+            itemIndex2: 7,
+            itemIndex3: 7
+        })
+      },
+    //   第二组点击
+      viewClick1(e) {
+        // 1.设置最新的index
+        this.setData({
+            itemIndex1: e.currentTarget.dataset.index,
+            itemIndex: 7,
+            itemIndex2: 7,
+            itemIndex3: 7
+        })
+      },
+      //   第三组点击
+      viewClick2(e) {
+        // 1.设置最新的index
+        this.setData({
+            itemIndex2: e.currentTarget.dataset.index,
+            itemIndex: 7,
+            itemIndex1: 7,
+            itemIndex3: 7
+        })
+      },
+      //   第四组点击
+      viewClick3(e) {
+        // 1.设置最新的index
+        this.setData({
+            itemIndex3: e.currentTarget.dataset.index,
+            itemIndex: 7,
+            itemIndex1: 7,
+            itemIndex2: 7
+        })
+      },
 
     /**
      * 生命周期函数--监听页面加载
      */
     onLoad: function (options) {
-
+        wx.showToast({title: '加载中', icon: 'loading', duration: 20000});
+        wx.hideToast();
     },
 
     /**
