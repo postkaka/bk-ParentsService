@@ -52,14 +52,8 @@
         "miniprogram": {
             "list": [
                 {
-                    "name": "pages/landing/landing",
-                    "pathName": "pages/landing/landing",
-                    "query": "",
-                    "scene": null
-                },
-                {
-                    "name": "pages/course/course",
-                    "pathName": "pages/course/course",
+                    "name": "选择学员",
+                    "pathName": "pages/selective/selective",
                     "query": "",
                     "scene": null
                 }

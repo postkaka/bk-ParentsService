@@ -1,6 +1,7 @@
 /* pages/landing/landing.wxss */
  page {
-     overflow: hidden
+     overflow: hidden;
+     background-color: #F5F5F5;
  }
  .page {
     width: 100vw;
@@ -35,7 +36,8 @@
 .text {
     color: #F25A43;
     font-size: 34rpx;
-    line-height: 48rpx;
+    height: 44rpx;
+    line-height: 44rpx;
 }
 .textitem {
     color: #333333;
@@ -53,19 +55,20 @@
     height: 72rpx;
     border-radius: 40rpx;
     display: flex;
+    justify-content: space-between;
 }
 .input-text {
     height: 72rpx;
-    margin-left: 30rpx;
     color: #dddddd;
     font-size: 28rpx;
+    margin-left: 64rpx;
 }
 .input-note {
     height: 72rpx;
     line-height: 72rpx;
     color: #F25A43;
     font-size: 28rpx;
-    margin-left: 120rpx;
+    margin-right: 60rpx; 
 }
 .button {
     height: 80rpx;

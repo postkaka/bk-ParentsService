@@ -5,6 +5,13 @@ Page({
      * 页面的初始数据
      */
     data: {
+        header:{
+          title: '课程科目',
+          fontColor: "#333333",
+          headerbg: '#f40',
+          hiddenBlock: false,
+          slot: false
+        },
         course:[
         {src:"../../assets/image/course/courses.png",show:["创意美术","素描"],show1:["中国舞","芭蕾舞","爵士舞","街舞"],
         show2:["合唱团","音乐剧","大师课","乐团"],show3:["尤克里里","架子鼓","古琴","钢琴","古琴"]},
@@ -49,7 +56,7 @@ Page({
           itemIndex2: 7,
           itemIndex3: 7,
           show: true,
-          display: "block"
+          display: "block",
         })
       },
     // 第一组点击
@@ -92,6 +99,8 @@ Page({
             itemIndex2: 7
         })
       },
+      //监听屏幕头部高度
+      
 
     /**
      * 生命周期函数--监听页面加载
@@ -99,20 +108,20 @@ Page({
     onLoad: function (options) {
         wx.showToast({title: '加载中', icon: 'loading', duration: 20000});
         wx.hideToast();
+
     },
 
     /**
      * 生命周期函数--监听页面初次渲染完成
      */
     onReady: function () {
-
+    
     },
 
     /**
      * 生命周期函数--监听页面显示
      */
     onShow: function () {
-
     },
 
     /**

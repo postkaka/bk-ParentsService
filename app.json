@@ -4,7 +4,8 @@
         "pages/course/course",
         "pages/activity/activity",
         "pages/mine/mine",
-        "pages/landing/landing"
+        "pages/landing/landing",
+        "pages/selective/selective"
     ],
     "sitemapLocation": "sitemap23.json",
     "tabBar": {

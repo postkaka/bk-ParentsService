@@ -1,45 +1,49 @@
 <!--pages/course/course.wxml-->
 <view>
-    <view class="bg"  style='display:{{display}}'></view>
-    <view class="course">
-        <view wx:for="{{course}}" wx:key="*this" bindtap="courseClick">
-                <image src="{{item.src}}" data-id="{{index}}"  mode="heightFix" style="height: 172rpx"
-                class="{{index == currentIndex?'active':''}}"
-                bind:tap="itemClick" data-index="{{index}}"
-                ></image>
-        </view>
-    </view>
-    <view class="{{show == true? 'show':'disshow'}}"> 
-        <view class="show-list">
-            <view wx:for="{{course[currentIndex].show}}" wx:key="*this">
-                <view class="item {{index == itemIndex? 'viewActive':''}}"
-                bind:tap="viewClick" data-index="{{index}}"
-                >{{item}}</view>
-            </view>   
-         </view>
-         <view class="show-list  {{currentIndex == 3?'':'show-lists'}}">
-            <view wx:for="{{course[currentIndex].show1}}" wx:key="*this">
-                <view class="item {{index == itemIndex1? 'viewActive':''}}"
-                bind:tap="viewClick1" data-index="{{index}}"
-                >{{item}}</view>
-            </view>
-         </view>
-         <view class="show-list {{currentIndex > 1?'':'show-lists'}}">
-            <view wx:for="{{course[currentIndex].show2}}" wx:key="*this">
-                <view class="item {{index == itemIndex2? 'viewActive':''}}"
-                bind:tap="viewClick2" data-index="{{index}}"
-                >{{item}}</view>
+    <by-header header='{{header}}' class="header"></by-header>
+    <view class="side"></view>
+   <view class="course-f {{show == true? 'course-s':''}}" > 
+        <view class="course ">
+            <view wx:for="{{course}}" wx:key="*this"  class="course-item">
+                    <image src="{{item.src}}" data-id="{{index}}"  mode="heightFix" style="height: 172rpx"
+                    class="{{index == currentIndex?'active':''}}"
+                    bind:tap="itemClick" data-index="{{index}}"
+                    ></image>
             </view>
         </view>
-        <view class="show-list {{currentIndex > 1?'':'show-lists'}}">
-            <view wx:for="{{course[currentIndex].show3}}" wx:key="*this">
-                <view class="item {{index == itemIndex3? 'viewActive':''}}" 
-                bind:tap="viewClick3" data-index="{{index}}"
-                >{{item}}</view>
-         </view>
+        <view class="{{show == true? 'show':'disshow'}}" id="show"> 
+            <view class="show-list">
+                <view wx:for="{{course[currentIndex].show}}" wx:key="*this">
+                    <view class="item {{index == itemIndex? 'viewActive':''}}"
+                    bind:tap="viewClick" data-index="{{index}}"
+                    >{{item}}</view>
+                </view>   
+            </view>
+            <view class="show-list  {{currentIndex == 3?'':'show-lists'}}">
+                <view wx:for="{{course[currentIndex].show1}}" wx:key="*this">
+                    <view class="item {{index == itemIndex1? 'viewActive':''}}"
+                    bind:tap="viewClick1" data-index="{{index}}"
+                    >{{item}}</view>
+                </view>
+            </view>
+            <view class="show-list {{currentIndex > 1?'':'show-lists'}}">
+                <view wx:for="{{course[currentIndex].show2}}" wx:key="*this">
+                    <view class="item {{index == itemIndex2? 'viewActive':''}}"
+                    bind:tap="viewClick2" data-index="{{index}}"
+                    >{{item}}</view>
+                </view>
+            </view>
+            <view class="show-list {{currentIndex > 1?'':'show-lists'}}">
+                <view wx:for="{{course[currentIndex].show3}}" wx:key="*this">
+                    <view class="item {{index == itemIndex3? 'viewActive':''}}" 
+                    bind:tap="viewClick3" data-index="{{index}}"
+                    >{{item}}</view>
+            </view>
+            </view>
         </view>
-    </view>
-    <scroll-view class='content' scroll-y style="height: calc(100vh - 260rpx)">
+   </view>
+   <view class="bg"  style='display:{{display}} ' ></view>
+    <scroll-view class='content' scroll-y style="height: calc(100vh - 430rpx)">
         <by-more-course item="{{items}}"></by-more-course>
     </scroll-view> 
 </view>

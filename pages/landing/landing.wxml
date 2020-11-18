@@ -14,16 +14,16 @@
         </view>
         <view class="input">
             <input class="input-text" type="number" auto-focus placeholder="请输入常用手机号" bindinput="handleInputPhone"></input>
-            <view class="input-note" bindtap="auth">短信验证</view>
+            <view class="input-note" bindtap="auth" disabled='{{disabled}}' data-id="2" >{{time}}</view>
         </view>
         <view class="texts">
             <text class="text">*</text>
             <text class="textitem">验证码:</text>
         </view>
         <view class="input">
-            <input class="input-text" type="number" auto-focus placeholder="请输入短信验证码"></input>
+            <input class="input-text" type="number" auto-focus placeholder="请输入短信验证码" bindinput="handleInputNumber"></input>
         </view>
     </view>
-    <view class="button" >下一步</view>
+    <view class="button"bindtap='next' >下一步</view>
 </view>
 </view>

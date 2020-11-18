@@ -1,0 +1,4 @@
+/* pages/selective/selective.wxss */
+ page {
+     background-color: #184571;
+ }
