@@ -1,0 +1,6 @@
+<!--pages/demeanour-detail/demeanour-detail.wxml-->
+<by-header header='{{header}}'></by-header>
+<view class="side"></view>
+<scroll-view class='content' scroll-y style="height: calc(100vh - 190rpx)">
+<by-students-item list='{{list}}'></by-students-item>
+</scroll-view>

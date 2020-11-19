@@ -1,7 +1,7 @@
 <!--pages/mine/mine.wxml-->
 <view class="mine">
 <!-- 头部图片 -->
-<view  bind:tap="landingClick" >
+<view  bind:tap="informationClick" >
     <image src="../../assets/image/mines.png" mode="widthFix" style="width: 100%"></image>
 </view>
 <!-- 点击文章 -->

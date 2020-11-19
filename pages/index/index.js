@@ -7,8 +7,8 @@ Page({
     data: {
         background:[
             "../../assets/image/figure.png",
-            "../../assets/image/figure-1.png",
-            "../../assets/image/figure-2.png"
+            "../../assets/image/figure.png",
+            "../../assets/image/figure.png"
         ],
         class:[
             "../../assets/image/curriculum.png",
@@ -63,6 +63,18 @@ Page({
         wx.navigateTo({
           url: '../teacher-detail/teacher-detail',
         })  
+    },
+    studentClick(){
+        console.log("跳转到学员风采")
+        wx.navigateTo({
+          url: '../students-demeanour/students-demeanour',
+        })
+    },
+    studentsClick(){
+        console.log("跳转到风采详情")
+        wx.navigateTo({
+          url: '../demeanour-detail/demeanour-detail',
+        })
     },
     /**
      * 生命周期函数--监听页面加载

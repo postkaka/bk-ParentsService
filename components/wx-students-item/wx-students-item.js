@@ -1,10 +1,13 @@
-// components/wx-location/wx-location.js
+// components/wx-students-item/wx-students-item.js
 Component({
     /**
      * 组件的属性列表
      */
     properties: {
-
+        list: {
+            type: Array,
+            value:[]
+        }
     },
 
     /**

@@ -1,4 +1,4 @@
-// pages/selective/selective.js
+// pages/mine/minepage/information/information.js
 Page({
 
     /**
@@ -6,13 +6,21 @@ Page({
      */
     data: {
         header:{
-            homeCapsule: true,
-            title: '选择学员',
-            fontColor: "#FFFFFF",
-            headerbg: '#184571',
+            title: '学员信息',
+            headerbg: '#F5F5F5',
             hiddenBlock: false,
             slot: false
           },
+          infor:[
+              {title:"*学员姓名：",info:"请填写学员姓名"},
+              {title:"*昵称：",info:"请填写昵称"},
+              {title:"*年龄：",info:"请填写年龄"},
+              {title:"*生日：",info:"请填写生日"},
+              {title:"*家庭住址：",info:"请填写家庭住址"},
+              {title:"*校区：",info:"请填写校区"},
+              {title:"*班级：",info:"请填写班级"},
+              {title:"*会员介绍：",info:"请填写会员介绍"},
+          ]
     },
 
     /**

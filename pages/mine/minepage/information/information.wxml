@@ -1,0 +1,25 @@
+<!--pages/mine/minepage/information/information.wxml-->
+<by-header header='{{header}}'></by-header>
+<view class="side"></view>
+<view class="information">
+    <view class="information-view">请完善以下信息后点击确认(*为必填项)</view>
+    <view class="line"></view>
+    <view class="information-image">
+        <view>
+            <image src="../../../../assets/image/head.png"  style=" height: 117rpx ; width: 117rpx"></image>
+        </view>
+        <view class="information-choose">选择头像</view>
+    </view>
+    <view class="informations">
+        <block wx:for="{{infor}}" wx:key="*this">
+            <view class="line"></view>
+            <view class="item-list">
+                <view class="item-title">{{item.title}}</view>
+                <input class="item-input" type="text"  auto-focus placeholder="{{item.info}}" bindinput="handleInputPhone" style="text-align:right" />
+            </view>
+        </block>
+    </view>
+</view>
+<view class="btn">
+    <view class="btn-view">添加</view>
+</view>

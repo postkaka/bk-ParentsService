@@ -1,6 +1,6 @@
 /* pages/teacher-detail/teacher-detail.wxss */
 page {
-    background-color: #F5F5F5;
+    background-color: #FFFFFF;
     overflow: hidden
 }
 .side {

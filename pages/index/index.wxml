@@ -37,8 +37,8 @@
 <by-more text="教学老师" bind:tap="teacherClick"></by-more>
 <by-more-item item="{{item}}" bind:tap="teachersClick"></by-more-item>
 <!--学员风采-->
-<by-more text="学员风采"></by-more>
-<by-more-items item="{{stu}}"></by-more-items>
+<by-more text="学员风采" bind:tap="studentClick"></by-more>
+<by-more-items item="{{stu}}" bind:tap="studentsClick"></by-more-items>
 <!--推荐课程-->
 <view class="tabs ">
 <by-tab course="{{course}}"></by-tab>   

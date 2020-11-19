@@ -1,0 +1,7 @@
+{
+  "usingComponents": {
+    "by-header":"../../components/wx-header/header",
+    "by-students-item":"../../components/wx-students-item/wx-students-item"
+  },
+  "navigationStyle":"custom"
+}

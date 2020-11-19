@@ -1,0 +1,6 @@
+<!--pages/students-demeanour/students-demeanour.wxml-->
+<by-header header='{{header}}'></by-header>
+<view class="side"></view>
+<scroll-view class='content' scroll-y style="height: calc(100vh - 190rpx)">
+<by-students-item list='{{list}}' bindtap="studentsClick"></by-students-item>
+</scroll-view>

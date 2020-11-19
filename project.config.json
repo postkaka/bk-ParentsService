@@ -52,8 +52,8 @@
         "miniprogram": {
             "list": [
                 {
-                    "name": "pages/teacher-detail/teacher-detail",
-                    "pathName": "pages/teacher-detail/teacher-detail",
+                    "name": "pages/selective/selective",
+                    "pathName": "pages/selective/selective",
                     "query": "",
                     "scene": null
                 }

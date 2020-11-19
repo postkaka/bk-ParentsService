@@ -7,7 +7,10 @@
         "pages/landing/landing",
         "pages/selective/selective",
         "pages/teacher/teacher",
-        "pages/teacher-detail/teacher-detail"
+        "pages/teacher-detail/teacher-detail",
+        "pages/students-demeanour/students-demeanour",
+        "pages/demeanour-detail/demeanour-detail",
+        "pages/mine/minepage/information/information"
     ],
     "sitemapLocation": "sitemap23.json",
     "tabBar": {

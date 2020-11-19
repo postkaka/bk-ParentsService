@@ -1,4 +1,4 @@
-// pages/selective/selective.js
+// pages/students-demeanour/students-demeanour.js
 Page({
 
     /**
@@ -6,13 +6,22 @@ Page({
      */
     data: {
         header:{
-            homeCapsule: true,
-            title: '选择学员',
-            fontColor: "#FFFFFF",
-            headerbg: '#184571',
+            title: '学员风采',
+            headerbg: '#F5F5F5',
             hiddenBlock: false,
             slot: false
           },
+          list:[
+              {src:"../../assets/components-image/x1.png",tite1:'风采标题风采标题风采标题',tite2:'学员:李冰冰'},
+              {src:"../../assets/components-image/x1.png",tite1:'风采标题风采标题风采标题',tite2:'学员:李冰冰'},
+              {src:"../../assets/components-image/x1.png",tite1:'风采标题风采标题风采标题',tite2:'学员:李冰冰'},
+          ]
+    },
+    studentsClick(){
+        console.log("跳转到风采详情")
+        wx.navigateTo({
+          url: '../demeanour-detail/demeanour-detail',
+        })
     },
 
     /**

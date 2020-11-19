@@ -1,4 +1,4 @@
-/* pages/teacher/teacher.wxss */
+/* pages/students-demeanour/students-demeanour.wxss */
 page {
     background-color: #FFFFFF;
     overflow: hidden

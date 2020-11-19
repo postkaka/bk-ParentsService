@@ -1,6 +1,5 @@
 {
   "usingComponents": {
-   "by-location": "../../components/wx-location/wx-location",
    "by-more":"../../components/wx-more/wx-more",
    "by-more-item":"../../components/wx-more-item/wx-more-item",
    "by-more-items":"../../components/wx-more-items/wx-more-items",

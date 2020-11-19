@@ -1,0 +1,11 @@
+<!--components/wx-students-item/wx-students-item.wxml-->
+<view class="list" >
+        <block wx:for="{{list}}" wx:key="index" >
+            <view class="list-src">
+                <image src="{{item.src}}" mode="widthFix" style="width: 100%"></image>
+            </view>
+            <view class="list-tite1">{{item.tite1}}</view>
+            <view class="list-tite2">{{item.tite2}}</view>
+            <view class="list-tite3">{{item.tite3}}</view>
+        </block>
+</view>

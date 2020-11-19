@@ -8,7 +8,7 @@ Page({
         header:{
           title: '课程科目',
           fontColor: "#333333",
-          headerbg: '#f40',
+          headerbg: '#F5F5F5',
           hiddenBlock: false,
           slot: false
         },

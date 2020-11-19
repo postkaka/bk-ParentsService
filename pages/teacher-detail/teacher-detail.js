@@ -7,7 +7,7 @@ Page({
     data: {
         header:{
             title: '教学详情',
-            headerbg: '#f40',
+            headerbg: '#F5F5F5',
             hiddenBlock: false,
             slot: false
           },
