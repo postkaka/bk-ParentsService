@@ -52,8 +52,8 @@
         "miniprogram": {
             "list": [
                 {
-                    "name": "选择学员",
-                    "pathName": "pages/selective/selective",
+                    "name": "pages/teacher-detail/teacher-detail",
+                    "pathName": "pages/teacher-detail/teacher-detail",
                     "query": "",
                     "scene": null
                 }

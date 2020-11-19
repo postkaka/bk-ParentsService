@@ -1,10 +1,10 @@
-// components/wx-more-items/wx-more-items.js
+// pages/teacher/by-more-teacher.js
 Component({
     /**
      * 组件的属性列表
      */
     properties: {
-        item:{
+        item: {
             type: Array,
             value: ''
         }
@@ -14,7 +14,7 @@ Component({
      * 组件的初始数据
      */
     data: {
-        
+
     },
 
     /**

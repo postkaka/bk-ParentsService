@@ -15,7 +15,7 @@
  <view class="box">
 <!--精选课程-->
 <view class="choosebox">
-    <view class="choiceness">
+    <view class="choiceness" bind:tap="courseClick">
         <image src="../../assets/image/choiceness.png" class="choicenessimage"  ></image>
     </view>
     <view class="choosebox-1">
@@ -34,11 +34,11 @@
 </view>
 </view>
 <!--教学老师-->
-<by-more text="教学老师"></by-more>
-<by-more-item item="{{item}}"></by-more-item>
+<by-more text="教学老师" bind:tap="teacherClick"></by-more>
+<by-more-item item="{{item}}" bind:tap="teachersClick"></by-more-item>
 <!--学员风采-->
 <by-more text="学员风采"></by-more>
-<by-more-items></by-more-items>
+<by-more-items item="{{stu}}"></by-more-items>
 <!--推荐课程-->
 <view class="tabs ">
 <by-tab course="{{course}}"></by-tab>   

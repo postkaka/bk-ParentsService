@@ -6,10 +6,10 @@
         </view>
         <view class="item-text">
             <view class="item-name">{{item.name}}</view>
-            <view class="item-price">{{item.price}}</view>
+            <view class="item-price" >{{item.price}}</view>
             <view class="cout">
                 <view class="item-cout">已购买{{item.cout}}节</view>
-                <view class="item-cout-src">
+                <view class="item-cout-src" >
                     <image src="../../assets/image/price.png" mode="heightFix" style="height:32rpx" ></image>
                 </view>
             </view>

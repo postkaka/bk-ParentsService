@@ -1,0 +1,7 @@
+<!--pages/teacher/teacher.wxml-->
+<by-header header='{{header}}'></by-header>
+<view class="side"></view>
+<by-search-box></by-search-box>
+<scroll-view class='content' scroll-y style="height: calc(100vh - 360rpx)">
+        <by-more-teacher item="{{items}}" bind:tap="teachersClick"></by-more-teacher>
+</scroll-view> 

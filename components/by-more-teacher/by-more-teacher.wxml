@@ -1,0 +1,12 @@
+<!--pages/teacher/by-more-teacher.wxml-->
+<view class="more-course">
+        <view class="more-item-1" wx:for="{{item}}" wx:key="*this">
+        <view style="flex: 1" class="image">
+            <image src="{{item.src}}"  mode="heightFix" style="height:330rpx"></image>
+        </view>
+        <view class="item-text">
+            <view class="item-name">{{item.name}}</view>
+            <view class="item-cout">{{item.cout}}</view>
+        </view>
+    </view>
+</view>

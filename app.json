@@ -5,7 +5,9 @@
         "pages/activity/activity",
         "pages/mine/mine",
         "pages/landing/landing",
-        "pages/selective/selective"
+        "pages/selective/selective",
+        "pages/teacher/teacher",
+        "pages/teacher-detail/teacher-detail"
     ],
     "sitemapLocation": "sitemap23.json",
     "tabBar": {

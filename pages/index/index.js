@@ -32,6 +32,10 @@ Page({
             {name:"课程名称课程名称",price:"￥100000",cout:"60000",src: "../../assets/image/course-1.png"}, 
             {name:"课程名称课程名称",price:"￥100000",cout:"60000",src: "../../assets/image/course-2.png"}
         ],
+        stu:[
+            {name:"风采标题",title:"李冰冰",introduce:"风采详情风采详情风采详情",image:"../../assets/components-image/x1.png"},
+            {name:"风采标题",title:"李冰冰",introduce:"风采详情风采详情风采详情",image:"../../assets/components-image/x1.png"}
+        ],
         scrollTop:0
     },
     onPageScroll: function(e){
@@ -41,7 +45,25 @@ Page({
         })
         // console.log(this.data.scrollTop)
     },
-   
+    courseClick(){
+        console.log("跳转到精选课程页")
+        wx.switchTab({
+          url: '../course/course',
+        })
+
+    },
+    teacherClick(){
+        console.log("跳转到教学老师页")
+        wx.navigateTo({
+          url: '../teacher/teacher',
+        })
+    },
+    teachersClick(){
+        console.log("跳转到教师详情页")
+        wx.navigateTo({
+          url: '../teacher-detail/teacher-detail',
+        })  
+    },
     /**
      * 生命周期函数--监听页面加载
      */

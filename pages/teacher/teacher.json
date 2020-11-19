@@ -1,0 +1,8 @@
+{
+  "usingComponents": {
+    "by-header":"../../components/wx-header/header",
+    "by-search-box":"../../components/wx-search-box/wx-search-box",
+    "by-more-teacher":"../../components/by-more-teacher/by-more-teacher"
+  },
+  "navigationStyle":"custom"
+}

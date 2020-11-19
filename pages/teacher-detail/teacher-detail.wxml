@@ -1,0 +1,32 @@
+<by-header header='{{header}}'></by-header>
+<view class="side"></view>
+<view class="image">
+    <image src="../../assets/image/teacher/ts1.png" mode="widthFix" style="width:100%"></image>
+</view>
+<view class="box">
+<!-- tab（*合并组件*） -->
+<view class="tab">
+    <view bindtap="tabClick">
+        <view class="{{type == 1?'active':'none-active'}}">所教课程</view>
+        <view class="tex">
+            <view class="{{type == 1?'text':''}}"></view>
+        </view>
+    </view>
+    <view bindtap="tabClicks">
+        <view class="{{type == 2?'active':'none-active'}}">教师介绍</view>
+        <view class="tex">
+            <view class=" {{type == 2?'text':''}}"></view>
+        </view>
+    </view>
+</view>
+<!-- 课程 -->
+<by-more-items item="{{stu}}" class="{{type == 1?'':'none'}}"></by-more-items>
+<!-- 教师介绍 -->
+<view class="texts {{type == 2?'':'none'}}">
+    <view class="text-1">某某某</view>
+    <view class="text-2">XXXXX老师</view>
+    <view class="line"></view>
+    <view class="text-3">毕业于XXXXX学校</view>
+    <view class="text-4">曾获得XXXX奖项曾获得XXXX奖项曾获得XXXX奖项曾获得XXXX奖项曾获得XXXX奖项曾获得XXXX奖项曾获得XXXX奖项曾获得XXXX奖项曾获得XXXX奖项曾获得XXXX奖项曾获得XXXX奖项曾获得XXXX奖项曾获得XXXX奖项</view>
+</view>
+</view>

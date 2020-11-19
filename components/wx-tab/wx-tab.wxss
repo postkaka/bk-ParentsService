@@ -13,6 +13,7 @@
     color: #333333;
     font-weight:bold;
   }
+ 
   .tab-item.active .text {
     padding: 16rpx 10rpx;
     border-bottom: 10rpx solid #333333;

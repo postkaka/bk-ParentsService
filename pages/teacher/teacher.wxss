@@ -1,0 +1,9 @@
+/* pages/teacher/teacher.wxss */
+page {
+    background-color: #F5F5F5;
+    overflow: hidden
+}
+.side {
+    width: 100%;
+    border: 1rpx solid #DDDDDD;
+}

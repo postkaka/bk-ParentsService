@@ -1,12 +1,12 @@
-// components/wx-more-items/wx-more-items.js
+// components/wx-search-box/wx-search-box.js
 Component({
     /**
      * 组件的属性列表
      */
     properties: {
-        item:{
-            type: Array,
-            value: ''
+        search: {
+            type: String,
+            value: '请输入老师姓名'
         }
     },
 
@@ -14,13 +14,13 @@ Component({
      * 组件的初始数据
      */
     data: {
-        
+        list:[]
     },
 
     /**
      * 组件的方法列表
      */
     methods: {
-
+        
     }
 })
