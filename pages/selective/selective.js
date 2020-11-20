@@ -11,10 +11,19 @@ Page({
             fontColor: "#FFFFFF",
             headerbg: '#184571',
             hiddenBlock: false,
-            slot: false
+            slot: false,
+            src:'../../assets/image/fsback.png'
           },
+        course:[
+            {src:'../../assets/image/selective.png',titel:'XXXXXXXX',time:'2020-05-19',count:'30'},
+            {src:'../../assets/image/selective.png',titel:'XXXXXXXX',time:'2020-05-19',count:'30'}
+        ]
     },
-
+    btnClick(){
+       wx.switchTab({
+         url: '../index/index',
+       })
+    },
     /**
      * 生命周期函数--监听页面加载
      */

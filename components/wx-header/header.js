@@ -13,7 +13,8 @@ Component({
           capsulebg: 'rgba(0,0,0,0.2)',
           capsuleborder: '1px solid rgba(0, 0, 0, 0.1)',
           capsulesep: '1px solid rgba(255,255,255,0.2)',
-          slot: false
+          slot: false,
+          src: ""
         }
       },
       /**

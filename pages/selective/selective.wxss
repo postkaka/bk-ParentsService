@@ -1,4 +1,96 @@
 /* pages/selective/selective.wxss */
  page {
      background-color: #184571;
+     overflow: hidden;
  }
+ .userinfo {
+     margin-top: 64rpx;
+     margin-bottom: 64rpx;
+     display: flex;
+     margin-left: 50rpx;
+     margin-right: 50rpx;
+     justify-content: space-between;
+ }
+ .userinfo-image {
+    display: flex;
+    align-items: center;
+ }
+ .userinfo-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    flex: 1;
+    margin-left: 40rpx;
+    font-family: PingFang SC;
+    color: #FFFFFF;
+    font-size: 28rpx;
+ }
+ .userinfo-images {
+     align-items: center;
+ }
+ .course {
+     position: relative;
+     background-color: #ffffff;
+     height: 841rpx;
+     border: 1rpx solid #ffffff;
+     margin-left: 32rpx;
+     margin-right: 32rpx;
+     border-radius: 30rpx;
+ }
+ .btn {
+    position: absolute;
+    bottom: 32rpx;
+    border: 1rpx solid #184571;
+    height: 80rpx;
+    line-height: 80rpx;
+    left: 0;
+    right: 0;
+    text-align: center;
+    margin-right: 32rpx;
+    margin-left: 32rpx;
+    background-color: #184571;
+    border-radius: 30rpx;
+    font-family: PingFang SC;
+    color: #FFFFFF;
+    font-size: 34rpx;
+ }
+ .courseinfo {
+    display: flex;
+    justify-content: space-between;
+    margin: 32rpx;
+ }
+ .courseinfo-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    flex: 1;
+    margin-left: 40rpx;
+ }
+ .courseinfo-text-fisrt {
+    font-family: PingFang SC;
+    color: #333333;
+    font-size: 34rpx;
+    font-weight: bold;
+ }
+ .courseinfo-text-second {
+    display: flex;
+    line-height: 30rpx;
+    color: #999999;
+    font-size: 24rpx;
+ }
+ .courseinfo-text-time {
+     margin-left: 10rpx;
+ }
+ .courseinfo-text-count {
+     margin-left: 10rpx;
+ }
+ .last {
+    position: fixed;
+    bottom: 32rpx;
+    left: 0;
+    right: 0;
+    text-align: center;
+    font-size: 24rpx;
+    font-family: PingFang SC;
+    color: #FFFFFF;
+}

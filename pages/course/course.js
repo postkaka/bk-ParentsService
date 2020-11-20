@@ -10,7 +10,8 @@ Page({
           fontColor: "#333333",
           headerbg: '#F5F5F5',
           hiddenBlock: false,
-          slot: false
+          slot: false,
+          src:'../../assets/image/fback.png'
         },
         course:[
         {src:"../../assets/image/course/courses.png",show:["创意美术","素描"],show1:["中国舞","芭蕾舞","爵士舞","街舞"],

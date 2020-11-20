@@ -10,7 +10,8 @@
         "pages/teacher-detail/teacher-detail",
         "pages/students-demeanour/students-demeanour",
         "pages/demeanour-detail/demeanour-detail",
-        "pages/mine/minepage/information/information"
+        "pages/mine/minepage/information/information",
+        "pages/hour/hour"
     ],
     "sitemapLocation": "sitemap23.json",
     "tabBar": {

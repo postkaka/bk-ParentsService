@@ -9,7 +9,8 @@ Page({
             title: '学员信息',
             headerbg: '#F5F5F5',
             hiddenBlock: false,
-            slot: false
+            slot: false,
+            src:'../../../../assets/image/fsback.png'
           },
           infor:[
               {title:"*学员姓名：",info:"请填写学员姓名"},

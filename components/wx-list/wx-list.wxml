@@ -1,0 +1,19 @@
+<!--components/wx-list/wx-list.wxml-->
+<view class="list">
+    <view class="list-item" style="height:{{height}}rpx; line-height:{{height}}rpx"> 
+        <view class="list-last">
+            <view >
+                <view class="rectangle" style="display:{{display}}"></view>
+            </view>
+            <view class="list-item-first"style="color:{{color}};font-weight:{{fontweight}}; font-size:{{fontsize}}rpx ">{{listitemfirst}}</view>
+        </view>
+        <view class="list-item-second">
+            <view class="list-item-second-first" style="color:{{colors}}">{{listitemsecondfirst}}</view>
+            <view class="list-item-second-second">
+                <image src="{{images}}" style="height: 28rpx; width: 28rpx; display:{{displays}}" class="list-item-second-second-image"></image>
+                <view>{{listitemsecondsecond}}</view>
+            </view>
+        </view>
+    </view>
+    <view class="list-line" style="margin-left:{{left}}rpx;margin-right:{{right}}rpx; display:{{displayss}} "></view>
+</view>

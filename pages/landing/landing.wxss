@@ -59,7 +59,7 @@
 }
 .input-text {
     height: 72rpx;
-    color: #dddddd;
+    color: #333333;
     font-size: 28rpx;
     margin-left: 64rpx;
 }

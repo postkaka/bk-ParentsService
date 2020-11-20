@@ -3,7 +3,7 @@
   <view class='status' style="height:{{statusHeight}}px"></view>
   <view class='navbar' style="height:{{navHeight}}px">
     <view class='navbar_home'>
-      <image class='navbar_home-image' src='../../assets/image/fback.png' bindtap='backClick' mode="heightFix" style="height 100%"></image>
+      <image class='navbar_home-image' src="{{header.src}}" bindtap='backClick' mode="heightFix" style="height 100%"></image>
       <!-- <image src='' bindtap='homeClick'></image> -->
     </view>
     <!-- <view class='navbar_back' bindtap='backClick'>

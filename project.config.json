@@ -52,8 +52,8 @@
         "miniprogram": {
             "list": [
                 {
-                    "name": "pages/selective/selective",
-                    "pathName": "pages/selective/selective",
+                    "name": "pages/hour/hour",
+                    "pathName": "pages/hour/hour",
                     "query": "",
                     "scene": null
                 }

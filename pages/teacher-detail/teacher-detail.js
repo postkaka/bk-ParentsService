@@ -9,7 +9,8 @@ Page({
             title: '教学详情',
             headerbg: '#F5F5F5',
             hiddenBlock: false,
-            slot: false
+            slot: false,
+            src:'../../assets/image/fback.png'
           },
           type: 1,
           stu:[

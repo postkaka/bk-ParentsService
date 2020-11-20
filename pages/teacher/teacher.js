@@ -9,7 +9,8 @@ Page({
             title: '教学教师',
             headerbg: '#F5F5F5',
             hiddenBlock: false,
-            slot: false
+            slot: false,
+            src:'../../assets/image/fback.png'
           },
           items:[
             {name:"某某某",cout:"曾获得XXXX奖",src: "../../assets/image/teacher/t1.png"}, 

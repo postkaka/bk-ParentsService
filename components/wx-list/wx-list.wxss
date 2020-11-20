@@ -1,0 +1,40 @@
+/* components/wx-list/wx-list.wxss */
+.list-item {
+    display: flex;
+    flex-direction: row;
+    margin-left: 32rpx;
+    margin-right: 32rpx;
+    justify-content: space-between;
+    font-size: 28rpx;
+    font-family: PingFang SC;
+}
+.list-last {
+    display: flex;
+    flex-direction: row;
+}
+.list-item-second {
+    display: flex;
+}
+.list-item-second-first {
+    margin-right: 8rpx;
+}
+.list-line {
+    border-bottom: 1rpx solid #DDDDDD;
+}
+.list-item-second-second {
+    display: flex;
+    align-items: center;
+}
+.list-item-second-second-image {
+    align-items: center;
+}
+.rectangle {
+    margin-top: 16rpx;
+    margin-right: 10rpx;
+    width: 4rpx;
+    height: 32rpx;
+    background: #F25A43;
+    border: 1px solid #F25A43;
+    opacity: 1;
+    border-radius: 2rpx;
+}

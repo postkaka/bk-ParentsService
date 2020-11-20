@@ -109,17 +109,19 @@ Page({
               duration: 1000
             })
             return false;
-        }else if(this.data.code !== this.data.iscode){
-            wx.showToast({
-              title: '验证码错误',
-              icon: 'none',
-              duration: 1000
-            })
-            return false;
-        }else{
+        }
+        // else if(this.data.code !== this.data.iscode){
+        //     wx.showToast({
+        //       title: '验证码错误',
+        //       icon: 'none',
+        //       duration: 1000
+        //     })
+        //     return false;
+        // }
+        else{
             wx.setStorageSync('phone', this.data.phone);
             wx.redirectTo({
-              url: 'url',
+              url: '../selective/selective',
             })
         }
       },

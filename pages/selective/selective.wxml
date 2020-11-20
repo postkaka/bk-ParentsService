@@ -1,1 +1,36 @@
 <by-header  header='{{header}}'></by-header>
+<view class="userinfo">
+    <view >
+        <image src="../../assets/image/head.png" style=" height: 120rpx ; width: 120rpx"></image>
+    </view>
+    <view class="userinfo-text">
+        <view class="userinfo-text-fisrt">冰冰</view>
+        <view>18241097090</view>
+    </view>
+    <view class="userinfo-image">
+        <image src="../../assets/image/back.png" style="height: 48rpx; width:48rpx" class="userinfo-images"></image>
+    </view>
+</view>
+<view class="course">
+<view>
+    <block wx:for="{{course}}" wx:key="index">
+        <view class="courseinfo">
+        <view >
+            <image src="{{item.src}}" style=" height: 120rpx ; width: 120rpx"></image>
+        </view>
+        <view class="courseinfo-text">
+            <view class="courseinfo-text-fisrt">美术{{item.titel}}课程</view>
+            <view class="courseinfo-text-second">
+                <view>
+                    <image src="../../assets/image/calendar.png" style="width: 24rpx;height: 28rpx"></image>
+                </view>
+                <view class="courseinfo-text-time">{{item.time}}</view>
+                <view class="courseinfo-text-count">剩余: {{item.count}}课时</view>
+            </view>
+        </view>
+</view>
+    </block>
+</view>
+<view class="btn" bind:tap="btnClick">确定</view>
+</view>
+<view class='last'>所学课程共: 20节课</view>

@@ -1,7 +1,7 @@
 /* components/wx-search-box/wx-search-box.wxss */
 .list {
    border: 1rpx solid #ffffff;
-   background-color:#ffffff;
+   background-color:#F5F5F5;
    border-radius: 30rpx;
    margin: 32rpx;
    height: 65rpx;

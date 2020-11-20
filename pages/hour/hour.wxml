@@ -1,0 +1,62 @@
+<!--pages/hour/hour.wxml-->
+<by-header  header='{{header}}'></by-header>
+<view class="tab">
+    <view bindtap="tabClick">
+        <view class="{{type == 1?'active':'none-active'}}">正在学</view>
+        <view class="tex">
+            <view class="{{type == 1?'text':''}}"></view>
+        </view>
+    </view>
+    <view bindtap="tabClicks">
+        <view class="{{type == 2?'active':'none-active'}}">已结课</view>
+        <view class="tex">
+            <view class=" {{type == 2?'text':''}}"></view>
+        </view>
+    </view>
+</view>
+<view class="{{type == 1?'':'none'}}">
+    <view>
+    <block wx:for="{{list}}" wx:key="index">
+        <view class="list {{item.show == 1?'':'lists'}}" >
+            <by-list listitemfirst="{{item.name}}" height="112" fontweight="bold" fontsize="34"></by-list>
+            <by-list listitemfirst="剩余课时:" listitemsecondfirst="{{item.time}}" listitemsecondsecond="课时" left="32" right="32"></by-list>
+            <by-list listitemfirst="消耗课时:" listitemsecondfirst="{{item.consume}}" colors="#F25A43" 
+            displays="" images="../../assets/image/back.png" left="32" right="32"></by-list>
+           <view class="{{item.show == 1?'':'none'}}">
+                <by-list listitemfirst="测试3(暂未分班):" display="" color="#F25A43"displays="" images="../../assets/image/below.png" ></by-list>
+                <by-list listitemfirst="课表:" displays="" images="../../assets/image/back.png" left="32" right="32"></by-list>
+                <by-list listitemfirst="评语:" displays="" listitemsecondfirst="总共出勤课堂:{{item.gatedate}}次，获得{{item.evaluate}}次教师评价"
+                images="../../assets/image/back.png" left="32" right="32"></by-list>
+                <by-list listitemfirst="作业:" displays="" listitemsecondfirst="已批改{{item.correct}}次"
+                images="../../assets/image/back.png" left="32" right="32"></by-list>
+                <by-list listitemfirst="请假情况:" displays="" listitemsecondfirst="{{item.leave}}次,限制{{item.impose}}次"
+                images="../../assets/image/back.png" left="32" right="32"></by-list>
+           </view>
+            <view class="btn" bind:tap="btnClick" data-index="{{index}}">
+                <view class="btn-view" >{{btn}}</view>
+                <view class="btn-image">
+                    <image style="height: 28rpx; width: 28rpx" src="{{btnsrc}}"></image>
+                </view>
+            </view>
+        </view>
+    </block>
+</view>
+<view class="list give-time">
+        <by-list listitemfirst="赠送课程" height="112" fontweight="bold" fontsize="34"></by-list>
+        <by-list listitemfirst="适用课程" listitemsecondsecond="{{feel.type}}" left="32" right="32"></by-list>
+        <by-list listitemfirst="剩余课时:" listitemsecondfirst="{{feel.residue}}" listitemsecondsecond="课时" left="32" right="32"></by-list>
+        <by-list listitemfirst="剩余有效期:" listitemsecondfirst="{{feel.expirytime}}" listitemsecondsecond="天" left="32" right="32"></by-list>
+        <by-list listitemfirst="剩余{{feel.residue}}赠送课时" height="112" fontweight="bold" fontsize="34"
+        displays="" listitemsecondfirst="查看课程" images="../../assets/image/back.png" displayss="none"
+        ></by-list>
+</view>
+</view>
+<view class="{{type == 2?'':'none'}}">
+    <view class="list over">
+        <by-list listitemfirst="赠送课程" height="112" fontweight="bold" fontsize="34"></by-list>
+        <by-list listitemfirst="剩余{{feel.residue}}赠送课时"  
+        displays="" listitemsecondfirst="查看课程" images="../../assets/image/back.png" displayss="none"
+        ></by-list>
+    </view>
+</view>
+

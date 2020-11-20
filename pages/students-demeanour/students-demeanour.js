@@ -9,7 +9,8 @@ Page({
             title: '学员风采',
             headerbg: '#F5F5F5',
             hiddenBlock: false,
-            slot: false
+            slot: false,
+            src:'../../assets/image/fback.png'
           },
           list:[
               {src:"../../assets/components-image/x1.png",tite1:'风采标题风采标题风采标题',tite2:'学员:李冰冰'},
