@@ -1,0 +1,48 @@
+<!--pages/hour/classhour/classhour.wxml-->
+<by-figure header="{{header}}" title1="{{infor.name}}" title2="{{infor.data}}"  src="{{infor.src}}"></by-figure>
+<view class="box">
+    <view class="list">
+        <by-list listitemfirst="购买课时"fontweight="bold" fontsize="34" lineheight="46" height="112"
+        listitemsecondsecond="课时" listitemsecondfirst="{{list.shoppingtime}}" left="32" right="32"
+        ></by-list>
+        <by-list listitemfirst="消耗课时" height='72' listitemsecondsecond="课时" left="32" right="32"
+        listitemsecondfirst="{{list.consumetime}}" colors="#F25A43"
+        ></by-list>
+        <view class="list-item">
+            <by-list listitemsecondsecond="课时" displayss="none" listitemfirst="考勤消耗:" height="40"
+        listitemsecondfirst="{{list.checktime}}"
+        ></by-list>
+        <by-list listitemsecondsecond="课时" displayss="none" listitemfirst="转出课时:" height="50"
+        listitemsecondfirst="{{list.rolltime}}"
+        ></by-list>
+        <by-list listitemsecondsecond="课时"  listitemfirst="自定义扣课时消耗:" height="56" left="14" right="14"
+        listitemsecondfirst="{{list.customtime}}"
+        ></by-list>
+        </view>
+        <by-list listitemfirst="剩余课时" lineheight="46" height="112" displayss="none"
+        listitemsecondsecond="课时" listitemsecondfirst="{{list.residuetime}}" colors="#F25A43"
+        ></by-list>
+    </view>
+    <view class="smalllist">
+        <view class="smalllist-fist">
+            <view class="smalllist-fist-view">
+                <view>课消类型:</view>
+                <view class="smalllist-fist-view-change">选择类型</view>
+                <view>
+                    <image src='../../../assets/image/below.png' style="height: 28rpx;width: 28rpx "></image>
+                </view>
+            </view>
+            <view class="smalllist-fist-view">
+                <view>班级:</view>
+                <view class="smalllist-fist-view-change">选择班级</view>
+                <view>
+                    <image src='../../../assets/image/below.png' style="height: 28rpx;width: 28rpx "></image>
+                </view>
+            </view>
+        </view>
+        <view class="line"></view>
+        <by-class-item classitemimage="../../assets/image/time1.png" imagedisplay="" classitemleftview="{{buyitem.type}}"
+        classitemlefttime="{{buyitem.time}}" classitemlefticon="../../../assets/image/time.png"
+        ></by-class-item>
+    </view>
+</view>

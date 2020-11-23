@@ -1,34 +1,38 @@
-// pages/selective/selective.js
+// pages/hour/classhour/classhour.js
 Page({
 
     /**
      * 页面的初始数据
      */
     data: {
-        header:{
+        header: {
             homeCapsule: true,
-            title: '选择学员',
+            title: '在学课程',
             fontColor: "#FFFFFF",
             headerbg: '#184571',
             hiddenBlock: false,
             slot: false,
             src:'../../assets/image/fsback.png'
-          },
-        course:[
-            {src:'../../assets/image/selective.png',titel:'XXXXXXXX',time:'2020-05-19',count:'30'},
-            {src:'../../assets/image/selective.png',titel:'XXXXXXXX',time:'2020-05-19',count:'30'}
-        ],
+        },
         infor:{
-          src:"../../assets/image/head.png",
-          name:"冰冰",
-          phone:'18241097090'
+            src:"../../assets/image/head.png",
+            name:"测试班级 学员: 冰冰",
+            data:'2020-03-16'
+          },
+        list: {
+            shoppingtime: "12.00",
+            consumetime:"2.00",
+            checktime:'2.00',
+            rolltime:'0.00',
+            customtime:'0.00',
+            residuetime:'11.00'
+        },
+        buyitem: {
+            type: "购买课时",
+            time:"2020-04-27 周一"
         }
     },
-    btnClick(){
-       wx.switchTab({
-         url: '../index/index',
-       })
-    },
+
     /**
      * 生命周期函数--监听页面加载
      */

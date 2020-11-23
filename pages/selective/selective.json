@@ -1,6 +1,6 @@
 {
   "usingComponents": {
-    "by-header":"../../components/wx-header/header"
+    "by-figure":"../../components/wx-figure/wx-figure"
   },
   "navigationStyle":"custom"
 }

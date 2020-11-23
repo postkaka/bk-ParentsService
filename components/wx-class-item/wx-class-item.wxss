@@ -1,0 +1,12 @@
+/* components/wx-class-item/wx-class-item.wxss */
+.class-list {
+    display: flex;
+    align-items: center;
+}
+.class-item-left {
+    display: flex;
+}
+.class-item-left-image {
+    display: flex;
+
+}

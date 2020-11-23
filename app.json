@@ -11,7 +11,9 @@
         "pages/students-demeanour/students-demeanour",
         "pages/demeanour-detail/demeanour-detail",
         "pages/mine/minepage/information/information",
-        "pages/hour/hour"
+        "pages/hour/hour",
+        "pages/hour/homework/homework",
+        "pages/hour/classhour/classhour"
     ],
     "sitemapLocation": "sitemap23.json",
     "tabBar": {

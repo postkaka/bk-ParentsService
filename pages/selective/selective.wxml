@@ -1,16 +1,4 @@
-<by-header  header='{{header}}'></by-header>
-<view class="userinfo">
-    <view >
-        <image src="../../assets/image/head.png" style=" height: 120rpx ; width: 120rpx"></image>
-    </view>
-    <view class="userinfo-text">
-        <view class="userinfo-text-fisrt">冰冰</view>
-        <view>18241097090</view>
-    </view>
-    <view class="userinfo-image">
-        <image src="../../assets/image/back.png" style="height: 48rpx; width:48rpx" class="userinfo-images"></image>
-    </view>
-</view>
+<by-figure title1="{{infor.name}}" title2="{{infor.phone}}" imagedisplay="" src="{{infor.src}}"></by-figure>
 <view class="course">
 <view>
     <block wx:for="{{course}}" wx:key="index">

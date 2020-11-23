@@ -1,0 +1,62 @@
+<!--pages/hour/homework/homework.wxml-->
+<by-header  header='{{header}}'></by-header>
+<view class="tab">
+    <view class="tab-text">
+        <view bindtap="tabClick" class="tab-text-1">
+        <view class="{{type == 1?'active':'none-active'}}">未完成</view>
+        <view class="tex">
+            <view class="{{type == 1?'text':''}}"></view>
+        </view>
+    </view>
+    <view bindtap="tabClicks">
+        <view class="{{type == 2?'active':'none-active'}}">已完成</view>
+        <view class="tex">
+            <view class=" {{type == 2?'text':''}}"></view>
+        </view>
+    </view>
+    </view>
+    <view class="tab-image">
+        <view>测试班级</view>
+        <view class="tab-image-2">
+            <image src="../../../assets/image/fback.png" style="height: 32rpx; width: 32rpx" ></image>
+        </view>
+    </view>
+</view>
+<view class="first-list {{type == 2?'':'none'}}">
+    <block wx:for="{{list}}" wx:key="index">
+        <view class="list {{item.type == 1?'act':'noneact' }} " >
+            <by-list class="by-lists" listitemfirst="{{item.name}}" homeworktype="{{item.homeworktype}}" 
+            fontweight="bold" fontsize="34" lineheight='64' homeworktypedisplay="{{item.homeworktypedisplay}}" displayss="none"></by-list>
+            <by-list listitemfirst="班级名称:" fontsize="28" lineheight='46' height="48" displayss="none"
+            time='{{item.classname}}' itemdisplay=""
+            ></by-list>
+            <by-list listitemfirst="提交时间:" fontsize="28" lineheight='46' height="48" displayss="none" 
+            time='{{item.time}}'week='{{item.week}}' overtime="{{item.overtime}}" itemdisplay="" ></by-list>
+            <by-list listitemfirst="作业质量:" displayss="none" lineheight='46' height="48" class="{{item.type == 1?'':'none' }}"
+            quality="" qualityitem='{{item.qualityitem}}'></by-list>
+            <view class="line"></view>
+            <by-list displayss="none" listitemfirst="查看详情" fontsize="28" lineheight='46' color='#F25A43' height='80' displays=''
+            images="../../assets/image/right.png" left="32" right="32" ></by-list>
+            <view class="{{item.type == 1?'correct':'none' }}">
+                <image src="../../../assets/image/correct.png" style="height:136rpx; width: 136rpx"></image>
+            </view>
+        </view>
+    </block>
+</view>
+<view class="second-list {{type == 1?'':'none'}}">
+    <block wx:for="{{unfinished}}" wx:key="index">
+        <view class="list" >
+            <by-list class="by-lists" listitemfirst="{{item.name}}" homeworktype="{{item.homeworktype}}" 
+            fontweight="bold" fontsize="34" lineheight='64' homeworktypedisplay="{{item.homeworktypedisplay}}" displayss="none"></by-list>
+            <by-list listitemfirst="班级名称:" fontsize="28" lineheight='46' height="48" displayss="none"
+            time='{{item.classname}}' itemdisplay=""
+            ></by-list>
+            <by-list listitemfirst="最晚提交时间:" fontsize="28" lineheight='46' height="48" displayss="none" firstsscolor="#333333"
+            time='{{item.time}}'week='{{item.week}}' overtime="{{item.overtime}}" itemdisplay="" ></by-list>
+            <view class="line"></view>
+            <by-list displayss="none" listitemfirst="查看详情" fontsize="28" lineheight='46' color='#F25A43' height='80' displays=''
+            images="../../assets/image/red-below.png" left="32" right="32" ></by-list>
+        </view>
+    </block>
+</view>
+

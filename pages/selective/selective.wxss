@@ -3,31 +3,6 @@
      background-color: #184571;
      overflow: hidden;
  }
- .userinfo {
-     margin-top: 64rpx;
-     margin-bottom: 64rpx;
-     display: flex;
-     margin-left: 50rpx;
-     margin-right: 50rpx;
-     justify-content: space-between;
- }
- .userinfo-image {
-    display: flex;
-    align-items: center;
- }
- .userinfo-text {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    flex: 1;
-    margin-left: 40rpx;
-    font-family: PingFang SC;
-    color: #FFFFFF;
-    font-size: 28rpx;
- }
- .userinfo-images {
-     align-items: center;
- }
  .course {
      position: relative;
      background-color: #ffffff;

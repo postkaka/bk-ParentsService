@@ -30,7 +30,7 @@
 <!--分类框-->
 <view class="classitem">
 <view wx:for="{{class}}" wx:key="*this" style="margin-left: 32rpx ">
-    <image src="{{item}}" mode="heightFix" style="height: 150rpx" ></image>
+    <image src="{{item.src}}" mode="heightFix" style="height: 150rpx" bind:tap='classitemClick' data-id="{{index}}"></image>
 </view>
 </view>
 <!--教学老师-->

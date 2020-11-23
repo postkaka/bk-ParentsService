@@ -5,7 +5,20 @@
             <view >
                 <view class="rectangle" style="display:{{display}}"></view>
             </view>
-            <view class="list-item-first"style="color:{{color}};font-weight:{{fontweight}}; font-size:{{fontsize}}rpx ">{{listitemfirst}}</view>
+            <view class="list-item-first"style="color:{{color}};font-weight:{{fontweight}}; font-size:{{fontsize}}rpx;line-height:{{lineheight}}rpx; ">{{listitemfirst}}</view>
+            <view class="list-item-firsts" style='display:{{homeworktypedisplay}}'>
+                <view class="list-item-firsts-item" >{{homeworktype}}</view>
+            </view>
+            <view class="list-item-firstss" style="display:{{itemdisplay}}; color:{{firstsscolor}}">
+                <view>{{time}}</view>
+                <view class="list-item-view">{{week}}</view>
+                <view>{{overtime}}</view>
+            </view>
+            <view class="list-item-firstss-image" style='display:{{quality}}'>
+                <block wx:for="{{qualityitem}}"  wx:key="index">
+                    <image src='../../assets/image/sar.png' style="height: 35rpx;width:36rpx;margin-right:20rpx" ></image>
+                </block>
+            </view>
         </view>
         <view class="list-item-second">
             <view class="list-item-second-first" style="color:{{colors}}">{{listitemsecondfirst}}</view>

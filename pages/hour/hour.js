@@ -62,6 +62,12 @@ Page({
             })
         }
     },
+    homeworkClick(){
+        console.log("跳转到作业页面")
+        wx.navigateTo({
+          url: '../hour/homework/homework?type=2',
+        })
+    },
 
     /**
      * 生命周期函数--监听页面加载

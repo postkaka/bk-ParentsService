@@ -1,0 +1,14 @@
+<!--components/wx-figure/wx-figure.wxml-->
+<by-header  header='{{header}}'></by-header>
+<view class="userinfo">
+    <view >
+        <image src="{{src}}" style=" height: 120rpx ; width: 120rpx"></image>
+    </view>
+    <view class="userinfo-text">
+        <view class="userinfo-text-fisrt">{{title1}}</view>
+        <view class="userinfo-text-second">{{title2}}</view>
+    </view>
+    <view class="userinfo-image" style='display:{{imagedisplay}}'>
+        <image src="../../assets/image/back.png" style="height: 48rpx; width:48rpx" class="userinfo-images"></image>
+    </view>
+</view>

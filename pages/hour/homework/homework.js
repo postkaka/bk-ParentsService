@@ -1,4 +1,4 @@
-// pages/selective/selective.js
+// pages/hour/homework/homework.js
 Page({
 
     /**
@@ -6,34 +6,42 @@ Page({
      */
     data: {
         header:{
-            homeCapsule: true,
-            title: '选择学员',
-            fontColor: "#FFFFFF",
-            headerbg: '#184571',
+            title: '我的课时',
+            fontColor: "#333333",
+            headerbg: '#F5F5F5',
             hiddenBlock: false,
             slot: false,
-            src:'../../assets/image/fsback.png'
+            src:'../../assets/image/fback.png'
           },
-        course:[
-            {src:'../../assets/image/selective.png',titel:'XXXXXXXX',time:'2020-05-19',count:'30'},
-            {src:'../../assets/image/selective.png',titel:'XXXXXXXX',time:'2020-05-19',count:'30'}
+        type: 1,
+        list: [
+            {type:"0",name:"新作业",homeworktypedisplay:'',homeworktype:'必做',classname:'测试班级',time:'2020-05-22',week:'周五',overtime:'超时'},
+            {type:"1",name:"124",homeworktypedisplay:'',homeworktype:'必做',classname:'测试班级',time:'2020-05-22',week:'周五',overtime:'超时', qualityitem:'5'}
         ],
-        infor:{
-          src:"../../assets/image/head.png",
-          name:"冰冰",
-          phone:'18241097090'
-        }
+        unfinished: [
+            {type:"1",name:"124",homeworktypedisplay:'',homeworktype:'必做',classname:'测试班级',time:'2020-05-22',week:'周五',overtime:'超时', qualityitem:'5'}
+        ]
     },
-    btnClick(){
-       wx.switchTab({
-         url: '../index/index',
-       })
+    tabClick(){
+        this.setData({
+            type:1
+        })
+
     },
+    tabClicks(){
+        this.setData({
+            type:2
+        })
+
+    },
+
     /**
      * 生命周期函数--监听页面加载
      */
     onLoad: function (options) {
-
+        this.setData({
+            type: options.type
+        })
     },
 
     /**

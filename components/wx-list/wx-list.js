@@ -52,6 +52,10 @@ Component({
             type: String,
             value:''
         },
+        lineheight: {
+            type: String,
+            value:''
+        },
         display: {
             type: String,
             value:'none'
@@ -63,7 +67,44 @@ Component({
         displayss: {
             type: String,
             value:''
+        },
+        homeworktype: {
+            type: String,
+            value: ''
+        },
+        homeworktypedisplay: {
+            type: String,
+            value:'none'
+        },
+        itemdisplay: {
+            type: String,
+            value:'none'
+        },
+        time: {
+            type: String,
+            value: ''
+        },
+        week: {
+            type: String,
+            value: ''
+        },
+        overtime: {
+            type: String,
+            value: ''
+        },
+        quality: {
+            type: String,
+            value: 'none'
+        },
+        qualityitem: {
+            type: Number,
+            value: 5
+        },
+        firstsscolor: {
+            type: String,
+            value: '#F25A43'
         }
+
     },
 
     /**

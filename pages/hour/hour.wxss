@@ -6,8 +6,13 @@ page {
     margin-top: 32rpx;
     margin-left: 150rpx;
     margin-right: 150rpx;
+    margin-bottom: 32rpx;
     display: flex;
     justify-content: space-around;
+    height: 40rpx;
+    line-height: 40rpx;
+    font-size: 28rpx;
+    font-family: PingFang SC;
 }
 .text {
     width: 30rpx;

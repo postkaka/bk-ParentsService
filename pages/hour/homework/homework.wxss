@@ -1,0 +1,92 @@
+/* pages/hour/homework/homework.wxss */
+page {
+    background-color: #FFFFFF;
+}
+.tab {
+    margin: 32rpx;
+    display: flex;
+    justify-content: space-between;
+    height: 40rpx;
+    line-height: 40rpx;
+    font-size: 28rpx;
+    font-family: PingFang SC;
+}
+.tab-text {
+    display: flex;
+}
+.tab-text-1 {
+    margin-right: 50rpx;
+}
+.tab-image {
+    display: flex;
+    font-weight: bold;
+    color: #333333;
+}
+.tab-image image {
+    transform:rotate(180deg)
+}
+.tab-image-2 {
+    display: flex;
+    align-items: center;
+    margin-left: 8rpx;
+}
+.tab-image-2 image {
+    align-items: center;
+}
+.text {
+    width: 30rpx;
+    padding: 12rpx 10rpx;
+    border-bottom: 8rpx solid #333333;
+    border-radius: 4rpx;
+  }
+.tex {
+    display: flex;
+    justify-content: center;
+  }
+  .none-active {
+    color: #999999;
+    font-family: PingFang SC;
+    font-size: 28rpx;
+}
+.active {
+    color: #333333;
+    font-weight:bold;
+  }
+.first-list {
+    margin-top: 65rpx;
+}
+.second-list {
+    margin-top: 65rpx;
+}
+.list {
+    position: relative;
+    border: 2rpx solid #DDDDDD;
+    background-color: #FFFFFF;
+    margin: 32rpx;
+    border-radius: 30rpx;   
+    font-family: PingFang SC;
+    padding-top: 32rpx;
+}
+.lists {
+    height: 366rpx;
+}
+
+.line {
+    border: 1rpx solid #DDDDDD;
+    margin-top: 32rpx;
+    margin-bottom: 20rpx;
+}
+.act{
+    height: 362rpx;
+}
+.noneact{
+    height: 314rpx;
+}
+.correct {
+    position: absolute;
+    bottom: 165rpx;
+    right: 32rpx;
+}
+.none {
+    display: none;
+} 

@@ -11,6 +11,7 @@
 .list-last {
     display: flex;
     flex-direction: row;
+    align-items: center;
 }
 .list-item-second {
     display: flex;
@@ -37,4 +38,39 @@
     border: 1px solid #F25A43;
     opacity: 1;
     border-radius: 2rpx;
+}
+.list-item-firsts {
+    width: 76rpx;
+    background: #F25A43;
+    opacity: 1;
+    border-radius: 14rpx;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 8rpx;
+}
+
+.list-item-firstss {
+    margin-left: 8rpx;
+    display: flex;
+    font-size: 28rpx;
+}
+.list-item-view {
+    margin-left: 8rpx;
+    margin-right: 8rpx;
+    height: 40rpx;
+    line-height: 46rpx;
+}
+.list-item-firsts-item {
+    width: 44rpx;
+    height: 30rpx;
+    font-size: 22rpx;
+    font-family: PingFang SC;
+    line-height: 30rpx;
+    color: #FFFFFF;
+    opacity: 1;
+    
+}
+.list-item-firstss-image {
+    display: flex;
 }

@@ -28,7 +28,7 @@
                 <by-list listitemfirst="评语:" displays="" listitemsecondfirst="总共出勤课堂:{{item.gatedate}}次，获得{{item.evaluate}}次教师评价"
                 images="../../assets/image/back.png" left="32" right="32"></by-list>
                 <by-list listitemfirst="作业:" displays="" listitemsecondfirst="已批改{{item.correct}}次"
-                images="../../assets/image/back.png" left="32" right="32"></by-list>
+                images="../../assets/image/back.png" left="32" right="32"  bindtap="homeworkClick"></by-list>
                 <by-list listitemfirst="请假情况:" displays="" listitemsecondfirst="{{item.leave}}次,限制{{item.impose}}次"
                 images="../../assets/image/back.png" left="32" right="32"></by-list>
            </view>

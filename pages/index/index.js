@@ -11,11 +11,12 @@ Page({
             "../../assets/image/figure.png"
         ],
         class:[
-            "../../assets/image/curriculum.png",
-            "../../assets/image/review.png",
-            "../../assets/image/results.png",
-            "../../assets/image/class.png",
-            "../../assets/image/homework.png"
+            {src:"../../assets/image/curriculum.png",url:''},
+            {src:"../../assets/image/review.png",url:''},
+            {src:"../../assets/image/results.png",url:''},
+            {src:"../../assets/image/class.png",url:'hour/hour'},
+            {src:"../../assets/image/homework.png",url:''}
+            
         ],
         course:["推荐课程","国学","美术","声乐","书法","舞蹈","口才"],
         item:[
@@ -75,6 +76,19 @@ Page({
         wx.navigateTo({
           url: '../demeanour-detail/demeanour-detail',
         })
+    },
+    classitemClick(e){
+        let id = e.currentTarget.dataset.id
+      if(id == 3){
+        wx.navigateTo({
+            url: '../hour/hour',
+          })
+      }else if(id == 4){
+          wx.navigateTo({
+            url: '../hour/homework/homework?type=1',
+          })
+      }
+        
     },
     /**
      * 生命周期函数--监听页面加载

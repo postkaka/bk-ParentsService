@@ -52,8 +52,8 @@
         "miniprogram": {
             "list": [
                 {
-                    "name": "pages/hour/hour",
-                    "pathName": "pages/hour/hour",
+                    "name": "pages/hour/classhour/classhour",
+                    "pathName": "pages/hour/classhour/classhour",
                     "query": "",
                     "scene": null
                 }
