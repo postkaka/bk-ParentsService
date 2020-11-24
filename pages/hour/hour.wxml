@@ -14,13 +14,14 @@
         </view>
     </view>
 </view>
-<view class="{{type == 1?'':'none'}}">
+<view class="hour {{type == 1?'':'none'}}">
     <view>
     <block wx:for="{{list}}" wx:key="index">
         <view class="list {{item.show == 1?'':'lists'}}" >
             <by-list listitemfirst="{{item.name}}" height="112" fontweight="bold" fontsize="34"></by-list>
             <by-list listitemfirst="剩余课时:" listitemsecondfirst="{{item.time}}" listitemsecondsecond="课时" left="32" right="32"></by-list>
             <by-list listitemfirst="消耗课时:" listitemsecondfirst="{{item.consume}}" colors="#F25A43" 
+            bindtap="consumeClick"
             displays="" images="../../assets/image/back.png" left="32" right="32"></by-list>
            <view class="{{item.show == 1?'':'none'}}">
                 <by-list listitemfirst="测试3(暂未分班):" display="" color="#F25A43"displays="" images="../../assets/image/below.png" ></by-list>
@@ -30,7 +31,7 @@
                 <by-list listitemfirst="作业:" displays="" listitemsecondfirst="已批改{{item.correct}}次"
                 images="../../assets/image/back.png" left="32" right="32"  bindtap="homeworkClick"></by-list>
                 <by-list listitemfirst="请假情况:" displays="" listitemsecondfirst="{{item.leave}}次,限制{{item.impose}}次"
-                images="../../assets/image/back.png" left="32" right="32"></by-list>
+                images="../../assets/image/back.png" left="32" right="32" bindtap="leaveClick"></by-list>
            </view>
             <view class="btn" bind:tap="btnClick" data-index="{{index}}">
                 <view class="btn-view" >{{btn}}</view>
@@ -47,15 +48,15 @@
         <by-list listitemfirst="剩余课时:" listitemsecondfirst="{{feel.residue}}" listitemsecondsecond="课时" left="32" right="32"></by-list>
         <by-list listitemfirst="剩余有效期:" listitemsecondfirst="{{feel.expirytime}}" listitemsecondsecond="天" left="32" right="32"></by-list>
         <by-list listitemfirst="剩余{{feel.residue}}赠送课时" height="112" fontweight="bold" fontsize="34"
-        displays="" listitemsecondfirst="查看课程" images="../../assets/image/back.png" displayss="none"
+        displays="" listitemsecondfirst="查看课程" images="../../assets/image/back.png" displayss="none" bindtap="givetimeClick"
         ></by-list>
 </view>
 </view>
-<view class="{{type == 2?'':'none'}}">
+<view class="hour {{type == 2?'':'none'}}">
     <view class="list over">
         <by-list listitemfirst="赠送课程" height="112" fontweight="bold" fontsize="34"></by-list>
         <by-list listitemfirst="剩余{{feel.residue}}赠送课时"  
-        displays="" listitemsecondfirst="查看课程" images="../../assets/image/back.png" displayss="none"
+        displays="" listitemsecondfirst="查看课程" images="../../assets/image/back.png" displayss="none" bindtap="givetimeClick"
         ></by-list>
     </view>
 </view>

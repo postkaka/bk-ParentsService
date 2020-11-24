@@ -1,0 +1,33 @@
+<!--pages/course-content/course-content.wxml-->
+<by-figure header="{{header}}" title1="{{infor.name}}" title2="{{infor.data}}"  src="{{infor.src}}"></by-figure>
+<view class="box">
+	<view class="box1">
+		<view class="box1-text">{{classinfor.name}}</view>
+		<view class="box1-item">
+			<view class="boxitem">
+				<view class="boxitemimage">
+					<image src="../../assets/image/time.png" style="width: 28rpx;height:28rpx;" class="imagefisrt"></image>
+				</view>
+				<view class="boxitem1">{{classinfor.time}}</view>
+			</view>
+			<view class="state">{{classinfor.state}}</view>
+		</view>
+	</view>
+	<view class="box2">
+		<view class="box2view large">{{classinfor.business}}</view>
+		<view class="box2view small">{{classinfor.businessthing}}</view>
+	</view>
+	<view class="box3">
+		<view class="box2view large" style="font-weight: bold;">{{classinfor.homework}}</view>
+		<view class="box2view small">{{classinfor.homeworkthing}}</view>
+	</view>
+	<view class="box4">
+		<view>
+			<view class="box2view large" style="font-weight: bold;">{{classinfor.remark}}</view>
+			<view class="box2view small">{{classinfor.remarkthing}}</view>
+		</view>
+		<view style="margin-right: 32rpx" bindtap="remarkClick">
+			<image style="height: 28rpx; width: 28rpx" src="../../assets/image/back.png"></image>
+		</view>
+	</view>
+</view>

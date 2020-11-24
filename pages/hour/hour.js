@@ -68,6 +68,24 @@ Page({
           url: '../hour/homework/homework?type=2',
         })
     },
+    consumeClick(){
+        console.log("跳转到消耗课时")
+        wx.navigateTo({
+          url: '../hour/classhour/classhour?type=0',
+        })
+    },
+    givetimeClick(){
+        console.log("跳转到赠送课时")
+        wx.navigateTo({
+          url: '../hour/classhour/classhour?type=1',
+        })
+    },
+    leaveClick(){
+        console.log("跳转到请假页面")
+        wx.navigateTo({
+          url: '../hour/leave/leave',
+        })
+    },
 
     /**
      * 生命周期函数--监听页面加载

@@ -1,0 +1,7 @@
+{
+  "usingComponents": {
+    "by-figure":"../../../components/wx-figure/wx-figure",
+    "by-search-box":"../../../components/wx-search-box/wx-search-box"
+  },
+  "navigationStyle":"custom"
+}

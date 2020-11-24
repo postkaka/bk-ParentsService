@@ -1,0 +1,45 @@
+<!--pages/course-content/class-review/class-review.wxml-->
+<by-figure header="{{header}}" title1="{{infor.name}}" title2="{{infor.data}}"  src="{{infor.src}}"></by-figure>
+<view class="box">
+	<view class="box1">
+		<view class="box1-text">{{classinfor.name}}</view>
+		<view class="box1-item">上课时间: {{classinfor.time}}</view>
+		<view class="fixed">
+			<view class="fixed-item">已回复</view>
+		</view>
+	</view>
+	<view class="box2">
+		<view class="box2view large">{{classinfor.message}}</view>
+		<view class="box2image">
+			<view class="box2images">详情</view>
+			<view class="box2s">
+				<image src='../../../assets/image/back.png' style="width: 28rpx;height:28rpx;" class="box2ss"></image>
+			</view>
+		</view>
+	</view>
+	<view class="box3">
+		<view class="box3text">{{classinfor.name}}</view>
+		<view style="margin-right: 32rpx;" bindtap="bgClick">
+			<image src='../../../assets/image/back.png' style="width: 28rpx;height:28rpx;" class="box2ss"></image>
+		</view>
+	</view>
+</view>
+<view class="bg" style='display:{{display}} '></view>
+<view class="bottom-button" style='display:{{display}} '>
+    <view class="button">班级选择</view>
+    <view class="last-line"></view>
+   <scroll-view scroll-y style="height: 600rpx">
+    <view >
+        <block wx:for="{{type}}" wx:key="index">
+			<view  class="type">
+				<view class="circle"></view>
+            <view class="type-item {{index == currentIndex?'active':''}}"
+            bind:tap="itemClick" data-index="{{index}}"
+            >{{item}}</view>
+			</view>
+			<view class="line"></view>
+        </block>
+    </view>
+   </scroll-view>
+</view>
+

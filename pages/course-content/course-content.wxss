@@ -1,0 +1,131 @@
+/* pages/course-content/course-content.wxss */
+page {
+    background-color: #184571;
+	overflow: hidden;
+}
+.box {
+    position: relative;
+    top: -30rpx;
+    height: 100vh;
+    border: 2rpx solid #F5F5F5;
+    border-top-left-radius:50rpx;
+    border-top-right-radius:50rpx;
+    background-color: #F5F5F5;
+}
+.box1 {
+	height: 160rpx;
+	background: #FFFFFF;
+	border-radius: 30rpx 30rpx 0rpx 0rpx;
+	margin-left: 32rpx;
+	margin-top: 32rpx;
+	margin-right: 32rpx;
+	display: flex;
+	flex-direction: column;
+}
+.box1-text {
+	height: 48rpx;
+	font-size: 34rpx;
+	font-family: PingFang SC;
+	font-weight: bold;
+	line-height: 46rpx;
+	color: #333333;
+	opacity: 1;
+	margin-top: 32rpx;
+	margin-left: 32rpx;
+	margin-bottom: 8rpx;
+	align-items: center;
+}
+.box1-item {
+	display: flex;
+	align-items: center;
+	margin-left: 32rpx;
+	margin-right: 32rpx;
+}
+.boxitem {
+	display: flex;
+}
+.boxitem1 {
+	font-size: 28rpx;
+	font-family: PingFang SC;
+	font-weight: 400;
+	line-height: 46rpx;
+	color: #999999;
+	opacity: 1;
+	margin-left: 8rpx;
+}
+.boxitemimage {
+	display: flex;
+	align-items: center;
+}
+.imagefisrt {
+	align-items: center;
+}
+.box1-item {
+	display: flex;
+	justify-content: space-between;
+}
+.state {
+	font-size: 28rpx;
+	font-family: PingFang SC;
+	font-weight: 400;
+	line-height: 46rpx;
+	color: #F25A43;
+	opacity: 1;
+}
+.box2 {
+	height: 160rpx;
+	background: #FFFFFF;
+	opacity: 1;
+	border-radius: 0rpx 0rpx 30rpx 30rpx;
+	margin-left: 32rpx;
+	margin-right: 32rpx;
+	margin-top: 2rpx;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+.box2view {
+	margin-left: 28rpx;
+}
+.large {
+	height: 48rpx;
+	font-size: 34rpx;
+	font-family: PingFang SC;
+	font-weight: 400;
+	line-height: 46rpx;
+	color: #333333;
+	opacity: 1;
+}
+.small {
+	height: 40rpx;
+	font-size: 28rpx;
+	font-family: PingFang SC;
+	font-weight: 400;
+	line-height: 46rpx;
+	color: #999999;
+	opacity: 1;
+}
+.box3 {
+	height: 160rpx;
+	background: #FFFFFF;
+	opacity: 1;
+	border-radius: 30rpx;
+	margin-top: 32rpx;
+	margin-left: 32rpx;
+	margin-right: 32rpx;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+.box4 {
+	height: 160rpx;
+	background: #FFFFFF;
+	opacity: 1;
+	border-radius: 30rpx;
+	margin-top: 32rpx;
+	margin-left: 32rpx;
+	margin-right: 32rpx;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}

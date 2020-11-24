@@ -1,0 +1,5 @@
+<!--pages/hour/leave/leave.wxml-->
+<by-header  header='{{header}}'></by-header>
+<view class="red">
+    <view >已请假: 0次 /请假次数限制: 10次</view>
+</view>

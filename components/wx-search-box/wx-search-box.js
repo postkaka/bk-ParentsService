@@ -7,6 +7,10 @@ Component({
         search: {
             type: String,
             value: '请输入老师姓名'
+        },
+        color: {
+            type: String,
+            value: '#F5F5F5'
         }
     },
 

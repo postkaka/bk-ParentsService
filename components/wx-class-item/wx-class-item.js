@@ -27,6 +27,42 @@ Component({
         classitemlefticon: {
             type: String,
             value:''
+        },
+        classitemrighttime: {
+            type: String,
+            value:''
+        },
+        classitemrighttype: {
+            type: String,
+            value:''
+        },
+        color2: {
+            type: String,
+            value:''
+        },
+        classitemleftview2:{
+            type: String,
+            value:""
+        },
+        color1: {
+            type: String,
+            value: ""
+        },
+        classitemleftview3: {
+            type: String,
+            value:""
+        },
+        classitemrighttimes: {
+            type: String,
+            value:""
+        },
+        color3: {
+            type: String,
+            value: ''
+        },
+        displays: {
+            type: String,
+            value: ''
         }
     },
 

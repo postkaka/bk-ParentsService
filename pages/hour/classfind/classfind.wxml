@@ -1,0 +1,23 @@
+<!--pages/hour/classfind/classfind.wxml-->
+<by-figure header="{{header}}" title1="{{infor.name}}" title2="{{infor.data}}"  src="{{infor.src}}"></by-figure>
+<view class="box">
+<by-search-box search="请输入班级名称" color="#FFFFFF"></by-search-box>
+<view>
+    <block wx:for="{{classes}}" wx:key="index">
+        <view class="list">
+            <view class="listes">
+                <view class="text">
+                    <view class="text1">班级名称: {{item.name}}</view>
+                    <view>教师: {{item.techer}}</view>
+                </view>
+                <view>
+                    <image src="../../../assets/image/back.png" style='height: 28rpx; width: 28rpx;'></image>
+                </view>
+            </view>
+        </view>
+    </block>
+</view>
+<view class="btn">
+    <view>返回</view>
+</view>
+</view>

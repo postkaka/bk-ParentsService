@@ -1,0 +1,64 @@
+/* pages/hour/classfind/classfind.wxss */
+page {
+    background-color: #184571;
+    overflow: hidden;
+}
+.box {
+    position: relative;
+    top: -30rpx;
+    height: 100vh;
+    border: 2rpx solid #F5F5F5;
+    border-top-left-radius:50rpx;
+    border-top-right-radius:50rpx;
+    background-color: #F5F5F5;
+}
+.list { 
+    height: 152rpx;
+    background: #FFFFFF;
+    border-radius: 30rpx;
+    margin: 32rpx;
+    display: flex;
+    align-items: center;
+}
+.listes {
+    width: 100%;
+    align-items: center;
+    display: flex;
+    margin: 32rpx;
+    justify-content: space-between;
+    height: 40rpx;
+    font-size: 28rpx;
+    font-family: PingFang SC;
+    font-weight: 400;
+    line-height: 46rpx;
+    color: #333333;
+    opacity: 1;
+}
+.text1 {
+    margin-bottom: 8rpx;
+}
+.btn { 
+    position: fixed;
+    bottom: 32rpx;
+    left: 0;
+    right: 0;
+    height: 80rpx;
+    background: #184571;
+    opacity: 1;
+    border-radius: 30rpx;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 32rpx;
+    margin-left: 32rpx;
+}
+.btn view {
+    align-items: center;
+    height: 48rpx;
+    font-size: 34rpx;
+    font-family: PingFang SC;
+    font-weight: 400;
+    line-height: 48rpx;
+    color: #FFFFFF;
+    opacity: 1;
+}

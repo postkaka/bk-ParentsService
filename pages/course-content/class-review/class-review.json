@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+	   "by-figure":"../../../components/wx-figure/wx-figure"
+  },
+  "navigationStyle":"custom"
+}

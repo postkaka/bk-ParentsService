@@ -1,0 +1,17 @@
+/* pages/hour/leave/leave.wxss */
+page {
+    background-color: #FFFFFF;
+}
+.red {
+    background-color: red;
+    height: 80rpx;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.red view {
+    align-items: center;
+    font-size: 28rpx;
+    font-family: PingFang SC;
+}

@@ -73,3 +73,6 @@ page {
 .none {
     display: none;
 } 
+.hour {
+    margin-top: 65rpx;
+}

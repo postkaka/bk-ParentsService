@@ -103,6 +103,10 @@ Component({
         firstsscolor: {
             type: String,
             value: '#F25A43'
+        },
+        listitemsolt: {
+            type: String,
+            value: ""
         }
 
     },

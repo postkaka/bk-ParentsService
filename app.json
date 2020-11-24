@@ -13,7 +13,11 @@
         "pages/mine/minepage/information/information",
         "pages/hour/hour",
         "pages/hour/homework/homework",
-        "pages/hour/classhour/classhour"
+        "pages/hour/classhour/classhour",
+        "pages/hour/classfind/classfind",
+        "pages/hour/leave/leave",
+        "pages/course-content/course-content",
+        "pages/course-content/class-review/class-review"
     ],
     "sitemapLocation": "sitemap23.json",
     "tabBar": {
