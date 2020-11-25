@@ -11,8 +11,8 @@
 	<view class="box2">
 		<view class="box2view large">{{classinfor.message}}</view>
 		<view class="box2image">
-			<view class="box2images">详情</view>
-			<view class="box2s">
+			<view class="box2images" bindtap="messageClick">详情</view>
+			<view class="box2s" bindtap="messageClick">
 				<image src='../../../assets/image/back.png' style="width: 28rpx;height:28rpx;" class="box2ss"></image>
 			</view>
 		</view>

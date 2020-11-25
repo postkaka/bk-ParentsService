@@ -1,0 +1,229 @@
+/* pages/course-content/homework-correcting/homework-correcting.wxss */
+page {
+    background-color: #184571;
+	overflow: hidden;
+}
+.box {
+    position: relative;
+    top: -30rpx;
+    height: 100vh;
+    border: 2rpx solid #F5F5F5;
+    border-top-left-radius:50rpx;
+    border-top-right-radius:50rpx;
+    background-color: #F5F5F5;
+    padding-top: 32rpx;
+    padding-left: 32rpx;
+    padding-right: 32rpx;
+    font-size: 28rpx;
+    font-family: PingFang SC;
+    font-weight: 400;
+    color: #333333;
+    opacity: 1;
+}
+.box1 {
+    height: 208rpx;
+    background: #FFFFFF;
+    opacity: 1;
+    border-radius: 30rpx 30rpx 0rpx 0rpx;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 32rpx;
+}
+.newbox1 {
+    height: 470rpx;
+    background: #FFFFFF;
+    opacity: 1;
+    border-radius: 30rpx;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 32rpx;
+}
+.box2 {
+    height: 104rpx;
+    background: #FFFFFF;
+    opacity: 1;
+    border-radius: 0px 0px 30rpx 30rpx;
+    margin-top: 2rpx;
+    display: flex;
+    align-items: center;
+    padding-left: 32rpx;
+}
+.box3 { 
+    height: 48rpx;
+    font-size: 34rpx;
+    font-family: PingFang SC;
+    font-weight: bold;
+    line-height: 46rpx;
+    color: #333333;
+    margin-top: 32rpx;
+    margin-bottom: 16rpx;
+}
+.box4 {
+    height: 152rpx;
+    background: #FFFFFF;
+    opacity: 1;
+    border-radius: 30rpx;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 32rpx;
+}
+.box5 {
+    height: 104rpx;
+    background: #FFFFFF;
+    opacity: 1;
+    border-radius: 30rpx 30rpx 0rpx 0rpx;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 32rpx;
+    padding-right: 32rpx;
+}
+.sarimage {
+    display: flex;
+    align-items: center;
+}
+.sarimage image {
+    align-items: center;
+    margin-left: 21rpx;
+}
+.box6 {
+    margin-top: 2rpx;
+    height: 152rpx;
+    background: #FFFFFF;
+    opacity: 1;
+    border-radius: 0rpx 0rpx 30rpx 30rpx;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 32rpx;
+}
+.colordark {
+    color: #999999;
+    margin-top: 8rpx;
+}
+.box1-view {
+    display: flex;
+    align-items: center;
+}
+.fixed {
+	width: 76rpx;
+	height: 28rpx;
+	background: #F25A43;
+	opacity: 1;
+	border-radius: 14rpx;
+	font-size: 22rpx;
+	font-family: PingFang SC;
+	font-weight: 400;
+	color: #FFFFFF;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-left: 16rpx;
+}
+.box1-views {
+    display: flex;
+}
+.box1-views-view {
+    display: flex;
+    align-items: center;
+}
+.box1-views-view image {
+    align-content: center;
+}
+.classname {
+    font-size:28rpx;
+    margin-top: 8rpx;
+    margin-bottom: 8rpx;
+}
+.box1-views-views {
+    margin-left: 59rpx;
+}
+.none {
+    display: none;
+}
+.imaget2 {
+    margin-left: 16rpx;
+}
+.vioce {  
+    width: 120rpx;
+    height: 38rpx;
+    background: #F25A43;
+    opacity: 1;
+    border-radius: 19px;
+    display: flex;
+}
+.vioce view {
+    margin-left: 10rpx;
+    color: #FFFFFF;
+}
+.lastbox {
+    margin-top: 32rpx;
+}
+.imaget {
+    margin-top: 16rpx;
+    margin-bottom: 16rpx;
+}
+.btn {
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: 32rpx;
+    display: flex;
+}
+.compile {
+    width: 327rpx;
+    height: 80rpx;
+    background: #184571;
+    opacity: 1;
+    border-radius: 30rpx;
+    margin-left: 32rpx;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    font-size: 34rpx;
+    font-family: PingFang SC;
+    font-weight: 400;
+    color: #FFFFFF;
+    }
+.delete {
+    width: 327rpx;
+    height: 80rpx;
+    background: #FFFFFF;
+    opacity: 1;
+    border-radius: 30rpx;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 34rpx;
+    font-family: PingFang SC;
+    font-weight: 400;
+    color: #184571;
+}
+.newdelete {
+    display: flex;
+}
+.newcompile {
+    width: 442rpx;
+    height: 80rpx;
+    background: #184571;
+    opacity: 1;
+    border-radius: 30rpx;
+    margin-left: 32rpx;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    font-size: 34rpx;
+    font-family: PingFang SC;
+    font-weight: 400;
+    color: #FFFFFF;
+    }
+.lastimage {
+    margin-right: 32rpx;
+    }
+.newdelete image {
+    margin-left: 16rpx;
+}

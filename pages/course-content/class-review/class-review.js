@@ -33,6 +33,11 @@ Page({
             display: ""
         })
     },
+    messageClick(){
+        wx.navigateTo({
+          url: '../splendid-moment/splendid-moment',
+        })
+    },
 
     /**
      * 生命周期函数--监听页面加载

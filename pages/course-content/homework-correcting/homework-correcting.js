@@ -1,13 +1,13 @@
-// pages/course-content/course-content.js
+// pages/course-content/homework-correcting/homework-correcting.js
 Page({
 
     /**
      * 页面的初始数据
      */
     data: {
-		header: {
+        header: {
 		    homeCapsule: true,
-		    title: '在学课程',
+		    title: '我的课时',
 		    fontColor: "#FFFFFF",
 		    headerbg: '#184571',
 		    hiddenBlock: false,
@@ -18,38 +18,45 @@ Page({
 		    src:"../../assets/image/head.png",
 		    name:"测试班级 学员: 冰冰",
 		    data:'2020-03-16'
-		  },
-		classinfor: {
-			name:"测试班级",
-			time:"周一 09:10~10:10",
-			state:"到课迟到",
-			business:"教程大纲",
-			businessthing:"无",
-			homework:"作业",
-			homeworkthing:"无",
-			remark:"课堂点评",
-			remarkthing:'点评人: 任生 2020-05-27 周三'
+        },
+        correct:{
+            item:'很好',
+            time:'2020-05-20 09:42',
+            number: 5,
+            submittime:"2020-05-20 16:11",
+            submit:'136',
+            particulars:'121',
+            classname:'测试班级',
+            name:'124',
+            type: 1,
+            lasttime:"2020-05-19 周二"
+        },
+        id:0,
+        click:1,
+        compile:'编辑'
     },
-    homework:[{name:'新作业',type:1,time:"2020-05-13 周三"},{name:'123',type:1,time:"2020-05-13 周三"}]
+    compileClick(){
+        if(this.data.click == 1){
+            this.setData({
+                click: 0,
+                compile:"提交"
+            })
+        }else{
+            this.setData({
+                click: 1,
+                compile:"编辑"
+            })
+        }
+      
     },
-	remarkClick(){
-		wx.navigateTo({
-      url: '../course-content/class-review/class-review',
-    })
-  },
-  itemClick(e){
-    let id = e.currentTarget.dataset.index
-    console.log(e.currentTarget)
-    wx.navigateTo({
-      url: '../course-content/homework-correcting/homework-correcting?id=' + id,
-    })
-  },
 
     /**
      * 生命周期函数--监听页面加载
      */
     onLoad: function (options) {
-
+        this.setData({
+            id : options.id
+        })
     },
 
     /**

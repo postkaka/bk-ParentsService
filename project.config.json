@@ -52,8 +52,8 @@
         "miniprogram": {
             "list": [
                 {
-                    "name": "pages/course-content/class-review/class-review",
-                    "pathName": "pages/course-content/class-review/class-review",
+                    "name": "pages/grade/grade",
+                    "pathName": "pages/grade/grade",
                     "query": "",
                     "scene": null
                 }

@@ -1,0 +1,65 @@
+<!--pages/course-content/homework-correcting/homework-correcting.wxml-->
+<by-figure header="{{header}}" title1="{{infor.name}}" title2="{{infor.data}}"  src="{{infor.src}}"></by-figure>
+<view class="box">
+    <view class="{{id == 0? 'box1':'newbox1'}}">
+        <view class="box1-view">
+            <view style="font-size:34rpx;font-weight: bold;">{{correct.name}}</view>
+            <view class="{{correct.type == 1?'fixed':'none'}}">必做</view>
+        </view>
+        <view class="classname">班级名称: {{correct.classname}}</view>
+        <view class="box1-views">
+            <view style="font-size:28rpx;">最晚提交时间: {{correct.lasttime}}</view>
+            <view class="box1-views-view">
+                <view style="font-size:28rpx; color:#F25A43" class="box1-views-views">展开详情</view>
+                <view>
+                    <image src="../../../assets/image/pack.png" style="height: 28rpx; width: 28rpx"></image>
+                </view>
+            </view>
+        </view>
+        <view class="{{id == 0? 'none':'lastbox'}}">
+            <view>自我进行评价可以有舞蹈</view>
+            <view class="imaget">
+                <image src="../../../assets/image/t1.png" style='height: 120rpx;width: 120rpx'></image>
+                <image src="../../../assets/image/t2.png" style='height: 120rpx;width: 120rpx' class="imaget2"></image>
+            </view>
+            <view class="vioce">
+                <view>
+                    <image src="../../../assets/image/t3.png" style="height:22rpx;width:22rpx"></image>
+                </view>
+                <view>4s</view>
+            </view>
+        </view>
+    </view>
+    <view class="box2 {{id == 0? '':'none'}}">
+        <view>{{correct.particulars}}</view>
+    </view>
+    <view class="box3">提交内容</view>
+    <view class="box4">
+        <view class="fisrt">{{correct.submit}}</view>
+        <view class="colordark">{{correct.submittime}}</view>
+    </view>
+   <view class="{{id == 0? '':'none'}}">
+    <view class="box3">批改内容</view>
+    <view class="box5">
+        <view>作业质量</view>
+        <view class="sarimage">
+           <block wx:for="{{correct.number}}" wx:key="index">
+            <image src="../../../assets/image/sar.png" style="height: 35rpx; width: 36rpx"></image>
+           </block>
+        </view>
+    </view>
+    <view class="box6">
+        <view class="fisrt">{{correct.item}}</view>
+        <view class="colordark">{{correct.time}}</view>
+    </view>
+   </view>
+</view>
+<view class="{{id == 0? 'none':'btn'}}">
+    <view class="{{click == 0? 'none':'delete'}}">删除</view>
+    <view class="{{click == 1? 'none':'newdelete'}}">
+        <image src="../../../assets/image/d1.png" style="width: 60rpx;height: 60rpx"></image>
+        <image src="../../../assets/image/d2.png" style="width: 60rpx;height: 60rpx"></image>
+        <image src="../../../assets/image/d3.png" style="width: 60rpx;height: 60rpx" class="lastimage"></image>
+    </view>
+    <view class="{{click == 0? 'newcompile':'compile'}}" bindtap="compileClick">{{compile}}</view>
+</view>

@@ -17,9 +17,26 @@
 		<view class="box2view large">{{classinfor.business}}</view>
 		<view class="box2view small">{{classinfor.businessthing}}</view>
 	</view>
-	<view class="box3">
+	<view class="{{homework == []?'box3': 'newbox3'}}">
 		<view class="box2view large" style="font-weight: bold;">{{classinfor.homework}}</view>
-		<view class="box2view small">{{classinfor.homeworkthing}}</view>
+		<view class="box2view small {{homework == []?'': 'none'}}">{{classinfor.homeworkthing}}</view>
+	</view>
+	<view class="{{homework == []?'none': ''}}">
+		<block  wx:for="{{homework}}" wx:key="index">
+			<view class="{{index == homework.length-1? 'lasthomework':'homework'}}">
+				<view class="homework-item">
+					<view class="homework-itemview">
+						<view>作业名称: {{item.name}}</view>
+						<view class="{{item.type == 1?'fixed':'none'}}">必做</view>
+					</view>
+					<view class="homework-item-view">截止日期: {{item.time}}</view>
+				</view>
+				<view class="homework-image" bindtap="itemClick"  data-index="{{index}}">
+					<image src="../../assets/image/back.png" style="height: 28rpx; width: 28rpx"></image>
+				</view>
+			
+			</view>
+		</block>
 	</view>
 	<view class="box4">
 		<view>

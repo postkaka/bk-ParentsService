@@ -1,0 +1,28 @@
+<!--pages/grade/grade.wxml-->
+<by-header header="{{header}}"></by-header>
+<view class="tab"></view>
+<by-tab course="{{course}}" ></by-tab>
+<view class="btn" bindtap="btnClick">
+    <view>学科选择</view>
+    <view class="btnimage">
+        <image src="../../assets/image/back.png" style="height: 28rpx; width: 28rpx"></image>
+    </view>
+</view>
+<view class="bg" style='display:{{display}} '></view>
+<view class="bottom-button" style='display:{{display}} '>
+    <view class="button">班级选择</view>
+    <view class="last-line"></view>
+   <scroll-view scroll-y style="height: 600rpx">
+    <view >
+        <block wx:for="{{type}}" wx:key="index">
+			<view  class="type">
+				<view class="circle"></view>
+            <view class="type-item {{index == currentIndex?'active':''}}"
+            bind:tap="itemClick" data-index="{{index}}"
+            >{{item}}</view>
+			</view>
+			<view class="line"></view>
+        </block>
+    </view>
+   </scroll-view>
+</view>

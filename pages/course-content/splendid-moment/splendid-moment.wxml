@@ -1,0 +1,31 @@
+<!--pages/course-content/splendid-moment/splendid-moment.wxml-->
+<by-figure header="{{header}}" title1="{{infor.name}}" title2="{{infor.data}}"  src="{{infor.src}}"></by-figure>
+<view class="box">
+    <view class="box1 bor">
+        <view class="box1-text">课堂点评</view>
+    </view>
+    <view class="box2 bor">
+        <view class="box-view">{{classitem.name}}</view>
+        <view class="box-image">
+            <view >
+                <block wx:for="{{classitem.number}}" wx:key="index">
+                    <image src='../../../assets/image/sar.png' style="height:35rpx;width:36rpx"></image>
+                </block>
+            </view>
+            <view class='box-image-view'>{{classitem.evaluate}}</view>
+        </view>
+    </view>
+    <view class="box3 bor">
+        <view class="box3-item fisrt color">{{classitem.evaluatename}}:</view>
+        <view class="box3-item">{{classitem.evaluates}}</view>
+        <view class="box3-item last color">{{classitem.evaluatetime}}</view>
+    </view>
+    <view class="box4 bor">
+        <view class="box3-item fisrt">我回复:</view>
+        <view class="box3-item">{{classitem.mineevaluates}}</view>
+        <view class="box3-item last color">{{classitem.mineevaluatetime}}</view>
+    </view>
+</view>
+<view class="btn">
+    <view>分享点评</view>
+</view>

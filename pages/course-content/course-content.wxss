@@ -125,7 +125,80 @@ page {
 	margin-top: 32rpx;
 	margin-left: 32rpx;
 	margin-right: 32rpx;
+	margin-bottom: 32rpx;
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
+}
+.newbox3 {
+	height: 112rpx;
+	background: #FFFFFF;
+	opacity: 1;
+	border-radius: 30rpx 30rpx 0rpx 0rpx;
+	margin-top: 32rpx;
+	margin-left: 32rpx;
+	margin-right: 32rpx;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+.none {
+	display: none;
+}
+.homework {
+	height: 152rpx;
+	margin-left: 32rpx;
+	margin-right: 32rpx;
+	margin-top: 2rpx;
+	background: #FFFFFF;
+	opacity: 1;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.lasthomework {
+	margin-left: 32rpx;
+	margin-right: 32rpx;
+	margin-top: 2rpx;
+	height: 152rpx;
+	background: #FFFFFF;
+	opacity: 1;
+	border-radius: 0rpx 0rpx 30rpx 30rpx;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.homework-item {
+	margin-left: 32rpx;
+	font-size: 28rpx;
+	font-family: PingFang SC;
+	font-weight: 400;
+	color: #333333;
+}
+.homework-image {
+	align-items: center;
+	margin-right: 32rpx;
+}
+.homework-item-view {
+	margin-top: 8rpx;
+	color: #999999;
+}
+.fixed {
+	width: 76rpx;
+	height: 28rpx;
+	background: #F25A43;
+	opacity: 1;
+	border-radius: 14rpx;
+	font-size: 22rpx;
+	font-family: PingFang SC;
+	font-weight: 400;
+	color: #FFFFFF;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-left: 16rpx;
+}
+.homework-itemview {
+	display: flex;
+	align-items: center;
 }

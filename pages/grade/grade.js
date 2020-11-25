@@ -1,49 +1,28 @@
-// pages/course-content/course-content.js
+// pages/grade/grade.js
 Page({
 
     /**
      * 页面的初始数据
      */
     data: {
-		header: {
+        header: {
 		    homeCapsule: true,
-		    title: '在学课程',
-		    fontColor: "#FFFFFF",
-		    headerbg: '#184571',
+		    title: '我的成绩',
+		    fontColor: "#333333",
+		    headerbg: '#F5F5F5',
 		    hiddenBlock: false,
 		    slot: false,
 		    src:'../../assets/image/fsback.png'
-		},
-		infor:{
-		    src:"../../assets/image/head.png",
-		    name:"测试班级 学员: 冰冰",
-		    data:'2020-03-16'
-		  },
-		classinfor: {
-			name:"测试班级",
-			time:"周一 09:10~10:10",
-			state:"到课迟到",
-			business:"教程大纲",
-			businessthing:"无",
-			homework:"作业",
-			homeworkthing:"无",
-			remark:"课堂点评",
-			remarkthing:'点评人: 任生 2020-05-27 周三'
+        },
+        course:["全部成绩","机构成绩","学校成绩"],
+        display:"none",
+        type:["创意美术","素描"]
     },
-    homework:[{name:'新作业',type:1,time:"2020-05-13 周三"},{name:'123',type:1,time:"2020-05-13 周三"}]
+    btnClick(){
+        this.setData({
+            display:""
+        })
     },
-	remarkClick(){
-		wx.navigateTo({
-      url: '../course-content/class-review/class-review',
-    })
-  },
-  itemClick(e){
-    let id = e.currentTarget.dataset.index
-    console.log(e.currentTarget)
-    wx.navigateTo({
-      url: '../course-content/homework-correcting/homework-correcting?id=' + id,
-    })
-  },
 
     /**
      * 生命周期函数--监听页面加载

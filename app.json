@@ -17,7 +17,10 @@
         "pages/hour/classfind/classfind",
         "pages/hour/leave/leave",
         "pages/course-content/course-content",
-        "pages/course-content/class-review/class-review"
+        "pages/course-content/class-review/class-review",
+        "pages/course-content/splendid-moment/splendid-moment",
+        "pages/course-content/homework-correcting/homework-correcting",
+        "pages/grade/grade"
     ],
     "sitemapLocation": "sitemap23.json",
     "tabBar": {

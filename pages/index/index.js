@@ -87,6 +87,14 @@ Page({
           wx.navigateTo({
             url: '../hour/homework/homework?type=1',
           })
+      }else if(id == 1){
+          wx.navigateTo({
+            url: '../course-content/class-review/class-review',
+          })
+      }else if(id == 2){
+        wx.navigateTo({
+          url: '../grade/grade',
+        })
       }
         
     },
