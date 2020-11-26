@@ -1,0 +1,58 @@
+<!--pages/apply/apply.wxml-->
+<by-figure header="{{header}}" title1="{{infor.name}}" title2="{{infor.data}}"  src="{{infor.src}}" imagedisplay="" class="{{type == 1?'':'none'}}"></by-figure>
+<by-header header="{{header}}" class="{{type == 0?'':'none'}}"></by-header>
+<view class="{{type == 0?'viewitem':'none'}}">
+	<view class="circle">
+		<image src="../../assets/image/circle.png" style="height: 170rpx;width:170rpx"></image>
+	</view>
+	<view class="circle-view">报名成功</view>
+	<view>您已成功报名此课程，可以去听课啦！</view>
+</view>
+<view class="{{type == 1?'box':'newbox'}}" >
+	<view class=" {{type == 1?'box1':'none'}}">支付方式</view>
+	<view class=" {{type == 1?'box2':'none'}}">
+		<view class="box2-box show">
+			<view class="box2-box-image">
+				<image src="../../assets/image/applybanke.png"  style="width: 92px;height: 92px"></image>
+			</view>
+			<view class="box2-view">余额支付</view>
+		</view>
+		<view class="box2-box drak last">
+			<view class="box2-box-image">
+				<image src="../../assets/image/applyweixi-1.png"  style="width: 92rpx;height: 92rpx"></image>
+			</view>
+			<view class="box2-view">微信支付</view>
+		</view>
+	</view>
+	<view class="{{type == 0?'':'none'}}"></view>
+	<view class=" {{type == 1?'box3':'newbox3'}}">报名课程</view>
+	<by-class-item classitemimage="{{infors.src}}" imagedisplay="" width="120" displays="none" classitemleftview="{{infors.name}}"
+	classitemlefticon="../../assets/image/calendar.png" classitemlefttime="{{infors.time}}" color2="#999999" fontsize1="28" fontsize2="24"
+	fontweight1="bold"
+	></by-class-item>
+	<view class="line first"></view>
+	<view class="{{type == 1?'boxitem':'none'}}">教师: {{infors.teacher}}</view>
+	<view class="{{type == 1?'line':'none'}}"></view>
+	<by-list listitemfirst="课程总额:" fontsize="24" listitemsecondfirst="{{infors.price}}" colors="#F25A43" right="32" left="32"
+	class="{{type == 1?'':'none'}}"
+	></by-list>
+	<by-list listitemfirst="优惠券:" fontsize="24" listitemsecondfirst="{{infors.apply}}" colors="#999999" right="32" left="32"
+	displays="" images="../../assets/image/back.png" class="{{type == 1?'':'none'}}"
+	></by-list>
+	<by-list listitemfirst="总合计:" fontsize="28" fontweight="bold" listitemsecondfirst="{{infors.price}}" colors="#F25A43"
+	fontweights="bold" fontsizes="28" displayss="none" class="{{type == 1?'':'none'}}"
+	></by-list>
+	<view class=" {{type == 1?'btn':'none'}}" bindtap="btnClick">确认</view>
+	<by-list listitemfirst="报名学员:" fontsize="24" listitemsecondfirst="{{infor.name}}"  right="32" left="32"
+	class="{{type == 0?'':'none'}}"
+	></by-list>
+	<by-list listitemfirst="联系电话:" fontsize="24" listitemsecondfirst="{{infor.data}}"  right="32" left="32"
+	class="{{type == 0?'':'none'}}"
+	></by-list>
+	<by-list listitemfirst="报名费用:" fontsize="24" listitemsecondfirst="{{infors.price}}"  right="32" left="32"
+	class="{{type == 0?'':'none'}}"
+	></by-list>
+	<by-list listitemfirst="支付方式:" fontsize="24" listitemsecondfirst="微信支付"  right="32" left="32"
+	class="{{type == 0?'':'none'}}"
+	></by-list>
+</view>

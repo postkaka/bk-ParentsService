@@ -52,8 +52,8 @@
         "miniprogram": {
             "list": [
                 {
-                    "name": "pages/grade/grade",
-                    "pathName": "pages/grade/grade",
+                    "name": "pages/apply/apply",
+                    "pathName": "pages/apply/apply",
                     "query": "",
                     "scene": null
                 }

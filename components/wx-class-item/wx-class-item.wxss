@@ -26,6 +26,7 @@
     margin-left: 16rpx;
     display: flex;
     flex-direction: column;
+    justify-content: center;
 }
 .class-item-left-images-view {
     display: flex;

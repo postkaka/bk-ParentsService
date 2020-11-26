@@ -63,6 +63,22 @@ Component({
         displays: {
             type: String,
             value: ''
+        },
+        width: {
+            type: String,
+            value: '88'
+        },
+        fontsize1: {
+            type: String,
+            value: '28'
+        },
+        fontsize2: {
+            type: String,
+            value: '28'
+        },
+        fontweight1: {
+            type: String,
+            value:''
         }
     },
 

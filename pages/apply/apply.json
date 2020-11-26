@@ -1,0 +1,9 @@
+{
+  "usingComponents": {
+     "by-figure":"../../../components/wx-figure/wx-figure",
+     "by-class-item":"../../components/wx-class-item/wx-class-item",
+     "by-list":"../../components/wx-list/wx-list",
+     "by-header":"../../components/wx-header/header"
+  },
+  "navigationStyle":"custom"
+}

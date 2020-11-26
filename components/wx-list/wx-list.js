@@ -107,6 +107,14 @@ Component({
         listitemsolt: {
             type: String,
             value: ""
+        },
+        fontweights: {
+            type: String,
+            value:''
+        },
+        fontsizes: {
+            type: String,
+            value:''
         }
 
     },

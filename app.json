@@ -20,7 +20,8 @@
         "pages/course-content/class-review/class-review",
         "pages/course-content/splendid-moment/splendid-moment",
         "pages/course-content/homework-correcting/homework-correcting",
-        "pages/grade/grade"
+        "pages/grade/grade",
+        "pages/apply/apply"
     ],
     "sitemapLocation": "sitemap23.json",
     "tabBar": {

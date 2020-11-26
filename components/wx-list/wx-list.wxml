@@ -21,7 +21,7 @@
             </view>
         </view>
         <view class="list-item-second">
-            <view class="list-item-second-first" style="color:{{colors}}">{{listitemsecondfirst}}</view>
+            <view class="list-item-second-first" style="color:{{colors}};font-weight:{{fontweights}}; font-size:{{fontsizes}}rpx">{{listitemsecondfirst}}</view>
             <view class="list-item-second-second">
                 <image src="{{images}}" style="height: 28rpx; width: 28rpx; display:{{displays}}" class="list-item-second-second-image"></image>
                 <view>{{listitemsecondsecond}}</view>
