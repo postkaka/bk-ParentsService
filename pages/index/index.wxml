@@ -1,7 +1,11 @@
 <!--pages/index/index.wxml-->
 <view class="page"  style="padding-top:{{statusBarHeight}}rpx">
-<view class="nav"></view>
-<!--轮播-->
+
+<scroll-view style="height:100vh" scroll-y="true" 
+              scroll-with-animation="true" scroll-top="{{topPosition}}"
+              bindscroll="scrollPosition" > 
+<view>
+    <!--轮播-->
 <view>
     <swiper autoplay="true" style="height: 451rpx">
         <block wx:for="{{background}}" wx:key="*this">
@@ -11,8 +15,10 @@
         </block>
     </swiper>
 </view>
+
 <!--背景图-->
- <view class="box">
+<view class="box">
+
 <!--精选课程-->
 <view class="choosebox">
     <view class="choiceness" bind:tap="courseClick">
@@ -35,18 +41,24 @@
 </view>
 <!--教学老师-->
 <by-more text="教学老师" bind:tap="teacherClick"></by-more>
-<by-more-item item="{{item}}" bind:tap="teachersClick"></by-more-item>
+<by-more-item item="{{item}}" bind:tap="teachersClick" ></by-more-item>
 <!--学员风采-->
 <by-more text="学员风采" bind:tap="studentClick"></by-more>
-<by-more-items item="{{stu}}" bind:tap="studentsClick"></by-more-items>
+<by-more-items item="{{stu}}" bind:tap="studentsClick" bind:imageLoad="loadover"></by-more-items>
 <!--推荐课程-->
-<view class="tabs ">
-<by-tab course="{{course}}"></by-tab>   
+<view class="tabs">
+    <by-tab course="{{course}}" class='tab-control'></by-tab> 
 </view>
-<scroll-view class='content' scroll-y>
-<by-more-course item="{{items}}"></by-more-course>
-</scroll-view> 
+<!-- 占位 -->
+<view  wx:if="{{showTabControl}}">
+    <by-tab course="{{course}}" class='tab-control-temp' ></by-tab> 
+</view>
+    <by-more-course item="{{items}}" ></by-more-course>
+
 </view>
 </view>
+</scroll-view>
+</view>
+
 
 

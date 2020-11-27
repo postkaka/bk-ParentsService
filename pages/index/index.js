@@ -18,7 +18,7 @@ Page({
             {src:"../../assets/image/homework.png",url:''}
             
         ],
-        course:["推荐课程","国学","美术","声乐","书法","舞蹈","口才"],
+        course:["推荐","国学","美术","声乐","书法","舞蹈","口才","国学","美术","声乐","书法","舞蹈","口才","国学","美术","声乐","书法","舞蹈","口才"],
         item:[
             {name:"某某某",introduce:"曾获得XXXXXX奖",image:"../../assets/components-image/t1.png"},
             {name:"某某某",introduce:"曾获得XXXXXX奖",image:"../../assets/components-image/t2.png"},
@@ -37,15 +37,31 @@ Page({
             {name:"风采标题",title:"李冰冰",introduce:"风采详情风采详情风采详情",image:"../../assets/components-image/x1.png"},
             {name:"风采标题",title:"李冰冰",introduce:"风采详情风采详情风采详情",image:"../../assets/components-image/x1.png"}
         ],
-        scrollTop:0
+        isFiexd:false,
+        tabScrollTop:0
     },
-    onPageScroll: function(e){
-        // console.log(e)
-        this.setData({
-            scrollTop: e.scrollTop
-        })
-        // console.log(this.data.scrollTop)
+    scrollPosition(e) {
+      wx.createSelectorQuery().select('.tab-control').boundingClientRect((rect) => {
+        // console.log(rect.top)
+        if(rect.top < 0 ){
+          this.setData({
+            showTabControl: true
+          })
+        }else {
+          this.setData({
+            showTabControl: false
+          })
+        }
+      }).exec()
     },
+    //监听推荐的图片加载完成
+  // loadover(){
+  //   //获取某个控件距离顶部的高度
+  //   this.createSelectorQuery().select('.tab-control').boundingClientRect(rect =>{
+  //     this.data.showTabControl=rect.top;
+  //   }).exec();
+  // },
+  
     courseClick(){
         console.log("跳转到精选课程页")
         wx.switchTab({
@@ -96,13 +112,13 @@ Page({
           url: '../grade/grade',
         })
       }
-        
     },
+ 
     /**
      * 生命周期函数--监听页面加载
      */
     onLoad: function (options) {
-
+     
     },
 
     /**
@@ -146,7 +162,6 @@ Page({
     onReachBottom: function () {
 
     },
-
     /**
      * 用户点击右上角分享
      */

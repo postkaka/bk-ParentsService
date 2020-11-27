@@ -7,7 +7,11 @@ Component({
         item:{
             type: Array,
             value: ''
-        }
+        },
+        recommends: {
+            type: Array,
+            value: []
+          }
     },
 
     /**
@@ -21,6 +25,8 @@ Component({
      * 组件的方法列表
      */
     methods: {
-
+        onImageLoad() {
+            this.triggerEvent('imageLoad', {}, {})
+          }
     }
 })
