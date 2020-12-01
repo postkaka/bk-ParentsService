@@ -52,8 +52,8 @@
         "miniprogram": {
             "list": [
                 {
-                    "name": "pages/apply/apply",
-                    "pathName": "pages/apply/apply",
+                    "name": "pages/discount-coupon/mine-coupon/mine-coupon",
+                    "pathName": "pages/discount-coupon/mine-coupon/mine-coupon",
                     "query": "",
                     "scene": null
                 }

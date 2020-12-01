@@ -39,3 +39,12 @@
     font-weight: Regular;
     line-height: 40rpx;
 }
+.headitem {
+    z-index: 9;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    text-align: center;
+    margin-top: 280rpx;
+}

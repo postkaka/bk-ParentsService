@@ -113,7 +113,12 @@ Page({
         })
       }
     },
- 
+    discountClick(){
+      console.log("跳转优惠礼券")
+      wx.navigateTo({
+        url: '../discount-coupon/discount-coupon',
+      })
+    },
     /**
      * 生命周期函数--监听页面加载
      */

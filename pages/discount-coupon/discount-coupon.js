@@ -1,32 +1,31 @@
-// pages/mine/mine.js
+// pages/discount-coupon/discount-coupon.js
 Page({
 
     /**
      * 页面的初始数据
      */
     data: {
-        item:[
-            {src:'../../assets/image/pay.png',title:"待付款"},
-            {src:'../../assets/image/after.png',title:"已报名"},
-            {src:'../../assets/image/after.png',title:"退课/售后"}
-        ]
+        header:{
+            title: '领取优惠券',
+            fontColor: "#333333",
+            headerbg: '#F5F5F5',
+            hiddenBlock: false,
+            slot: false,
+            src:'../../assets/image/fback.png'
+          },
+          infor:[
+              {preferentialPrice:20,nominalPrice:2000,startTime:"2020-05-28",endTime:"2020-05-28",src:"../../assets/image/selective.png",className:"美术XXXX课程"},
+              {preferentialPrice:20,nominalPrice:2000,startTime:"2020-05-28",endTime:"2020-05-28",src:"../../assets/image/selective.png",className:"美术XXXX课程"},
+              {preferentialPrice:20,nominalPrice:2000,startTime:"2020-05-28",endTime:"2020-05-28",src:"../../assets/image/selective.png",className:"美术XXXX课程"}
+          ],
+          display:"none"
     },
-    // 点击跳转登陆页面
-    landingClick(e){
-        wx.navigateTo({
-          url: '../landing/landing',
+    btnClick(){
+        this.setData({
+            display:''
         })
     },
-    informationClick(){
-        wx.navigateTo({
-          url: '../mine/minepage/information/information',
-        })
-    },
-    mineCouponClick(){
-        wx.navigateTo({
-          url: '../discount-coupon/mine-coupon/mine-coupon',
-        })
-    },
+
     /**
      * 生命周期函数--监听页面加载
      */

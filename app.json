@@ -21,7 +21,9 @@
         "pages/course-content/splendid-moment/splendid-moment",
         "pages/course-content/homework-correcting/homework-correcting",
         "pages/grade/grade",
-        "pages/apply/apply"
+        "pages/apply/apply",
+        "pages/discount-coupon/discount-coupon",
+        "pages/discount-coupon/mine-coupon/mine-coupon"
     ],
     "sitemapLocation": "sitemap23.json",
     "tabBar": {

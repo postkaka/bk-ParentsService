@@ -1,0 +1,11 @@
+/* pages/discount-coupon/mine-coupon/mine-coupon.wxss */
+.tab {
+    text-align: center;
+    margin-top: 34rpx;
+}
+.coupon {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 16rpx;
+}

@@ -1,0 +1,26 @@
+<!--components/wx-discount-coupon/wx-discount-coupon.wxml-->
+<view class="{{nub == 1?'coupon':'new-coupon'}}">
+    <view class="{{nub == 1?'coupon-line':'new-coupon-line'}}"></view>
+    <view class="{{nub == 1?'coupon-1':'new-coupon-1'}}">
+        <view class="coupon-1-price">
+            <view class="coupon-1-price-unit">￥</view>
+            <view class="coupon-1-price-item">{{infor.preferentialPrice}}</view>
+        </view>
+        <view class="coupon-1-nominal">满{{infor.nominalPrice}}元可用</view>
+    </view>
+    <view class="{{nub == 1?'coupon-2':'new-coupon-2'}}">
+        <view class="coupon-2-name">
+            <view>
+                <image style="height:48rpx;width:48rpx" src="{{infor.src}}"></image>
+            </view>
+            <view class="coupon-2-name-item">{{infor.className}}</view>
+        </view>
+        <view class="coupon-2-time">{{infor.startTime}}至{{infor.endTime}}</view>
+        <view class="coupon-2-item"> 
+            <view class="coupon-2-item-view">券码</view>
+            <view class="coupon-2-item-view right">去使用</view>
+        </view>
+    </view>
+    <view class="{{nub == 1?'none':'cricle'}}"></view>
+    <view class="{{nub == 1?'none':'cricle-1'}}"></view>
+</view>

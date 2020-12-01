@@ -7,6 +7,10 @@ Component({
         course: {
             type: Array,
             value: ''
+        },
+        left: {
+            type: String,
+            value: "5"
         }
     },
 

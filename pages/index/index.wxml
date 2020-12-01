@@ -28,7 +28,7 @@
         <view class="activity">
             <image src="../../assets/image/activity.png" class="activityimage"></image>
         </view>
-        <view class="discounts">
+        <view class="discounts" bindtap="discountClick">
             <image src="../../assets/image/discounts.png" class="discountsiamge" ></image>
         </view>
     </view>

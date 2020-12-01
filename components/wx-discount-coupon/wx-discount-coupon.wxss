@@ -1,0 +1,183 @@
+.coupon {
+    width: 686rpx;
+    height: 212rpx;
+    opacity: 1;
+    display: flex;
+    align-items: center;
+    position: relative;
+    margin-top: 16rpx;
+    margin-bottom: 16rpx;
+}
+.coupon-1 {
+    height: 212rpx;
+    width: 212rpx;
+    border-top-left-radius:40rpx ;
+    border-bottom-left-radius: 40rpx;
+    background-image:radial-gradient(circle at right top, #184571, #184571 10px, transparent 11px),
+    radial-gradient(circle at right bottom, #184571, #184571 10px, transparent 11px);
+    background-color:#FFFFFF;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+.coupon-1-price-unit {
+    font-size: 50rpx;
+    font-family: DIN;
+    font-weight: 400;
+    line-height: 60rpx;
+    color: #194670;
+}
+.coupon-1-price {
+    display: flex;
+    align-items: baseline;
+    margin-top: 20rpx;
+}
+.coupon-1-price-item {
+    font-size: 81rpx;
+    font-family: DIN;
+    font-weight: bold;
+    color: #194670;
+    opacity: 1;
+}
+.coupon-1-nominal {
+    font-size: 24rpx;
+    font-family: PingFang SC;
+    font-weight: 400;
+    color: #194670;
+    margin-bottom: 22rpx;
+}
+.coupon-line {
+    position: absolute;
+    left: 210rpx;
+    /* height: 180rpx; */
+    margin-top: 10rpx;
+    margin-bottom: 10rpx;
+    border: 2rpx dashed #184571;
+    z-index: 9;
+}
+.coupon-2 {
+    height: 212rpx;
+    width: 474rpx;
+    background-color:#FFFFFF;
+    background-image:radial-gradient(circle at left top, #184571, #184571 10px, transparent 11px),
+    radial-gradient(circle at left bottom, #184571, #184571 10px, transparent 11px);
+    border-top-right-radius:40rpx ;
+    border-bottom-right-radius: 40rpx;
+    flex-direction: column;
+}
+.coupon-2-item {
+    display: flex;
+    justify-content: center;
+}
+.coupon-2-item-view {
+    width: 120rpx;
+    height: 35rpx;
+    background: #FFFFFF;
+    border: 2rpx solid #194670;
+    opacity: 1;
+    border-radius: 18rpx;  
+    font-size: 24rpx;
+    font-family: PingFang SC;
+    font-weight: 400;
+    color: #194670;
+    text-align: center;
+}
+.right {
+    margin-left: 16rpx;
+}
+.coupon-2-time {
+    font-size: 24rpx;
+    font-family: PingFang SC;
+    font-weight: 400;
+    color: #194670;
+    opacity: 1;
+    text-align: center;
+    margin-top: 10rpx;
+    margin-bottom: 16rpx;
+}
+.coupon-2-name {
+    display: flex;
+    justify-content: center;
+    margin-top: 32rpx;
+}
+.coupon-2-name-item {
+    font-size: 34rpx;
+    font-family: PingFang SC;
+    font-weight: bold;
+    color: #184571;
+    opacity: 1;
+    margin-left: 16rpx;
+}
+.new-coupon {
+    width: 686rpx;
+    height: 212rpx;
+    opacity: 1;
+    display: flex;
+    align-items: center;
+    position: relative;
+    margin-top: 16rpx;
+    margin-bottom: 16rpx;
+    border: 2rpx solid #194670;
+    border-radius: 40rpx;
+}
+.new-coupon-1 {
+    height: 212rpx;
+    width: 212rpx;
+    border-top-left-radius:40rpx ;
+    border-bottom-left-radius: 40rpx;
+    background-color:#FFFFFF;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    
+}
+.new-coupon-2 {
+    height: 212rpx;
+    width: 474rpx;
+    background-color:#FFFFFF;
+    border-top-right-radius:40rpx ;
+    border-bottom-right-radius: 40rpx;
+    flex-direction: column; 
+}
+.none {
+    display: none;
+}
+.cricle {
+    position: absolute;
+    height: 30rpx;
+    width: 30rpx;
+    border-radius:50% ;
+    border: 2rpx solid #194670;
+    left: 195rpx;
+    top: -18rpx;
+    border-left-color: transparent;
+    border-bottom-color: transparent;
+    /* border-right-color: transparent; */
+    transform: rotate(137deg);
+    background-color: #fff;
+}
+.cricle-1 {
+    position: absolute;
+    height: 30rpx;
+    width: 30rpx;
+    border-radius:50% ;
+    border: 2rpx solid #194670;
+    left: 195rpx;
+    bottom: -18rpx;
+    border-bottom-color: transparent;
+    border-left-color: transparent;
+    transform: rotate(-43deg);
+    background-color: #fff;
+}
+.new-coupon-line {
+    position: absolute;
+    left: 210rpx;
+    height: 170rpx;
+    margin-top: 5rpx;
+    margin-bottom: 10rpx;
+    border: 2rpx dashed #184571;
+    z-index: 9;
+}
+
