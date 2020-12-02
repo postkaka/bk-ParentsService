@@ -1,0 +1,7 @@
+{
+  "usingComponents": {
+    "by-header":"../../components/wx-header/header",
+    "by-calendar":"../../components/wx-calendar/calendar/calendar"
+  },
+  "navigationStyle":"custom"
+}

@@ -1,0 +1,5 @@
+<!--pages/discount-coupon/favorable-course/favorable-course.wxml-->
+<by-header header='{{header}}'></by-header>
+<view class="items">
+    <by-more-course item="{{items}}" display="none" displays=""></by-more-course>
+</view>

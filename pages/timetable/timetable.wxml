@@ -1,0 +1,45 @@
+<!--pages/timetable/timetable.wxml-->
+<by-header header='{{header}}'></by-header>
+<view class="{{type == 0?'newbg':'bg'}}" >
+    <by-calendar bind:toggleType="toggleType"></by-calendar>
+</view>
+<view class="this-week box">
+    <view>
+        <view class="box-text-1">
+            <view class="box-week">本周</view>
+            <view class="box-name">{{class.name}}</view>
+        </view>
+        <view class="box-time">2020-11-16——2020-11-22</view>
+    </view>
+    <view class="box-image">
+        <image src="../../assets/image/back.png" style="height:28rpx;width:28rpx"></image>
+    </view>
+</view>
+<view class="last-week box">
+    <view>
+        <view class="box-text-1">
+            <view class="box-week">上周</view>
+            <view class="box-name">{{class.name}}</view>
+        </view>
+        <view class="box-time">2020-11-16——2020-11-22</view>
+    </view>
+    <view class="box-image">
+        <image src="../../assets/image/back.png" style="height:28rpx;width:28rpx"></image>
+    </view>
+</view>
+<view class="history-week box">
+    <view>
+        <view class="box-text-1">
+            <view class="box-week">预计</view>
+            <view class="box-name">{{class.name}}</view>
+        </view>
+        <view class="box-time">2020-11-16——2020-11-22</view>
+    </view>
+    <view class="box-image">
+        <image src="../../assets/image/back.png" style="height:28rpx;width:28rpx"></image>
+    </view>
+</view>
+<view class="more-title">查看更多</view>
+<view class="{{type == 0?'new-last-title':'last-title'}}">
+    请注意:    课表上显示的【共多少节课】，指的是班级已排课表。而您的剩余课时数，才是决定您能实际上课的次数。您可以在【我的班级】查看您的课时情况。
+</view>

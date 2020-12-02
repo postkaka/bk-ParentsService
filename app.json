@@ -23,7 +23,9 @@
         "pages/grade/grade",
         "pages/apply/apply",
         "pages/discount-coupon/discount-coupon",
-        "pages/discount-coupon/mine-coupon/mine-coupon"
+        "pages/discount-coupon/mine-coupon/mine-coupon",
+        "pages/discount-coupon/favorable-course/favorable-course",
+        "pages/timetable/timetable"
     ],
     "sitemapLocation": "sitemap23.json",
     "tabBar": {

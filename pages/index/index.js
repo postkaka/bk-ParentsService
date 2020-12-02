@@ -111,6 +111,10 @@ Page({
         wx.navigateTo({
           url: '../grade/grade',
         })
+      }else {
+        wx.navigateTo({
+          url: '../timetable/timetable',
+        })
       }
     },
     discountClick(){

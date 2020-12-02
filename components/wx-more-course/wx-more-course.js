@@ -7,6 +7,14 @@ Component({
         item: {
             type: Array,
             value: ''
+        },
+        display: {
+            type: String,
+            value: ""
+        },
+        displays: {
+            type: String,
+            value: 'none'
         }
     },
 

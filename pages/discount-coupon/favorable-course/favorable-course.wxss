@@ -1,0 +1,4 @@
+/* pages/discount-coupon/favorable-course/favorable-course.wxss */
+.items {
+    margin-top: 32rpx;
+}

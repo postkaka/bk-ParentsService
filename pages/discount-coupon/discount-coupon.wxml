@@ -1,6 +1,8 @@
 <!--pages/discount-coupon/discount-coupon.wxml-->
 <by-header header='{{header}}'></by-header>
-<view class="bg"></view>
+<!-- <view class="bg"> -->
+    <image src="../../assets/image/bg.png" mode="widthFix" style="width:100%"></image>
+<!-- </view> -->
 <view class="coupon">
     <block wx:for="{{infor}}" wx:key="index">
         <by-discout-coupon infor="{{item}}"></by-discout-coupon>
@@ -10,7 +12,7 @@
 <view class="newbg" style='display:{{display}} '></view>
 <view class="box" style='display:{{display}} '>
     <view class="box-circle">
-        <image src="../../assets/image/circle.png" style="height:170rpx;width: 170rpx"></image>
+        <image src="../../assets/image/newcircle.png" style="height:170rpx;width: 170rpx"></image>
     </view>
     <view class="box-item">恭喜您领取成功，快去使用吧</view>
     <view class="btn">立即使用</view>

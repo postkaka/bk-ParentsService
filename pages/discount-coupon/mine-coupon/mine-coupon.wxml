@@ -1,10 +1,40 @@
 <!--pages/discount-coupon/mine-coupon/mine-coupon.wxml-->
 <by-header header='{{header}}'></by-header>
 <view class="tab">
-    <by-tab course="{{course}}" left="15"></by-tab> 
+    <by-tab course="{{course}}" left="15" bind:itemClick="itemClick"></by-tab> 
 </view>
-<view class="coupon">
+<!-- 待使用 -->
+<view class="{{type == 0?'coupon':'none'}}" >
     <block wx:for="{{infor}}" wx:key="index">
-        <by-discout-coupon infor="{{item}}" nub="2"></by-discout-coupon>
+        <by-discout-coupon infor="{{item}}" nub="2" 
+        bind:couponUseClick="couponUseClick" bind:couponUsePage="couponUsePage"
+        data-index="{{index}}"></by-discout-coupon>
     </block>
+</view>
+<!-- 已使用 -->
+<view class="{{type == 1?'coupon':'none'}}" >
+    <block wx:for="{{infor}}" wx:key="index">
+        <by-discout-coupon infor="{{item}}" nub="2" 
+        color="#FF999999" blackcolor="#FFFFFF" colors="#FF999999"
+        data-index="{{index}}"></by-discout-coupon>
+    </block>
+</view>
+<!-- 已过期 -->
+<view class="{{type == 2?'coupon':'none'}}" >
+    <block wx:for="{{infors}}" wx:key="index">
+        <by-discout-coupon infor="{{item}}" nub="2" 
+        color="#FFDDDDDD" blackcolor="#FFFFFF" colors="#FFDDDDDD"
+        data-index="{{index}}"></by-discout-coupon>
+    </block>
+</view>
+<!-- 弹出层 -->
+<view class="newbg" style='display:{{display}} '></view>
+<view class="box" style='display:{{display}} '>
+    <view class="box-title">券码</view>
+    <view class="box-line"></view>
+    <view class="box-item">{{infor[nub].key}}</view>
+    <view class="btn">
+        <view class="btn-view1" bindtap="closeClick">关闭</view>
+        <view class="btn-view" bindtap='copyBtn'>复制</view>
+    </view>
 </view>

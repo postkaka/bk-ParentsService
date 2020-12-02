@@ -33,6 +33,7 @@ Component({
         this.setData({
           currentIndex: e.currentTarget.dataset.index
         })
+        this.triggerEvent("itemClick",e.currentTarget.dataset.index)
       }
     }
 })

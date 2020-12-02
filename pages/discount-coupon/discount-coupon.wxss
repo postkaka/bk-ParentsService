@@ -2,12 +2,6 @@
 page {
     background: #184571;
 }
-.bg {
-    height: 500rpx;
-    background: #FFFFFF;
-    opacity: 1;
-    border-radius: 0px 0px 50rpx 50rpx;
-}
 .coupon {
     display: flex;
     flex-direction: column;
@@ -15,15 +9,12 @@ page {
     margin-top: 16rpx;
 }
 .btn {
-    position: fixed;
-    bottom: 0;
-    right: 0;
-    left: 0;
     height: 80rpx;
     background: #184571;
     border: 2rpx solid #FFFFFF;
     opacity: 1;
     border-radius: 30rpx;
+    margin-top: 100rpx;
     margin-bottom: 32rpx;
     margin-left: 32rpx;
     margin-right: 32rpx;

@@ -52,8 +52,8 @@
         "miniprogram": {
             "list": [
                 {
-                    "name": "pages/discount-coupon/mine-coupon/mine-coupon",
-                    "pathName": "pages/discount-coupon/mine-coupon/mine-coupon",
+                    "name": "pages/timetable/timetable",
+                    "pathName": "pages/timetable/timetable",
                     "query": "",
                     "scene": null
                 }

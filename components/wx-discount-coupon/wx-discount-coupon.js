@@ -18,6 +18,18 @@ Component({
         nub:{
             type:String,
             value:1
+        },
+        color:{
+            type:String,
+            value:""
+        },
+        blackcolor:{
+            type:String,
+            value:""
+        },
+        colors:{
+            type:String,
+            value:"#194670"
         }
     },
 
@@ -32,6 +44,14 @@ Component({
      * 组件的方法列表
      */
     methods: {
-
+        couponUseClick(e){
+            console.log("使用券码")
+            console.log(e)
+            this.triggerEvent("couponUseClick")
+        },
+        couponUsePage(){
+            console.log("去使用")
+            this.triggerEvent("couponUsePage")
+        }
     }
 })

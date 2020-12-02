@@ -1,0 +1,94 @@
+/* pages/timetable/timetable.wxss */
+page {
+    background: #184571;
+}
+.bg {
+    height: 420rpx;
+    width: 100%;    
+    background: #FFFFFF;
+    opacity: 1;
+    border-radius: 0px 0px 50rpx 50rpx;
+}
+.newbg {
+    height: 780rpx;
+    width: 100%;    
+    background: #FFFFFF;
+    opacity: 1;
+    border-radius: 0px 0px 50rpx 50rpx;
+}
+.more-title {
+    display: none;
+}
+.last-title {
+    position: absolute;
+    bottom: 0;
+    font-size: 20rpx;
+    height: 78rpx;
+    font-family: PingFang SC;
+    font-weight: 400;
+    color: #FFFFFF;
+    opacity: 1;
+    margin:  40rpx 32rpx 40rpx;
+}
+.box {
+    height: 160rpx;
+    background: #FFFFFF;
+    opacity: 1;
+    border-radius: 30rpx;
+    margin: 32rpx 32rpx 0 32rpx;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.history-week {
+    margin-bottom: 32rpx;
+}
+.box-text-1 {
+    display: flex;
+    align-items: baseline;
+    margin-top: 32rpx;
+    margin-left: 32rpx;
+    margin-bottom: 8rpx;
+
+}
+.box-name {
+    height: 40rpx;
+    font-size: 28rpx;
+    font-family: PingFang SC;
+    font-weight: 400;
+    line-height: 46rpx;
+    color: #333333;
+    opacity: 1;
+    margin-left: 16rpx;
+}
+.box-week {
+    font-size: 34rpx;
+    font-family: PingFang SC;
+    font-weight: bold;
+    color: #184571;
+    opacity: 1;
+    align-items: center;
+}
+.box-image {
+    margin-right: 32rpx;
+}
+.box-time {
+    height: 40rpx;
+    font-size: 28rpx;
+    font-family: PingFang SC;
+    font-weight: 400;
+    line-height: 46rpx;
+    color: #999999;
+    opacity: 1;
+    margin-left: 32rpx;
+    margin-bottom: 32rpx;
+}
+.new-last-title {
+    font-size: 20rpx;
+    height: 78rpx;
+    font-family: PingFang SC;
+    font-weight: 400;
+    color: #FFFFFF;
+    opacity: 1;
+    margin:  40rpx 32rpx 40rpx;
+}

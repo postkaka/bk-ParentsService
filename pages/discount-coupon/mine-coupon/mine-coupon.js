@@ -14,14 +14,63 @@ Page({
             src:'../../assets/image/fback.png'
           },
           infor:[
-              {preferentialPrice:20,nominalPrice:2000,startTime:"2020-05-28",endTime:"2020-05-28",src:"../../assets/image/selective.png",className:"美术XXXX课程"},
-              {preferentialPrice:20,nominalPrice:2000,startTime:"2020-05-28",endTime:"2020-05-28",src:"../../assets/image/selective.png",className:"美术XXXX课程"},
-              {preferentialPrice:20,nominalPrice:2000,startTime:"2020-05-28",endTime:"2020-05-28",src:"../../assets/image/selective.png",className:"美术XXXX课程"}
+              {preferentialPrice:20,nominalPrice:2000,startTime:"2020-05-28",endTime:"2020-05-28",src:"../../assets/image/selective.png",className:"美术XXXX课程",key:"KHMT4OER33R5KJ",id:""},
+              {preferentialPrice:20,nominalPrice:2000,startTime:"2020-05-28",endTime:"2020-05-28",src:"../../assets/image/selective.png",className:"美术XXXX课程",key:"KHMT4OADA3R5KJ",id:""},
+              {preferentialPrice:20,nominalPrice:2000,startTime:"2020-05-28",endTime:"2020-05-28",src:"../../assets/image/selective.png",className:"美术XXXX课程",key:"KUIY4OER33R5KJ",id:""}
           ],
+          infors:[
+            {preferentialPrice:20,nominalPrice:2000,startTime:"2020-05-28",endTime:"2020-05-28",src:"../../assets/image/newselective.png",className:"美术XXXX课程",key:"KHMT4OER33R5KJ",id:""},
+            {preferentialPrice:20,nominalPrice:2000,startTime:"2020-05-28",endTime:"2020-05-28",src:"../../assets/image/newselective.png",className:"美术XXXX课程",key:"KHMT4OADA3R5KJ",id:""},
+            {preferentialPrice:20,nominalPrice:2000,startTime:"2020-05-28",endTime:"2020-05-28",src:"../../assets/image/newselective.png",className:"美术XXXX课程",key:"KUIY4OER33R5KJ",id:""}
+        ],
           display:"none",
-          course:["待使用","已使用","已过期"]
+          course:["待使用","已使用","已过期"],
+          type:0,
+          nub:""
     },
-
+    itemClick(e){
+        console.log(e.detail)
+        this.setData({
+            type: e.detail
+        })
+    },
+    couponUseClick(e){
+        console.log(e.target.dataset.index)
+        if(this.data.type == 0){
+            this.setData({
+                nub: e.target.dataset.index,
+                display:''
+            })
+        }
+    },
+    couponUsePage(e){
+        console.log(e.target.dataset.index)
+        if(this.data.type == 0){
+            this.setData({
+                nub: e.target.dataset.index
+            })
+            let nub = this.data.nub
+            wx.navigateTo({
+              url: '../favorable-course/favorable-course?id='+ JSON.stringify(this.data.infor[nub].id,),
+            })
+        }
+    },
+    closeClick(){
+        this.setData({
+            display:'none'
+        })
+    },
+    copyBtn(){
+        // 复制当前key
+        wx.setClipboardData({
+          data: 'this.data.infor[nub].key',
+          success: function(res){
+              wx.showToast({
+                title: '复制成功',
+              })
+          }
+        })
+    },
     /**
      * 生命周期函数--监听页面加载
      */

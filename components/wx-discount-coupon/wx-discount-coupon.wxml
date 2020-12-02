@@ -1,26 +1,26 @@
 <!--components/wx-discount-coupon/wx-discount-coupon.wxml-->
-<view class="{{nub == 1?'coupon':'new-coupon'}}">
-    <view class="{{nub == 1?'coupon-line':'new-coupon-line'}}"></view>
-    <view class="{{nub == 1?'coupon-1':'new-coupon-1'}}">
+<view class="{{nub == 1?'coupon':'new-coupon'}}" style="border: 2rpx solid {{colors}};blackground-color:{{blackcolor}}">
+    <view class="{{nub == 1?'coupon-line':'new-coupon-line'}}" style="border: 2rpx dashed {{colors}}"></view>
+    <view class="{{nub == 1?'coupon-1':'new-coupon-1'}}" >
         <view class="coupon-1-price">
-            <view class="coupon-1-price-unit">￥</view>
-            <view class="coupon-1-price-item">{{infor.preferentialPrice}}</view>
+            <view class="coupon-1-price-unit" style="color:{{color}}">￥</view>
+            <view class="coupon-1-price-item" style="color:{{color}}">{{infor.preferentialPrice}}</view>
         </view>
-        <view class="coupon-1-nominal">满{{infor.nominalPrice}}元可用</view>
+        <view class="coupon-1-nominal" style="color:{{color}}">满{{infor.nominalPrice}}元可用</view>
     </view>
     <view class="{{nub == 1?'coupon-2':'new-coupon-2'}}">
         <view class="coupon-2-name">
             <view>
                 <image style="height:48rpx;width:48rpx" src="{{infor.src}}"></image>
             </view>
-            <view class="coupon-2-name-item">{{infor.className}}</view>
+            <view class="coupon-2-name-item" style="color:{{color}}">{{infor.className}}</view>
         </view>
-        <view class="coupon-2-time">{{infor.startTime}}至{{infor.endTime}}</view>
+        <view class="coupon-2-time" style="color:{{color}}">{{infor.startTime}}至{{infor.endTime}}</view>
         <view class="coupon-2-item"> 
-            <view class="coupon-2-item-view">券码</view>
-            <view class="coupon-2-item-view right">去使用</view>
+            <view class="coupon-2-item-view" bindtap="couponUseClick" style="border: 2rpx solid {{color}};color:{{color}}">券码</view>
+            <view class="coupon-2-item-view right" bindtap="couponUsePage" style="border: 2rpx solid {{color}};color:{{color}}">去使用</view>
         </view>
     </view>
-    <view class="{{nub == 1?'none':'cricle'}}"></view>
-    <view class="{{nub == 1?'none':'cricle-1'}}"></view>
+    <view class="{{nub == 1?'none':'cricle'}}" style="border-color:{{colors}};border-left-color: transparent;border-bottom-color: transparent;"></view>
+    <view class="{{nub == 1?'none':'cricle-1'}}" style="border-color:{{colors}};border-left-color: transparent;border-bottom-color: transparent;"></view>
 </view>

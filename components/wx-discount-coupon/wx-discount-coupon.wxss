@@ -50,7 +50,7 @@
 .coupon-line {
     position: absolute;
     left: 210rpx;
-    /* height: 180rpx; */
+    height: 180rpx;
     margin-top: 10rpx;
     margin-bottom: 10rpx;
     border: 2rpx dashed #184571;
@@ -174,7 +174,7 @@
 .new-coupon-line {
     position: absolute;
     left: 210rpx;
-    height: 170rpx;
+    height: 175rpx;
     margin-top: 5rpx;
     margin-bottom: 10rpx;
     border: 2rpx dashed #184571;
