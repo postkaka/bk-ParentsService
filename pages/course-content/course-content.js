@@ -30,7 +30,10 @@ Page({
 			remark:"课堂点评",
 			remarkthing:'点评人: 任生 2020-05-27 周三'
     },
-    homework:[{name:'新作业',type:1,time:"2020-05-13 周三"},{name:'123',type:1,time:"2020-05-13 周三"}]
+    homework:[{name:'新作业',type:1,time:"2020-05-13 周三"},{name:'123',type:1,time:"2020-05-13 周三"}],
+    id:"0",
+    show:"1",
+    display:"none"
     },
 	remarkClick(){
 		wx.navigateTo({
@@ -44,12 +47,31 @@ Page({
       url: '../course-content/homework-correcting/homework-correcting?id=' + id,
     })
   },
+  cirleClick(){
+    this.setData({
+      show:0
+    })
+  },
+  newboxClick(){
+    this.setData({
+      display:''
+    })
+  },
+  btnClick(){
+    this.setData({
+      display:'none'
+    })
+  },
 
     /**
      * 生命周期函数--监听页面加载
      */
     onLoad: function (options) {
 
+      this.setData({
+        id: options.id
+      })
+      console.log(this.data.id)
     },
 
     /**

@@ -1,0 +1,12 @@
+<!--pages/info/info.wxml-->
+<by-header header='{{header}}'></by-header>
+<view>
+    <image src="../../assets/image/course-1.png" mode="widthFix" style="width:100%"></image>
+</view>
+<view class="title">
+    <view class="title-age">{{info.age}}</view>
+    <view class="title-infos">
+        <view class="title-infos-name">{{info.name}}</view>
+        <view>{{info.price}}</view>
+    </view>
+</view>

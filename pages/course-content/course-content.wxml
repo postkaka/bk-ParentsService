@@ -1,7 +1,7 @@
 <!--pages/course-content/course-content.wxml-->
 <by-figure header="{{header}}" title1="{{infor.name}}" title2="{{infor.data}}"  src="{{infor.src}}"></by-figure>
 <view class="box">
-	<view class="box1">
+	<view class="{{id == 1?'box1':'none'}}">
 		<view class="box1-text">{{classinfor.name}}</view>
 		<view class="box1-item">
 			<view class="boxitem">
@@ -13,38 +13,79 @@
 			<view class="state">{{classinfor.state}}</view>
 		</view>
 	</view>
+	<view class="{{id == 0?'box1':'none'}}">
+		<view class="newbox1">
+			<view class="box1-text">{{classinfor.name}}</view>
+			<view class="newbox1-image">
+				<view class="newbox1-image-text">请假</view>
+				<view bindtap="newboxClick">
+					<image src="../../assets/image/right.png"style="width: 28rpx;height:28rpx;"></image>
+				</view>
+			</view>
+		</view>
+		<view class="box1-item">
+			<view class="boxitem">
+				<view class="boxitemimage">
+					<image src="../../assets/image/time.png" style="width: 28rpx;height:28rpx;" class="imagefisrt"></image>
+				</view>
+				<view class="boxitem1">{{classinfor.time}}</view>
+			</view>
+		</view>
+	</view>
 	<view class="box2">
 		<view class="box2view large">{{classinfor.business}}</view>
 		<view class="box2view small">{{classinfor.businessthing}}</view>
 	</view>
-	<view class="{{homework == []?'box3': 'newbox3'}}">
-		<view class="box2view large" style="font-weight: bold;">{{classinfor.homework}}</view>
-		<view class="box2view small {{homework == []?'': 'none'}}">{{classinfor.homeworkthing}}</view>
+	<!-- 作业 -->
+	<view class="{{id == 0?'newboxs3':'none'}}">
+		<view class="newboxs3-homework">作业</view>
+		<view class="newboxs3-homework-item">无</view>
 	</view>
-	<view class="{{homework == []?'none': ''}}">
-		<block  wx:for="{{homework}}" wx:key="index">
-			<view class="{{index == homework.length-1? 'lasthomework':'homework'}}">
-				<view class="homework-item">
-					<view class="homework-itemview">
-						<view>作业名称: {{item.name}}</view>
-						<view class="{{item.type == 1?'fixed':'none'}}">必做</view>
+	<view class="{{id == 1?'':'none'}}">
+		<view class="{{homework == []?'box3': 'newbox3'}}">
+			<view class="box2view large" style="font-weight: bold;">{{classinfor.homework}}</view>
+			<view class="box2view small {{homework == []?'': 'none'}}">{{classinfor.homeworkthing}}</view>
+		</view>
+		<view  class="{{homework == []?'none': ''}}">
+			<block  wx:for="{{homework}}" wx:key="index">
+				<view class="{{index == homework.length-1? 'lasthomework':'homework'}}">
+					<view class="homework-item">
+						<view class="homework-itemview">
+							<view>作业名称: {{item.name}}</view>
+							<view class="{{item.type == 1?'fixed':'none'}}">必做</view>
+						</view>
+						<view class="homework-item-view">截止日期: {{item.time}}</view>
 					</view>
-					<view class="homework-item-view">截止日期: {{item.time}}</view>
+					<view class="homework-image" bindtap="itemClick"  data-index="{{index}}">
+						<image src="../../assets/image/back.png" style="height: 28rpx; width: 28rpx"></image>
+					</view>
+				
 				</view>
-				<view class="homework-image" bindtap="itemClick"  data-index="{{index}}">
-					<image src="../../assets/image/back.png" style="height: 28rpx; width: 28rpx"></image>
-				</view>
-			
-			</view>
-		</block>
+			</block>
+		</view>
 	</view>
-	<view class="box4">
-		<view>
-			<view class="box2view large" style="font-weight: bold;">{{classinfor.remark}}</view>
-			<view class="box2view small">{{classinfor.remarkthing}}</view>
-		</view>
-		<view style="margin-right: 32rpx" bindtap="remarkClick">
-			<image style="height: 28rpx; width: 28rpx" src="../../assets/image/back.png"></image>
-		</view>
+	<!-- 课堂点评 -->
+	<view class="{{id == 1?'box4':'none'}}">
+			<view>
+				<view class="box2view large" style="font-weight: bold;">{{classinfor.remark}}</view>
+				<view class="box2view small">{{classinfor.remarkthing}}</view>
+			</view>
+			<view style="margin-right: 32rpx" bindtap="remarkClick">
+				<image style="height: 28rpx; width: 28rpx" src="../../assets/image/back.png"></image>
+			</view>
+	</view>
+	<view class="{{id ==0?'cirle':'none'}}" bindtap="cirleClick">
+		签到
+	</view>
+	<view class="{{show ==0?'newcirle':'none'}}" bindtap="cirleClick">
+		√
 	</view>
 </view>
+<view class="bg" style='display:{{display}}'></view>
+<view class="bottom-button" style='display:{{display}}'>
+	<view class="btn-cri">?</view>
+	<view class="btn-text bottom">是否确认请假</view>
+	<view class="btn-text">本年度请假次数0/4次</view>
+	<view class="btn" bindtap="btnClick">确认</view>
+</view>
+

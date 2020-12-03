@@ -27,6 +27,7 @@ Component({
         month: 0,
         date: 0,
         select:'',//选中日期
+        nowdata:''
     },
     ready: function () {
         this.today();
@@ -58,10 +59,13 @@ Component({
                 month,
                 date,
                 title: year + '年' + this.zero(month) + '月',
-                select:select
+                select:select,
+                nowdata:select
             })
             // this.createDays(year, month);
             this.createEmptyGrids(year, month);
+            this.triggerEvent('nowdata', this.data.nowdata);
+            console.log(this.data.select)
 
 
         },
@@ -102,7 +106,8 @@ Component({
                 month: this.data.month,
                 date: date
             });
-
+            console.log(this.data.select)
+            this.triggerEvent("nowSelect",this.data.select)
         },
         //上个月
         lastMonth: function () {

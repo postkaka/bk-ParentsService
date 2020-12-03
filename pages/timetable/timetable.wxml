@@ -1,7 +1,26 @@
 <!--pages/timetable/timetable.wxml-->
 <by-header header='{{header}}'></by-header>
 <view class="{{type == 0?'newbg':'bg'}}" >
-    <by-calendar bind:toggleType="toggleType"></by-calendar>
+    <by-calendar bind:toggleType="toggleType" bind:nowSelect = "nowSelect" bind:nowdata="nowdata"></by-calendar>
+</view>
+<view class="{{nowdate == date?'boxitem':'none'}}">
+    <view class="boxitemtext">
+        <view class="boxitemtext-name">{{classitem.name}}</view>
+        <view class="boxitemimage">
+            <view>
+                <image src="../../assets/image/time.png" style="height:29rpx;width:29rpx"></image>
+            </view>
+            <view class="boxitemtime">{{classitem.time}}</view>
+        </view>
+    </view>
+    <view class="backsrc" bindtap="firstClassClick">
+        <image src="../../assets/image/back.png" style="height:29rpx;width:29rpx"></image>
+    </view>
+</view>
+<view class="{{nowdate == date?'boxline':'none'}}"></view>
+<view class="{{nowdate == date?'lastboxitem':'none'}}">
+    <view class="lastboxitem-item">测试班级</view>
+    <view class="lastboxitem-last">请假</view>
 </view>
 <view class="this-week box">
     <view>
@@ -27,7 +46,7 @@
         <image src="../../assets/image/back.png" style="height:28rpx;width:28rpx"></image>
     </view>
 </view>
-<view class="history-week box">
+<view class="{{lastday == 1?'none':'history-week box'}}">
     <view>
         <view class="box-text-1">
             <view class="box-week">预计</view>
@@ -39,7 +58,44 @@
         <image src="../../assets/image/back.png" style="height:28rpx;width:28rpx"></image>
     </view>
 </view>
-<view class="more-title">查看更多</view>
-<view class="{{type == 0?'new-last-title':'last-title'}}">
+<view class="{{lastday == 0?'none':'box'}} {{pack == 0?'newbox':'box'}}" >
+    <view>
+        <view class="box-text-1">
+            <view class="box-week">历史</view>
+            <view class="box-name">共10节课</view>
+        </view>
+        <view class="box-time">……{{nowdate}}</view>
+    </view>
+    <view class="box-image" bindtap="pickClick">
+        <image src="{{packsrc}}" style="height:28rpx;width:28rpx"></image>
+    </view>
+</view>
+<view class="{{pack == 0?'boxline':'none'}}"></view>
+<view class="{{pack == 0?'':'none'}}">
+    <block wx:for="{{class}}" wx:key="index">
+        <view class="newboxitem">
+    <view class="boxitemtext">
+        <view class="boxitemtext-name">{{item.name}}</view>
+        <view class="boxitemimage">
+            <view>
+                <image src="../../assets/image/time.png" style="height:29rpx;width:29rpx"></image>
+            </view>
+            <view class="boxitemtime">{{item.time}}</view>
+        </view>
+    </view>
+    <view class="backsrc" bindtap="classClick">
+        <image src="../../assets/image/back.png" style="height:29rpx;width:29rpx"></image>
+    </view>
+</view>
+<view class="boxline"></view>
+<view class="{{index+1 == class.length?'lastboxitem':'newlastboxitem'}}">
+    <view class="lastboxitem-item">测试班级</view>
+    <view class="lastboxitem-last">请假</view>
+</view>
+<view class="boxline" class="{{index+1 == class.length?'none':'boxline'}}"></view>
+    </block>
+</view>
+<view class="{{pack == 0?'more-title':'none'}}">查看更多</view>
+<view class="{{type == 0?'new-last-title':'last-title'}} {{pack == 0?'new-last-title':''}}">
     请注意:    课表上显示的【共多少节课】，指的是班级已排课表。而您的剩余课时数，才是决定您能实际上课的次数。您可以在【我的班级】查看您的课时情况。
 </view>

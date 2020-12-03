@@ -52,8 +52,8 @@
         "miniprogram": {
             "list": [
                 {
-                    "name": "pages/timetable/timetable",
-                    "pathName": "pages/timetable/timetable",
+                    "name": "pages/info/info",
+                    "pathName": "pages/info/info",
                     "query": "",
                     "scene": null
                 }
