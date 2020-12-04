@@ -17,8 +17,80 @@ Page({
               age:"适合3-15岁孩子",
               name:'精品少儿美术',
               price:'￥10000'
-
+          },
+          choose:1,
+          catalogueitem:["美术基础体系介绍","进入绘画的世界","绘画必要的经历","线条绘制手法与光影的表现"],
+          catalogueitemelse:["透视法的诞生","成角透视","三点透视"],
+          catalogueone:0,
+          cataloguesen:0,
+          comment: {
+            grade: "5.0",
+            allStar: 5,
+            info: [{
+              id: 1,
+              name: "威萌恺特",
+              img: "../../assets/image/memberImg.png",
+              num: 4,
+              star: 5,
+              time: "2020-04-05"
+            }, {
+              id: 1,
+              name: "威萌恺特",
+              img: "../../assets/image/memberImg.png",
+              num: 4,
+              star: 5,
+              time: "2020-04-05"
+            }, {
+              id: 1,
+              name: "威萌恺特",
+              img: "../../assets/image/memberImg.png",
+              num: 4,
+              star: 5,
+              time: "2020-04-05"
+            }, {
+              id: 1,
+              name: "威萌恺特",
+              img: "../../assets/image/memberImg.png",
+              num: 4,
+              star: 5,
+              time: "2020-04-05"
+            }]
           }
+    },
+    choose: function (e) {
+        var that = this;
+        that.setData({
+          choose: e.currentTarget.id
+        })
+      },
+      catalogueoneClick(){
+          if(this.data.catalogueone == 0){
+              this.setData({
+                  catalogueone: 1
+              })
+          }else {
+              this.setData({
+                  catalogueone:0
+              })
+              console.log(0)
+          }
+      },
+      cataloguesenClick(){
+        if(this.data.cataloguesen == 0){
+            this.setData({
+                cataloguesen: 1
+            })
+        }else {
+            this.setData({
+                cataloguesen:0
+            })
+            console.log(0)
+        }
+    },
+    applyClick(){
+        wx.navigateTo({
+          url: '../apply/apply',
+        })
     },
 
     /**

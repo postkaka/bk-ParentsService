@@ -53,7 +53,7 @@
 <view  wx:if="{{showTabControl}}">
     <by-tab course="{{course}}" class='tab-control-temp' ></by-tab> 
 </view>
-    <by-more-course item="{{items}}" ></by-more-course>
+    <by-more-course item="{{items}}" bind:itemClick="itemClick"></by-more-course>
 
 </view>
 </view>

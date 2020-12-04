@@ -3,10 +3,106 @@
 <view>
     <image src="../../assets/image/course-1.png" mode="widthFix" style="width:100%"></image>
 </view>
-<view class="title">
+<view class="info">
+    <!-- 课程简介 -->
+    <view class="title">
     <view class="title-age">{{info.age}}</view>
     <view class="title-infos">
         <view class="title-infos-name">{{info.name}}</view>
-        <view>{{info.price}}</view>
+        <view class="title-infos-price">{{info.price}}</view>
+    </view>
+    </view>
+    <!-- 优惠券 -->
+    <view class="discount-coupon">
+        <view class="discount-coupon-view">课程优惠:</view>
+        <view class="discount-coupon-image">
+            <view>领券</view>
+            <view>
+                <image src="../../assets/image/right.png" style="height:28rpx;width:28rpx"></image>
+            </view>
+        </view>
+    </view>
+  	<!-- tab -->
+    <view class="tab bottom flexW">
+			<view class="tabInfo {{choose==1?'choose':''}}" id="1" bindtap="choose">课程目录</view>
+			<view class="tabInfo {{choose==2?'choose':''}}" id="2" bindtap="choose">课程介绍</view>
+			<view class="tabInfo {{choose==3?'choose':''}}" id="3" bindtap="choose">课程评论</view>
+    </view>
+    <!-- 课程目录 -->
+    <view class="{{choose==1?'catalogue':'none'}}">
+        <view class="catalogue-title">美术绘画基础</view>
+        <view class="catalogue-image" bindtap="catalogueoneClick">
+            <image src="../../assets/image/below.png" style="height:28rpx;width:28rpx" class="{{catalogueone==0?'':'catalogue-image-item'}}"></image>
+        </view>
+        <view class="{{catalogueone==0?'none':'catalogue-item'}}" >
+            <block wx:for="{{catalogueitem}}" data-index="{{index}}">
+                <view>{{index+1}}、{{item}}</view>
+            </block>
+        </view>
+        <view class="catalogue-title">透视法</view>
+        <view class="catalogue-image" bindtap="cataloguesenClick">
+            <image src="../../assets/image/below.png" style="height:28rpx;width:28rpx" class="{{cataloguesen==0?'':'catalogue-image-item'}}"></image>
+        </view>
+        <view class="{{cataloguesen==0?'none':'catalogue-item'}}">
+            <block wx:for="{{catalogueitemelse}}" data-index="{{index}}">
+                <view>{{index+1}}、{{item}}</view>
+            </block>
+        </view>
+    </view>
+    <!-- 课程介绍 -->
+    <view class="{{choose==2?'course-description':'none'}}">
+        <view class="course-description-title">课程简介:</view>
+        <view class="course-description-title1">绘画是所有设计师所需掌握的基础，能过绘画来表现出设计师的思维与创造的构思图。但绘画又分为很多种，不同行业需要不同的绘画风格。</view>
+        <view class="course-description-title2">本课程讲述产品绘画的表现形式，快速掌握绘画训练的学习与练习方式，节省不必要的绘画演练学习方式。</view>
+        <view class="course-line"></view>
+        <view>
+            <view class="tea-item">
+                <view>
+                    <image src="../../assets/image/teacher.png" style="width: 96rpx;height: 96rpx"></image>
+                </view>
+                <view class="tea-title">
+                    <view>李某某教师</view>
+                    <view>曾任大型智慧出行互联网公司资深大数据架</view>
+                    <view>构工程师，拥有5年教学经验</view>
+                </view>
+            </view>
+            <view class="last-course-line"></view>
+            <view class="more">查看更多课程</view>
+        </view>
+    </view>
+    <!-- 课程评论 -->
+    <view  class="{{choose==3?'block':'none'}}">
+			<view class="commentTop flexB" style="margin-bottom:0;">
+				<view class="allComment">全部评价:</view>
+				<view class="addComment" bindtap="addComment">发表评论</view>
+			</view>
+			<view class="commentTop flexB" style="margin-top:0;">
+				<view class="gradeComment">{{comment.grade}}</view>
+				<view class="starComment flexW">
+					<image src="../../assets/image/sar.png" class="starAll" wx:for="{{comment.allStar}}" wx:key="index"></image>
+				</view>
+			</view>
+			<view class="commentInfo flexW" wx:for="{{comment.info}}" wx:key="index">
+				<image src="{{item.img}}" class="memberImg"></image>
+				<view class="commentText">
+					<view class="commentTextTop flexB">
+						<view class="commentTextTopLeft">{{item.name}}</view>
+						<view>
+							<image src="../../assets/image/sar.png" class="starInfo" wx:for="{{item.star}}" wx:key="index"></image>
+						</view>
+					</view>
+					<view class="commentTextBottom flexB">
+						<view class="">学习{{item.num}}个课时评论</view>
+						<view>{{item.time}}</view>
+					</view>
+
+				</view>
+
+			</view>
+		</view>
+    <view style="height:200rpx"></view>
+    <!-- 底部tab -->
+    <view class="buy">
+        <view class="buybtn" bindtap="applyClick">立即报名</view>
     </view>
 </view>

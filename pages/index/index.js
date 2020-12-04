@@ -123,6 +123,11 @@ Page({
         url: '../discount-coupon/discount-coupon',
       })
     },
+    itemClick(e){
+      wx.navigateTo({
+        url: '../info/info?id='+ e.detail,
+      })
+    },
     /**
      * 生命周期函数--监听页面加载
      */

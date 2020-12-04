@@ -29,6 +29,8 @@ Component({
      * 组件的方法列表
      */
     methods: {
-
+        itemClick(e){
+            this.triggerEvent("itemClick",e.currentTarget.dataset.index)
+        }
     }
 })
