@@ -25,7 +25,7 @@
             displays="" images="../../assets/image/back.png" left="32" right="32"></by-list>
            <view class="{{item.show == 1?'':'none'}}">
                 <by-list listitemfirst="测试3(暂未分班):" display="" color="#F25A43"displays="" images="../../assets/image/below.png" ></by-list>
-                <by-list listitemfirst="课表:" displays="" images="../../assets/image/back.png" left="32" right="32"></by-list>
+                <by-list listitemfirst="课表:" displays="" images="../../assets/image/back.png" left="32" right="32" bindtap="timetableClick"></by-list>
                 <by-list listitemfirst="评语:" displays="" listitemsecondfirst="总共出勤课堂:{{item.gatedate}}次，获得{{item.evaluate}}次教师评价"
                 images="../../assets/image/back.png" left="32" right="32"></by-list>
                 <by-list listitemfirst="作业:" displays="" listitemsecondfirst="已批改{{item.correct}}次"

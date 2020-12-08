@@ -62,6 +62,11 @@ Page({
             })
         }
     },
+    timetableClick(){
+        wx.navigateTo({
+          url: '../timetable/timetable',
+        })
+    },
     homeworkClick(){
         console.log("跳转到作业页面")
         wx.navigateTo({

@@ -1,7 +1,8 @@
 <!--pages/grade/grade.wxml-->
 <by-header header="{{header}}"></by-header>
-<view class="tab"></view>
-<by-tab course="{{course}}" ></by-tab>
+<view class="tab">
+    <by-tab course="{{course}}" left="25"></by-tab>
+</view>
 <view class="btn" bindtap="btnClick">
     <view>学科选择</view>
     <view class="btnimage">

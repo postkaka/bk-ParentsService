@@ -1,6 +1,8 @@
 /* pages/grade/grade.wxss */
 .tab {
-    margin-top: 32rpx;
+	margin-top: 32rpx;
+	display: flex;
+	justify-content: center;
 }
 .btn {
     display: flex;
