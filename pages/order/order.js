@@ -1,42 +1,32 @@
-// pages/mine/mine.js
+// pages/order/order.js
 Page({
 
     /**
      * 页面的初始数据
      */
     data: {
-        item:[
-            {src:'../../assets/image/pay.png',title:"待付款"},
-            {src:'../../assets/image/after.png',title:"已报名"},
-            {src:'../../assets/image/after.png',title:"退课/售后"}
-        ]
+        header:{
+            title: '我的订单',
+            fontColor: "#333333",
+            headerbg: '#F5F5F5',
+            hiddenBlock: false,
+            slot: false,
+            src:'../../assets/image/fback.png'
+          },
+        course:["全部订单","待付款","已报名","已失效"],
+        orders:[
+            {name:"测试名称",type:"待付款",image:"../../assets/image/selective.png",className:"美术XXXXXXXX课程",
+        classNameNumber:"48",classPrice:"10000.00",studentName:"冰冰"}
+        ],
+        nub:0
     },
-    // 点击跳转登陆页面
-    landingClick(e){
-        wx.navigateTo({
-          url: '../landing/landing',
-        })
-        wx.login({
-          success:function(res){
-            console.log(res)
-          }
-        })
-    },
-    informationClick(){
-        wx.navigateTo({
-          url: '../mine/minepage/information/information',
-        })
-    },
-    mineCouponClick(){
-        wx.navigateTo({
-          url: '../discount-coupon/mine-coupon/mine-coupon',
+    itemClick(e){
+        console.log(e.detail)
+        this.setData({
+            nub:e.detail
         })
     },
-    orderClick(){
-      wx.navigateTo({
-        url: '../order/order',
-      })
-    },
+
     /**
      * 生命周期函数--监听页面加载
      */

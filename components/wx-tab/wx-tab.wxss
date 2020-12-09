@@ -5,6 +5,7 @@
   width:100%;
   white-space:nowrap;
   margin-left: 32rpx;
+  margin-right: 32rpx;
 }
 .scroll-view {
   min-width:100%;

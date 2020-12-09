@@ -100,6 +100,11 @@ Page({
             itemIndex2: 7
         })
       },
+      itemClicks(e){
+        wx.navigateTo({
+          url: '../info/info?id='+ e.detail,
+        })
+      },
       //监听屏幕头部高度
       
 

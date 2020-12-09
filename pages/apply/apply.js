@@ -27,7 +27,10 @@ Page({
             price:"￥10000.00",
             apply:"无可用"
         },
-        type:1
+        type:1,
+        payType:1,
+        apply:"../../assets/image/applybanke.png",
+        weixingapply:"../../assets/image/applyweixi-1.png"
     },
     btnClick(){
         console.log("付款成功")
@@ -35,7 +38,20 @@ Page({
             type:0
         })
     },
-
+    showClick1(){
+            this.setData({
+                payType: 1,
+                apply:"../../assets/image/applybanke.png",
+                weixingapply:"../../assets/image/applyweixi-1.png"
+            })
+    },
+    showClick2(){
+        this.setData({
+            payType: 2,
+            apply:"../../assets/image/applybanke-1.png",
+            weixingapply:"../../assets/image/applyweixi.png"
+        })
+},
     /**
      * 生命周期函数--监听页面加载
      */

@@ -12,7 +12,7 @@
 <view class="text"  bind:tap="landingClick" >请点击登陆</view>
 <!-- 订单模块 -->
 <by-more text="我的订单" texts="查看更多订单">
-    <view class="back">
+    <view class="back" bindtap="orderClick">
         <image src="../../assets/image/back.png" class="backs"></image>
     </view>
 </by-more>

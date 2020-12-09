@@ -11,6 +11,10 @@ Component({
         left: {
             type: String,
             value: "5"
+        },
+        right:{
+            type: String,
+            value:''
         }
     },
 

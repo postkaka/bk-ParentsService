@@ -2,8 +2,8 @@
     <view class="tab">
         <scroll-view class="scroll-view" scroll-x scroll-with-animation> 
         <block wx:for="{{course}}" wx:key="index">
-                <view bind:tap="itemClick" class="ontab" data-index="{{index}}">
-                <view class="{{index == currentIndex?'active':'none-active'}}">{{item}}</view>
+                <view bind:tap="itemClick" class="ontab" data-index="{{index}}"  style="margin-right:{{right}}rpx">
+                <view class="{{index == currentIndex?'active':'none-active'}}" >{{item}}</view>
                 <view class="{{index == currentIndex?'ontab-line':''}}" style=" margin-left: {{left}}rpx;"></view>
                 </view>
         </block>

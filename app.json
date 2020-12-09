@@ -26,7 +26,8 @@
         "pages/discount-coupon/mine-coupon/mine-coupon",
         "pages/discount-coupon/favorable-course/favorable-course",
         "pages/timetable/timetable",
-        "pages/info/info"
+        "pages/info/info",
+        "pages/order/order"
     ],
     "sitemapLocation": "sitemap23.json",
     "tabBar": {

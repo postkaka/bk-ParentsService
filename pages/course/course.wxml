@@ -44,6 +44,6 @@
    </view>
    <view class="bg"  style='display:{{display}} ' ></view>
     <scroll-view class='content' scroll-y style="height: calc(100vh - 430rpx)">
-        <by-more-course item="{{items}}"></by-more-course>
+        <by-more-course item="{{items}}" bind:itemClick="itemClicks"></by-more-course>
     </scroll-view> 
 </view>
