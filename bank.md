@@ -70,3 +70,5 @@ landing 登陆页面
 selective 选择学员
 
 apply 报名确认
+
+order 订单详情
