@@ -16,7 +16,6 @@ Page({
             {src:"../../assets/image/results.png",url:''},
             {src:"../../assets/image/class.png",url:'hour/hour'},
             {src:"../../assets/image/homework.png",url:''}
-            
         ],
         course:["推荐","国学","美术","声乐","书法","舞蹈","口才","国学","美术","声乐","书法","舞蹈","口才","国学","美术","声乐","书法","舞蹈","口才"],
         item:[

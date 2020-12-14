@@ -103,6 +103,7 @@
     <view style="height:200rpx"></view>
     <!-- 底部tab -->
     <view class="buy">
+        <view class="classbtn" bindtap="applyClick">课程咨询</view>
         <view class="buybtn" bindtap="applyClick">立即报名</view>
     </view>
 </view>
