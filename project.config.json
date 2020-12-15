@@ -66,6 +66,12 @@
                     "pathName": "pages/info/info",
                     "query": "",
                     "scene": null
+                },
+                {
+                    "name": "pages/discount-coupon/mine-coupon/mine-coupon",
+                    "pathName": "pages/discount-coupon/mine-coupon/mine-coupon",
+                    "query": "",
+                    "scene": null
                 }
             ]
         }

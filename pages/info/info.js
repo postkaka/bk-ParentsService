@@ -23,6 +23,7 @@ Page({
           catalogueitemelse:["透视法的诞生","成角透视","三点透视"],
           catalogueone:0,
           cataloguesen:0,
+          display: "none",
           comment: {
             grade: "5.0",
             allStar: 5,
@@ -55,7 +56,10 @@ Page({
               star: 5,
               time: "2020-04-05"
             }]
-          }
+          },
+          infor:[{
+            preferentialPrice:20,nominalPrice:2000,startTime:"2020-05-28",endTime:"2020-05-28",src:"../../assets/image/selective.png",className:"美术XXXX课程"
+          }]
     },
     choose: function (e) {
         var that = this;
@@ -63,7 +67,7 @@ Page({
           choose: e.currentTarget.id
         })
       },
-      catalogueoneClick(){
+    catalogueoneClick(){
           if(this.data.catalogueone == 0){
               this.setData({
                   catalogueone: 1
@@ -75,7 +79,7 @@ Page({
               console.log(0)
           }
       },
-      cataloguesenClick(){
+    cataloguesenClick(){
         if(this.data.cataloguesen == 0){
             this.setData({
                 cataloguesen: 1
@@ -91,6 +95,20 @@ Page({
         wx.navigateTo({
           url: '../apply/apply',
         })
+    },
+    discountClick(){
+      console.log("优惠券")
+      this.setData({
+        display: ""
+      })
+    },
+    couponUsePage(){
+      this.setData({
+        display:"none"
+      })
+      wx.showToast({
+        title: '领取成功',
+      })
     },
 
     /**

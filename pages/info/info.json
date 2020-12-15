@@ -1,7 +1,8 @@
 {
   "usingComponents": {
     "by-header":"../../components/wx-header/header",
-    "by-tab":"../../components/wx-tab/wx-tab"
+    "by-tab":"../../components/wx-tab/wx-tab",
+    "by-discout-coupon":"../../components/wx-discount-coupon/wx-discount-coupon"
   },
   "navigationStyle":"custom"
 }
