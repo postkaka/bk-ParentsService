@@ -28,31 +28,31 @@
 	<view class=" {{type == 1?'box3':'newbox3'}}">报名课程</view>
 	<by-class-item classitemimage="{{infors.src}}" imagedisplay="" width="120" displays="none" classitemleftview="{{infors.name}}"
 	classitemlefticon="../../assets/image/calendar.png" classitemlefttime="{{infors.time}}" color2="#999999" fontsize1="28" fontsize2="24"
-	fontweight1="bold"
+	fontweight1="bold" class="by-class-item"
 	></by-class-item>
 	<view class="line first"></view>
 	<view class="{{type == 1?'boxitem':'none'}}">教师: {{infors.teacher}}</view>
 	<view class="{{type == 1?'line':'none'}}"></view>
 	<by-list listitemfirst="课程总额:" fontsize="24" listitemsecondfirst="{{infors.price}}" colors="#F25A43" right="32" left="32"
-	class="{{type == 1?'':'none'}}"
+	class="{{type == 1?'by-list':'none'}}" 
 	></by-list>
 	<by-list listitemfirst="优惠券:" fontsize="24" listitemsecondfirst="{{infors.apply}}" colors="#999999" right="32" left="32"
-	displays="" images="../../assets/image/back.png" class="{{type == 1?'':'none'}}"
+	displays="" images="../../assets/image/back.png" class="{{type == 1?'by-list':'none'}}" class="by-list"
 	></by-list>
 	<by-list listitemfirst="总合计:" fontsize="28" fontweight="bold" listitemsecondfirst="{{infors.price}}" colors="#F25A43"
-	fontweights="bold" fontsizes="28" displayss="none" class="{{type == 1?'':'none'}}"
+	fontweights="bold" fontsizes="28" displayss="none" class="{{type == 1?'by-list':'none'}}" class="by-list"
 	></by-list>
 	<view class=" {{type == 1?'btn':'none'}}" bindtap="btnClick">确认</view>
 	<by-list listitemfirst="报名学员:" fontsize="24" listitemsecondfirst="{{infor.name}}"  right="32" left="32"
-	class="{{type == 0?'':'none'}}"
+	class="{{type == 0?'by-list':'none'}}"
 	></by-list>
 	<by-list listitemfirst="联系电话:" fontsize="24" listitemsecondfirst="{{infor.data}}"  right="32" left="32"
-	class="{{type == 0?'':'none'}}"
+	class="{{type == 0?'by-list':'none'}}"
 	></by-list>
 	<by-list listitemfirst="报名费用:" fontsize="24" listitemsecondfirst="{{infors.price}}"  right="32" left="32"
-	class="{{type == 0?'':'none'}}"
+	class="{{type == 0?'by-list':'none'}}"
 	></by-list>
 	<by-list listitemfirst="支付方式:" fontsize="24" listitemsecondfirst="微信支付"  right="32" left="32"
-	class="{{type == 0?'':'none'}}"
+	class="{{type == 0?'by-list':'none'}}"
 	></by-list>
 </view>

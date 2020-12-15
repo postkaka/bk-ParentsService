@@ -11,12 +11,14 @@ page {
     margin-bottom: 32rpx;
     border-radius: 50rpx;
     background: #FFFFFF;
-    height: 906rpx;
+    /* height: 906rpx; */
+    height: 67vh;
     padding-top: 32rpx;
    
 }
 .box1 {
-    height: 48rpx;
+    /* height: 48rpx; */
+    height: 3vh;
     font-size: 34rpx;
     font-family: PingFang SC;
     font-weight: bold;
@@ -31,8 +33,10 @@ page {
     padding-left: 32rpx;
 }
 .box2-box {
-    width: 295rpx;
-    height: 140rpx;
+    /* width: 295rpx; */
+    /* height: 140rpx; */
+    width: 39vw;
+    height: 10vh;
     border-radius: 20rpx;
     display: flex;
     align-items: center;
@@ -74,6 +78,7 @@ page {
     margin-left: 32rpx;
 }
 .box3 {
+    height: 3vh;
     font-size: 34rpx;
     font-family: PingFang SC;
     font-weight: bold;
@@ -142,7 +147,8 @@ page {
         margin-bottom: 32rpx;
         border-radius: 50rpx;
         background: #FFFFFF;
-        height: 714rpx;
+        /* height: 714rpx; */
+        height: 53vh;
         padding-top: 32rpx;
     }
     .newbox3 { 
@@ -152,4 +158,10 @@ page {
     text-align: center;
     color: #333333;
     opacity: 1;
+    }
+    .by-list {
+        height: 4vh;
+    }
+    .by-class-item {
+        height: 8vh;
     }

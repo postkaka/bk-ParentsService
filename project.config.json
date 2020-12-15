@@ -62,8 +62,8 @@
         "miniprogram": {
             "list": [
                 {
-                    "name": "pages/landing/landing",
-                    "pathName": "pages/landing/landing",
+                    "name": "pages/apply/apply",
+                    "pathName": "pages/apply/apply",
                     "query": "",
                     "scene": null
                 }
