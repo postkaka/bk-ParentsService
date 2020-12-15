@@ -30,7 +30,12 @@ Page({
         type:1,
         payType:1,
         apply:"../../assets/image/applybanke.png",
-        weixingapply:"../../assets/image/applyweixi-1.png"
+        weixingapply:"../../assets/image/applyweixi-1.png",
+        display: "none",
+        infortime:[
+            {preferentialPrice:20,nominalPrice:2000,startTime:"2020-05-28",endTime:"2020-05-28",src:"../../assets/image/selective.png",className:"美术XXXX课程"},
+            {preferentialPrice:20,nominalPrice:2000,startTime:"2020-05-28",endTime:"2020-05-28",src:"../../assets/image/selective.png",className:"美术XXXX课程"}
+        ]
     },
     btnClick(){
         console.log("付款成功")
@@ -52,6 +57,20 @@ Page({
             weixingapply:"../../assets/image/applyweixi.png"
         })
 },
+    discountClick(){
+        console.log("优惠券")
+        this.setData({
+        display: ""
+        })
+    },
+    couponUsePage(){
+        this.setData({
+        display:"none"
+        })
+        wx.showToast({
+        title: '领取成功',
+        })
+    },
     /**
      * 生命周期函数--监听页面加载
      */

@@ -17,7 +17,7 @@
         </view>
         <view class="coupon-2-time" style="color:{{color}}">{{infor.startTime}}至{{infor.endTime}}</view>
         <view class="coupon-2-item"> 
-            <view class="coupon-2-item-view" bindtap="couponUseClick" style="border: 2rpx solid {{color}};color:{{color}}">券码</view>
+            <view class="coupon-2-item-view" bindtap="couponUseClick" style="border: 2rpx solid {{color}};color:{{color}};display:{{show}}">券码</view>
             <view class="coupon-2-item-view right" bindtap="couponUsePage" style="border: 2rpx solid {{color}};color:{{color}}">去使用</view>
         </view>
     </view>

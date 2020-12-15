@@ -3,7 +3,8 @@
      "by-figure":"../../../components/wx-figure/wx-figure",
      "by-class-item":"../../components/wx-class-item/wx-class-item",
      "by-list":"../../components/wx-list/wx-list",
-     "by-header":"../../components/wx-header/header"
+     "by-header":"../../components/wx-header/header",
+    "by-discout-coupon":"../../components/wx-discount-coupon/wx-discount-coupon"
   },
   "navigationStyle":"custom"
 }

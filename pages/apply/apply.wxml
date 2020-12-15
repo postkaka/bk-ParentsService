@@ -37,7 +37,7 @@
 	class="{{type == 1?'by-list':'none'}}" 
 	></by-list>
 	<by-list listitemfirst="优惠券:" fontsize="24" listitemsecondfirst="{{infors.apply}}" colors="#999999" right="32" left="32"
-	displays="" images="../../assets/image/back.png" class="{{type == 1?'by-list':'none'}}" class="by-list"
+	displays="" images="../../assets/image/back.png" class="{{type == 1?'by-list':'none'}}" class="by-list" bindtap="discountClick"
 	></by-list>
 	<by-list listitemfirst="总合计:" fontsize="28" fontweight="bold" listitemsecondfirst="{{infors.price}}" colors="#F25A43"
 	fontweights="bold" fontsizes="28" displayss="none" class="{{type == 1?'by-list':'none'}}" class="by-list"
@@ -55,4 +55,14 @@
 	<by-list listitemfirst="支付方式:" fontsize="24" listitemsecondfirst="微信支付"  right="32" left="32"
 	class="{{type == 0?'by-list':'none'}}"
 	></by-list>
+</view>
+<view class="bg" style='display:{{display}}'></view>
+<view class="bottom-button" style='display:{{display}}'>
+   <view class="bottom-buttons">
+	<block wx:for="{{infortime}}" wx:key="index" >
+        <by-discout-coupon infor="{{item}}" nub="2"  show="none"
+         bind:couponUsePage="couponUsePage"
+        data-index="{{index}}" class="bottom-button-item"></by-discout-coupon>
+	</block>
+   </view>
 </view>

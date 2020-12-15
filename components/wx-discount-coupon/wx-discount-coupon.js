@@ -30,6 +30,10 @@ Component({
         colors:{
             type:String,
             value:"#194670"
+        },
+        show:{
+            type:String,
+            value:""
         }
     },
 

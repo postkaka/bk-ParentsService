@@ -15,7 +15,7 @@
     <!-- 优惠券 -->
     <view class="discount-coupon">
         <view class="discount-coupon-view">课程优惠:</view>
-        <view class="discount-coupon-image" bindtap="discountClick">
+        <view class="discount-coupon-image" >
             <view>领券</view>
             <view>
                 <image src="../../assets/image/right.png" style="height:28rpx;width:28rpx"></image>
@@ -107,13 +107,6 @@
         <view class="buybtn" bindtap="applyClick">立即报名</view>
     </view>
 </view>
-<view class="bg" style='display:{{display}}'></view>
-<view class="bottom-button" style='display:{{display}}'>
-    <view wx:for="{{infor}}" wx:key="index" class="bottom-button-item">
-        <by-discout-coupon infor="{{item}}" nub="2" 
-         bind:couponUsePage="couponUsePage"
-        data-index="{{index}}"></by-discout-coupon>
-    </view>
-</view>
+
 
 
