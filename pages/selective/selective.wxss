@@ -6,7 +6,8 @@
  .course {
      position: relative;
      background-color: #ffffff;
-     height: 841rpx;
+     /* height: 841rpx; */
+     height: 63vh;
      border: 1rpx solid #ffffff;
      margin-left: 32rpx;
      margin-right: 32rpx;
