@@ -62,14 +62,8 @@
         "miniprogram": {
             "list": [
                 {
-                    "name": "pages/info/info",
-                    "pathName": "pages/info/info",
-                    "query": "",
-                    "scene": null
-                },
-                {
-                    "name": "pages/discount-coupon/mine-coupon/mine-coupon",
-                    "pathName": "pages/discount-coupon/mine-coupon/mine-coupon",
+                    "name": "pages/landing/landing",
+                    "pathName": "pages/landing/landing",
                     "query": "",
                     "scene": null
                 }

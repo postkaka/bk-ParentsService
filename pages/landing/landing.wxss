@@ -16,27 +16,33 @@
     width: 100%;
     text-align: center;
     position: absolute;
-    top: 300rpx;
+    /* top: 300rpx; */
+    top:23vh;
 }
 .list {
     position: absolute;
-    top: 650rpx;
+    /* top: 650rpx; */
+    top:50vh;
     border: 1rpx solid #ffffff;
     background-color:#ffffff;
     width: 686rpx;
-    height: 566rpx;
+    /* height: 566rpx; */
+    height: 42vh;
     border-radius: 30rpx;
     margin-left: 32rpx;
     margin-right: 32rpx;
+    margin-bottom: 32rpx;
 }
 .lists {
+    margin-top:32rpx ;
     margin-left: 32rpx;
     margin-right: 32rpx;
 }
 .text {
     color: #F25A43;
     font-size: 34rpx;
-    height: 44rpx;
+    /* height: 44rpx; */
+    height: 3vh;
     line-height: 44rpx;
 }
 .textitem {
@@ -52,29 +58,36 @@
 }
 .input {
     border: 1rpx solid #DDDDDD;
-    height: 72rpx;
+    /* height: 72rpx; */
+    height: 5vh;
     border-radius: 40rpx;
     display: flex;
     justify-content: space-between;
+    align-content: center;
 }
 .input-text {
-    height: 72rpx;
+    /* height: 72rpx; */
+    height: 5vh;
     color: #333333;
     font-size: 28rpx;
     margin-left: 64rpx;
+    align-content: center;
 }
 .input-note {
-    height: 72rpx;
+    /* height: 72rpx; */
+    height: 5vh;
     line-height: 72rpx;
     color: #F25A43;
     font-size: 28rpx;
     margin-right: 60rpx; 
 }
 .button {
-    height: 80rpx;
-    line-height: 80rpx;
+    /* height: 80rpx; */
+    height: 5vh;
+    line-height: 5vh;
     background-color: #184571;
-    margin-top: 63rpx;
+    /* margin-top: 63rpx; */
+    margin-top: 5vh;
     margin-left: 32rpx;
     margin-right: 32rpx;
     text-align: center;
