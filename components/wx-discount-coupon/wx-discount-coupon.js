@@ -34,6 +34,10 @@ Component({
         show:{
             type:String,
             value:""
+        },
+        otherShow:{
+            type:String,
+            value:""
         }
     },
 

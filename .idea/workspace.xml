@@ -5,15 +5,6 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/components/wx-discount-coupon/wx-discount-coupon.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/wx-discount-coupon/wx-discount-coupon.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/components/wx-discount-coupon/wx-discount-coupon.wxml" beforeDir="false" afterPath="$PROJECT_DIR$/components/wx-discount-coupon/wx-discount-coupon.wxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/apply/apply.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/apply/apply.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/apply/apply.json" beforeDir="false" afterPath="$PROJECT_DIR$/pages/apply/apply.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/apply/apply.wxml" beforeDir="false" afterPath="$PROJECT_DIR$/pages/apply/apply.wxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/apply/apply.wxss" beforeDir="false" afterPath="$PROJECT_DIR$/pages/apply/apply.wxss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/info/info.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/info/info.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/info/info.json" beforeDir="false" afterPath="$PROJECT_DIR$/pages/info/info.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/info/info.wxml" beforeDir="false" afterPath="$PROJECT_DIR$/pages/info/info.wxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/info/info.wxss" beforeDir="false" afterPath="$PROJECT_DIR$/pages/info/info.wxss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project.config.json" beforeDir="false" afterPath="$PROJECT_DIR$/project.config.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -54,7 +45,8 @@
       <workItem from="1607670684136" duration="3485000" />
       <workItem from="1607907037279" duration="10547000" />
       <workItem from="1607996319005" duration="676000" />
-      <workItem from="1608000771344" duration="3354000" />
+      <workItem from="1608000771344" duration="6669000" />
+      <workItem from="1608080828773" duration="4071000" />
     </task>
     <servers />
   </component>
