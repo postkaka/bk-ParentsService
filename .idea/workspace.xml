@@ -3,8 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="3f70450c-fb69-4570-a4e9-75f4bf3eba28" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/wx-discount-coupon/wx-discount-coupon.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/wx-discount-coupon/wx-discount-coupon.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/wx-discount-coupon/wx-discount-coupon.wxml" beforeDir="false" afterPath="$PROJECT_DIR$/components/wx-discount-coupon/wx-discount-coupon.wxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,7 +44,7 @@
       <workItem from="1607907037279" duration="10547000" />
       <workItem from="1607996319005" duration="676000" />
       <workItem from="1608000771344" duration="6669000" />
-      <workItem from="1608080828773" duration="4071000" />
+      <workItem from="1608080828773" duration="5859000" />
     </task>
     <servers />
   </component>

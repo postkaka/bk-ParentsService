@@ -19,8 +19,8 @@
 <view class="item-list">
     <block wx:for="{{item}}" wx:key="*this">
             <view >
-                <view class="item-list-src" >
-                    <image src="{{item.src}}" data-id="{{index}}"  mode="widthFix" style="width: 64rpx"></image>
+                <view class="item-list-src" data-id="{{index}}" bindtap="itemListClick" >
+                    <image src="{{item.src}}" data-id="{{index}}"  mode="widthFix" style="width: 64rpx" ></image>
                 </view>
                 <view class="item-list-title">{{item.title}}</view>
             </view>

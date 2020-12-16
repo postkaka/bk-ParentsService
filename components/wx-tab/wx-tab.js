@@ -15,6 +15,10 @@ Component({
         right:{
             type: String,
             value:''
+        },
+        currentIndex:{
+            type: String,
+            value:"0"
         }
     },
 
@@ -22,7 +26,7 @@ Component({
      * 组件的初始数据
      */
     data: {
-        currentIndex: 0
+        
     },
 
     /**

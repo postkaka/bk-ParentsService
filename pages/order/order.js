@@ -18,7 +18,8 @@ Page({
             {name:"测试名称",type:"待付款",image:"../../assets/image/selective.png",className:"美术XXXXXXXX课程",
         classNameNumber:"48",classPrice:"10000.00",studentName:"冰冰"}
         ],
-        nub:0
+        nub:0,
+        id:0,
     },
     itemClick(e){
         console.log(e.detail)
@@ -31,7 +32,12 @@ Page({
      * 生命周期函数--监听页面加载
      */
     onLoad: function (options) {
-
+        console.log(options.id)
+        this.setData({
+            id: options.id,
+            nub: options.id
+        })
+        console.log(this.data.id)
     },
 
     /**

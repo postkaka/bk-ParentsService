@@ -37,6 +37,11 @@ Page({
         url: '../order/order',
       })
     },
+    itemListClick(e){
+      wx.navigateTo({
+        url: '../order/order?id=2',
+      })
+    },
     /**
      * 生命周期函数--监听页面加载
      */
