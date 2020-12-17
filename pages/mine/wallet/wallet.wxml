@@ -1,0 +1,21 @@
+<!--pages/mine/wallet/wallet.wxml-->
+<by-header header='{{header}}'></by-header>
+<view class='wallet'>
+    <view class="wallet-balance top">
+        <view>账号余额:</view>
+        <view class="red">￥ {{balance}}</view>
+    </view>
+    <view class="wallet-balance">
+        <view>赠送金额:</view>
+        <view class="red">￥ {{give}}</view>
+    </view>
+    <view >
+        <block wx:for="{{wallet}}" wx:key="index">
+            <view class="wallet-list">
+                <view>{{item.time}}</view>
+                <view>{{item.type}}</view>
+                <view>￥ {{item.price}}</view>
+            </view>
+        </block>
+    </view>
+</view>

@@ -28,7 +28,7 @@
 </view>
 <!-- 列表信息 -->
 <by-add text="所在学校" icon="../../assets/image/m1.png" texts="班客新赛道（铁西校区）"></by-add>
-<by-add text="我的钱包" icon="../../assets/image/m2.png" icons="../../assets/image/back.png" texts="￥2000.00"></by-add>
+<by-add text="我的钱包" icon="../../assets/image/m2.png" icons="../../assets/image/back.png" texts="￥2000.00" bindtap="walletClick"></by-add>
 <by-add text="我的活动" icon="../../assets/image/m3.png" icons="../../assets/image/back.png"></by-add>
 <by-add text="我的优惠券" icon="../../assets/image/m4.png" icons="../../assets/image/back.png" bindtap="mineCouponClick"></by-add>
 <by-add text="推荐好友" icon="../../assets/image/m5.png" icons="../../assets/image/back.png"></by-add>

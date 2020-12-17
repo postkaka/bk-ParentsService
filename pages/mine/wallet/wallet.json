@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "by-header":"../../../components/wx-header/header"
+  },
+  "navigationStyle":"custom"
+}

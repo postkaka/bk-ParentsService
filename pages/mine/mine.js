@@ -42,6 +42,11 @@ Page({
         url: '../order/order?id=2',
       })
     },
+    walletClick(){
+      wx.navigateTo({
+        url: '../mine/wallet/wallet',
+      })
+    },
     /**
      * 生命周期函数--监听页面加载
      */
