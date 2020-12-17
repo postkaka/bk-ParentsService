@@ -1,0 +1,76 @@
+<!--pages/order/orederItem/orderItem.wxml-->
+<by-header header='{{header}}'></by-header>
+<view class="order-item-title">已报名课程</view>
+<view class="order-item-info">
+    <view>
+        <view>{{info.classname}} 学员: {{info.name}}</view>
+        <view class="info-time">{{info.time}}</view>
+    </view>
+    <view>
+        <image src="{{info.src}}" style="height:88rpx;width:88rpx"></image>
+    </view>
+</view>
+<view class="order-item-bg">
+    <view class="order-item-item">
+            <view class="order-list-one">
+                <view class="order-list-one-name">
+                    <view>{{orders.name}}</view>
+                    <view>
+                        <image src="../../../assets/image/back.png" style="height:28rpx;width:28rpx"></image>
+                    </view>
+                </view>
+                <view class="order-list-one-type">{{orders.type}}</view>
+            </view>
+            <view class="oreder-line"></view>
+            <view class="order-list-two">
+                <view class="order-list-two-image">
+                    <view class="order-list-two-image-item">
+                        <image src="{{orders.image}}" style="height:88rpx;width:88rpx"></image>
+                    </view>
+                    <view class="order-list-two-image-items">
+                        <view>{{orders.className}}</view>
+                        <view class="order-list-two-image-items-text">{{orders.classNameNumber}}课时</view>
+                    </view>
+                </view>
+                <view class="order-list-two-classPrice">￥{{orders.classPrice}}</view>
+            </view>
+            <view class="oreder-line small"></view>
+            <view class="order-list-three">
+                <view class="order-list-three-item">课程总价:</view>
+                <view class="order-list-three-classPrice">￥{{orders.classPrice}}</view>
+            </view>
+            <view class="oreder-line small"></view>
+            <view class="order-list-three">
+                <view class="order-list-three-item">优惠金额：</view>
+                <view class="order-list-three-classPrice">￥{{orders.discountsPrice}}</view>
+            </view>
+            <view class="oreder-line small"></view>
+            <view class="order-list-three">
+                <view class="order-list-three-item">物品金额：</view>
+                <view class="order-list-three-classPrice">￥{{orders.goodsPrice}}</view>
+            </view>
+            <view class="oreder-line small"></view>
+            <view class="order-list-four">
+                <view class="order-list-four-item">实付金额 :</view>
+                <view class="order-list-four-item red">￥{{orders.classPrice}}</view>
+            </view>
+    </view> 
+    <view class="order-item-other-item">
+        <view class="order-item-other-item-top">
+            <view class="right">订单信息</view>
+            <view bindtap="belowClick" class="{{type == 0?'':'below'}}">
+                <image src="../../../assets/image/below.png" style="height:28rpx;width:28rpx" ></image>
+            </view>
+        </view>
+        <view class="{{type == 0?'oreder-line small':'none'}}"></view>
+        <view class="{{type == 0?'order-list-three':'none'}}">
+                <view class="order-list-three-item last">订单编号：</view>
+                <view class="order-list-three-classPrice last-small">{{orders.orderId}}</view>
+            </view>
+            <view class="{{type == 0?'oreder-line small':'none'}}"></view>
+            <view class="{{type == 0?'order-list-four':'none'}}">
+                <view class="order-list-four-item last">支付方式 :</view>
+                <view class="order-list-four-item last-small">￥{{orders.payType}}</view>
+        </view>
+    </view>
+</view>

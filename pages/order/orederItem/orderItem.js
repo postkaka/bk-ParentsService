@@ -1,4 +1,4 @@
-// pages/order/order.js
+// pages/order/orederItem/orderItem.js
 Page({
 
     /**
@@ -7,41 +7,48 @@ Page({
     data: {
         header:{
             title: '我的订单',
-            fontColor: "#333333",
-            headerbg: '#F5F5F5',
+            fontColor: "#FFFFFF",
+            headerbg: '#184571',
             hiddenBlock: false,
             slot: false,
-            src:'../../assets/image/fback.png'
+            src:'../../assets/image/fsback.png'
           },
-        course:["全部订单","已报名","已失效"],
-        orders:[
-            {name:"测试名称",type:"已报名",image:"../../assets/image/selective.png",className:"美术XXXXXXXX课程",
-        classNameNumber:"48",classPrice:"10000.00",studentName:"冰冰"}
-        ],
-        nub:0,
-        id:0,
+          info:{
+            classname:"测试班级",
+            name:"冰冰",
+            time:"2020-03-16 09:10",
+            src:"../../../assets/image/head.png"
+          },
+          type:0,
+          orders:{
+            name:"测试名称",
+            type:"已报名",
+            image:"../../../assets/image/selective.png", 
+            className:"美术XXXXXXXX课程",
+            classNameNumber:"48",
+            classPrice:"10000.00",
+            discountsPrice:"0.00",
+            goodsPrice:"0.00",
+            payType:"微信",
+            orderId:'13738299289482398'}
     },
-    itemClick(e){
-        console.log(e.detail)
-        this.setData({
-            nub:e.detail
-        })
+    belowClick(){
+        if(this.data.type == 0){
+            this.setData({
+                type: 1
+            })
+        } else {
+            this.setData({
+                type: 0
+            })
+        }
     },
-    orderClick(){
-        wx.navigateTo({
-          url: '../order/orederItem/orderItem',
-        })
-    },
+
     /**
      * 生命周期函数--监听页面加载
      */
     onLoad: function (options) {
-        console.log(options.id)
-        this.setData({
-            id: options.id,
-            nub: options.id
-        })
-        console.log(this.data.id)
+
     },
 
     /**

@@ -62,8 +62,8 @@
         "miniprogram": {
             "list": [
                 {
-                    "name": "pages/mine/mine",
-                    "pathName": "pages/mine/mine",
+                    "name": "pages/order/orederItem/orderItem",
+                    "pathName": "pages/order/orederItem/orderItem",
                     "query": "",
                     "scene": null
                 }

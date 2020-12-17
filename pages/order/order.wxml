@@ -1,13 +1,13 @@
 <!--pages/order/order.wxml-->
 <by-header header='{{header}}'></by-header>
 <view class='tab'>
-    <text decode="{{true}}" space="{{true}}">&nbsp;&nbsp;&nbsp;</text>
-    <by-tab course="{{course}}" left="20" right="40" bind:itemClick="itemClick" currentIndex="{{id}}"></by-tab>
+    <!-- <text decode="{{true}}" space="{{true}}">&nbsp;&nbsp;&nbsp;</text> -->
+    <by-tab course="{{course}}" left="20" right="150" bind:itemClick="itemClick" currentIndex="{{id}}"></by-tab>
 </view>
 <!-- 订单内容 -->
 <view class="{{nub == 0?'order':'none'}}">
     <block  wx:for="{{orders}}" wx:key="index">
-        <view class="order-list">
+        <view class="order-list" bindtap="orderClick">
             <view class="order-list-one">
                 <view class="order-list-one-name">
                     <view>{{item.name}}</view>
@@ -21,7 +21,7 @@
             <view class="order-list-two">
                 <view class="order-list-two-image">
                     <view class="order-list-two-image-item">
-                        <image src="{{item.image}}" style="height:120rpx;width:120rpx"></image>
+                        <image src="{{item.image}}" style="height:88rpx;width:88rpx"></image>
                     </view>
                     <view class="order-list-two-image-items">
                         <view>{{item.className}}</view>
@@ -32,22 +32,33 @@
             </view>
             <view class="oreder-line small"></view>
             <view class="order-list-three">
-                <view class="order-list-three-item">单价:</view>
+                <view class="order-list-three-item">课程总价:</view>
+                <view class="order-list-three-classPrice">￥{{item.classPrice}}</view>
+            </view>
+            <view class="oreder-line small"></view>
+            <view class="order-list-three">
+                <view class="order-list-three-item">优惠金额：</view>
+                <view class="order-list-three-classPrice">￥{{item.classPrice}}</view>
+            </view>
+            <view class="oreder-line small"></view>
+            <view class="order-list-three">
+                <view class="order-list-three-item">物品金额：</view>
                 <view class="order-list-three-classPrice">￥{{item.classPrice}}</view>
             </view>
             <view class="oreder-line small"></view>
             <view class="order-list-four">
-                <view class="order-list-four-item">报名学员:</view>
-                <view class="order-list-four-item">{{item.studentName}}</view>
+                <view class="order-list-four-item">实付金额 :</view>
+                <view class="order-list-four-item red">￥{{item.classPrice}}</view>
             </view>
         </view>
         <view class="{{index+1 == orders.length?'text':'none'}}">没有更多了</view>
     </block>
 </view>
-<!-- 待付款 -->
+
+<!-- 已报名 -->
 <view class="{{nub == 1?'order':'none'}}">
     <block  wx:for="{{orders}}" wx:key="index">
-        <view class="order-list">
+        <view class="order-list" bindtap="orderClick">
             <view class="order-list-one">
                 <view class="order-list-one-name">
                     <view>{{item.name}}</view>
@@ -61,7 +72,7 @@
             <view class="order-list-two">
                 <view class="order-list-two-image">
                     <view class="order-list-two-image-item">
-                        <image src="{{item.image}}" style="height:120rpx;width:120rpx"></image>
+                        <image src="{{item.image}}" style="height:88rpx;width:88rpx"></image>
                     </view>
                     <view class="order-list-two-image-items">
                         <view>{{item.className}}</view>
@@ -72,62 +83,32 @@
             </view>
             <view class="oreder-line small"></view>
             <view class="order-list-three">
-                <view class="order-list-three-item">单价:</view>
+                <view class="order-list-three-item">课程总价:</view>
                 <view class="order-list-three-classPrice">￥{{item.classPrice}}</view>
-            </view>
-            <view class="oreder-line small"></view>
-            <view class="order-list-four">
-                <view class="order-list-four-item">报名学员:</view>
-                <view class="order-list-four-item">{{item.studentName}}</view>
-            </view>
-        </view>
-        <view class="{{index+1 == orders.length?'text':'none'}}">没有更多了</view>
-    </block>
-</view>
-<!-- 已报名 -->
-<view class="{{nub == 2?'order':'none'}}">
-    <block  wx:for="{{orders}}" wx:key="index">
-        <view class="order-list">
-            <view class="order-list-one">
-                <view class="order-list-one-name">
-                    <view>{{item.name}}</view>
-                    <view>
-                        <image src="../../assets/image/back.png" style="height:28rpx;width:28rpx"></image>
-                    </view>
-                </view>
-                <view class="order-list-one-type">{{item.type}}</view>
-            </view>
-            <view class="oreder-line"></view>
-            <view class="order-list-two">
-                <view class="order-list-two-image">
-                    <view class="order-list-two-image-item">
-                        <image src="{{item.image}}" style="height:120rpx;width:120rpx"></image>
-                    </view>
-                    <view class="order-list-two-image-items">
-                        <view>{{item.className}}</view>
-                        <view class="order-list-two-image-items-text">{{item.classNameNumber}}课时</view>
-                    </view>
-                </view>
-                <view class="order-list-two-classPrice">￥{{item.classPrice}}</view>
             </view>
             <view class="oreder-line small"></view>
             <view class="order-list-three">
-                <view class="order-list-three-item">单价:</view>
+                <view class="order-list-three-item">优惠金额：</view>
+                <view class="order-list-three-classPrice">￥{{item.classPrice}}</view>
+            </view>
+            <view class="oreder-line small"></view>
+            <view class="order-list-three">
+                <view class="order-list-three-item">物品金额：</view>
                 <view class="order-list-three-classPrice">￥{{item.classPrice}}</view>
             </view>
             <view class="oreder-line small"></view>
             <view class="order-list-four">
-                <view class="order-list-four-item">报名学员:</view>
-                <view class="order-list-four-item">{{item.studentName}}</view>
+                <view class="order-list-four-item">实付金额 :</view>
+                <view class="order-list-four-item red">￥{{item.classPrice}}</view>
             </view>
         </view>
         <view class="{{index+1 == orders.length?'text':'none'}}">没有更多了</view>
     </block>
 </view>
 <!-- 已失效 -->
-<view class="{{nub == 3?'order':'none'}}">
+<view class="{{nub == 2?'order':'none'}}">
     <block  wx:for="{{orders}}" wx:key="index">
-        <view class="order-list">
+        <view class="order-list" bindtap="orderClick">
             <view class="order-list-one">
                 <view class="order-list-one-name">
                     <view>{{item.name}}</view>
@@ -141,7 +122,7 @@
             <view class="order-list-two">
                 <view class="order-list-two-image">
                     <view class="order-list-two-image-item">
-                        <image src="{{item.image}}" style="height:120rpx;width:120rpx"></image>
+                        <image src="{{item.image}}" style="height:88rpx;width:88rpx"></image>
                     </view>
                     <view class="order-list-two-image-items">
                         <view>{{item.className}}</view>
@@ -152,13 +133,23 @@
             </view>
             <view class="oreder-line small"></view>
             <view class="order-list-three">
-                <view class="order-list-three-item">单价:</view>
+                <view class="order-list-three-item">课程总价:</view>
+                <view class="order-list-three-classPrice">￥{{item.classPrice}}</view>
+            </view>
+            <view class="oreder-line small"></view>
+            <view class="order-list-three">
+                <view class="order-list-three-item">优惠金额：</view>
+                <view class="order-list-three-classPrice">￥{{item.classPrice}}</view>
+            </view>
+            <view class="oreder-line small"></view>
+            <view class="order-list-three">
+                <view class="order-list-three-item">物品金额：</view>
                 <view class="order-list-three-classPrice">￥{{item.classPrice}}</view>
             </view>
             <view class="oreder-line small"></view>
             <view class="order-list-four">
-                <view class="order-list-four-item">报名学员:</view>
-                <view class="order-list-four-item">{{item.studentName}}</view>
+                <view class="order-list-four-item">实付金额 :</view>
+                <view class="order-list-four-item red">￥{{item.classPrice}}</view>
             </view>
         </view>
         <view class="{{index+1 == orders.length?'text':'none'}}">没有更多了</view>
