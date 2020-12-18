@@ -12,9 +12,9 @@
     <view >
         <block wx:for="{{wallet}}" wx:key="index">
             <view class="wallet-list">
-                <view>{{item.time}}</view>
-                <view>{{item.type}}</view>
-                <view>￥ {{item.price}}</view>
+                <view >{{item.time}}</view>
+                <view >{{item.type}}</view>
+                <view class="price">￥ {{item.price}}</view>
             </view>
         </block>
     </view>
