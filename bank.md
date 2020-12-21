@@ -35,6 +35,8 @@ mine 我的
 
 mine/minepage/information 学员信息
 
+mine/wallet 钱包
+
 discount-coupon 领取优惠券
 
 discount-coupon/mine-coupon 我的优惠券
@@ -73,3 +75,4 @@ apply 报名确认
 
 order 订单详情
 
+order/orderItem 订单内容
