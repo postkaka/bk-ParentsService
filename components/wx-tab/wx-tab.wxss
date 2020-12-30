@@ -11,7 +11,6 @@
   min-width:100%;
 }
 .ontab {
- 
   display: inline-block;
 }
 .ontab-line {
@@ -20,7 +19,6 @@
     padding: 12rpx 10rpx;
     border-bottom: 8rpx solid #333333;
     border-radius: 4rpx;
-   
 }
 .none-active {
   color: #999999;
