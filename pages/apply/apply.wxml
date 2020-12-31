@@ -13,7 +13,7 @@
 	<view class=" {{type == 1?'box2':'none'}}">
 		<view class="box2-box  {{payType == 1?'show':'drak'}}" bindtap="showClick1">
 			<view class="box2-box-image">
-				<image src="{{apply}}"  class="{{payType ==1?'image1':'image2'}}"></image>
+				<image src="{{apply}}"  style="width: 92rpx;height: 92rpx"></image>
 			</view>
 			<view class="box2-view">余额支付</view>
 		</view>
