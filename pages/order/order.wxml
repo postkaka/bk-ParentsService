@@ -2,7 +2,9 @@
 <by-header header='{{header}}'></by-header>
 <view class='tab'>
     <!-- <text decode="{{true}}" space="{{true}}">&nbsp;&nbsp;&nbsp;</text> -->
+    <!-- 修改 -->
     <by-tab course="{{course}}" left="20" right="150" bind:itemClick="itemClick" currentIndex="{{id}}"></by-tab>
+    <!-- 修改 -->
 </view>
 <!-- 订单内容 -->
 <view class="{{nub == 0?'order':'none'}}">

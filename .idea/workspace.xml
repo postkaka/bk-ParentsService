@@ -19,6 +19,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_package_manager_path" value="npm" />
@@ -59,6 +60,7 @@
       <workItem from="1609289682419" duration="3870000" />
       <workItem from="1609376046119" duration="2085000" />
       <workItem from="1609721765434" duration="1130000" />
+      <workItem from="1609835581657" duration="1942000" />
     </task>
     <servers />
   </component>

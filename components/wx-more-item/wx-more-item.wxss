@@ -2,10 +2,13 @@
 .more-item {
     width: 100%;
     overflow: auto;
+    /* height: 303rpx; */
 }
 .more-item-n {
     display: flex;
-    margin: 32rpx;
+    margin-top:32rpx;
+    margin-left:32rpx ;
+    /* margin-bottom:12rpx ; */
 }
 .more-item-1 {
     width: 200rpx;

@@ -22,14 +22,20 @@
 <!--精选课程-->
 <view class="choosebox">
     <view class="choiceness" bind:tap="courseClick">
-        <image src="../../assets/image/choiceness.png" class="choicenessimage"  ></image>
+        <!-- 调整-->
+        <image src="../../assets/image/choiceness.png"  mode="heightFix" style="height: 390rpx" ></image>
+         <!-- 调整-->
     </view>
     <view class="choosebox-1">
         <view class="activity">
-            <image src="../../assets/image/activity.png" class="activityimage"></image>
+             <!-- 调整-->
+            <image src="../../assets/image/activity.png"   mode="heightFix" style="height: 187rpx" ></image>
+             <!-- 调整-->
         </view>
         <view class="discounts" bindtap="discountClick">
-            <image src="../../assets/image/discounts.png" class="discountsiamge" ></image>
+             <!-- 调整-->
+            <image src="../../assets/image/discounts.png"   mode="heightFix" style="height: 187rpx" ></image>
+             <!-- 调整-->
         </view>
     </view>
 </view>
@@ -47,11 +53,17 @@
 <by-more-items item="{{stu}}" bind:tap="studentsClick" bind:imageLoad="loadover"></by-more-items>
 <!--推荐课程-->
 <view class="tabs">
-    <by-tab course="{{course}}" class='tab-control'></by-tab> 
+    <!-- <by-tab course="{{course}}" class='tab-control'tabdisplay="none" num="34" right="150"></by-tab>  -->
+     <!-- 调整-->
+    <by-more text="推荐课程" bind:tap="courseClick" class='tab-control'></by-more>
+     <!-- 调整-->
 </view>
 <!-- 占位 -->
 <view  wx:if="{{showTabControl}}">
-    <by-tab course="{{course}}" class='tab-control-temp' ></by-tab> 
+    <!-- <by-tab course="{{course}}" class='tab-control-temp' tabdisplay="none" num="34" right="150"></by-tab>  -->
+     <!-- 调整-->
+    <by-more text="推荐课程" bind:tap="courseClick" class='tab-control-temp'></by-more>
+     <!-- 调整-->
 </view>
 <!-- 课程详情 -->
     <by-more-course item="{{items}}" bind:itemClick="itemClick"></by-more-course>

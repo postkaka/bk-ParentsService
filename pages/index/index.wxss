@@ -28,22 +28,36 @@
     margin-top: 32rpx;
     margin-left: 32rpx;
 }
-.choicenessimage {
-    height: 390rpx;
-    width: 335rpx;
-}
+
 .choosebox-1 {
     margin-left: 16rpx;
 }
-.activityimage {
+.discounts {
+   margin-top:5rpx ;
+}
+/* .choicenessimage {
+    height: 400rpx;
+    width: 335rpx;
+} */
+/* .choiceness {
+    position: relative;
+    left: -30rpx;
+}
+
+.activity {
+    position: relative;
+    left: -90rpx;
+}
+ */
+/* .activityimage {
     height: 187rpx;
     width: 335rpx;
     margin-bottom: 16rpx;
-}
-.discountsiamge {
+} */
+/* .discountsiamge {
     height: 187rpx;
     width: 335rpx;
-}
+} */
 .classitem {
     display: flex;
     width: 750rpx;

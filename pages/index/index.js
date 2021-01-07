@@ -17,7 +17,7 @@ Page({
             {src:"../../assets/image/class.png",url:'hour/hour'},
             {src:"../../assets/image/homework.png",url:''}
         ],
-        course:["推荐","国学","美术","声乐","书法","舞蹈","口才","国学","美术","声乐","书法","舞蹈","口才","国学","美术","声乐","书法","舞蹈","口才"],
+        course:["推荐课程","查看更多"],
         item:[
             {name:"某某某",introduce:"曾获得XXXXXX奖",image:"../../assets/components-image/t1.png"},
             {name:"某某某",introduce:"曾获得XXXXXX奖",image:"../../assets/components-image/t2.png"},
