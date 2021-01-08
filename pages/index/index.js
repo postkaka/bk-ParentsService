@@ -33,7 +33,7 @@ Page({
             {name:"课程名称课程名称",price:"￥100000",cout:"60000",src: "../../assets/image/course-2.png"}
         ],
         stu:[
-            {name:"风采标题",title:"李冰冰",introduce:"风采详情风采详情风采详情",image:"../../assets/components-image/x1.png"},
+            {name:"风采标题",title:"李冰冰",introduce:"风采详情风采详情风采详情风采详情风采详情风采详情风采详情风采详情风采详情",image:"../../assets/components-image/x1.png"},
             {name:"风采标题",title:"李冰冰",introduce:"风采详情风采详情风采详情",image:"../../assets/components-image/x1.png"}
         ],
         isFiexd:false,

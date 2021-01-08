@@ -74,7 +74,7 @@
     top: 0;
     z-index: 9;
     background: #fff;
-    padding-top: 60rpx;
+    padding-top: 130rpx;
     padding-bottom: 40rpx;
 }
 .none {

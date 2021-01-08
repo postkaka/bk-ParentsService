@@ -16,6 +16,7 @@
 .more-item-text {
     margin-top: 11rpx;
     margin-left: 16rpx;
+    margin-right: 16rpx;
 }
 .name {
     font-weight:bold;
